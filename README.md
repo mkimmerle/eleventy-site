@@ -1,4 +1,4 @@
-#Static Site - Eleventy Version
+# Static Site - Eleventy Version
 
 This is a newer version of my static personal website, built with the [Eleventy static site generator](https://www.11ty.dev/).
 
