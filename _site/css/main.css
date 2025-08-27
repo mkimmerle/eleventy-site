@@ -6,6 +6,20 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
 	display: block
 }
+@font-face {
+  	font-family: "Kadwa";
+  	src: url('kadwa-v12-latin-700.woff2') format("woff2");
+  	font-style: normal;
+  	font-weight: 700;
+  	font-display: swap;
+}
+@font-face {
+  	font-family: "Merriweather Sans";
+  	src: url('merriweather-sans-v27-latin-regular.woff2') format("woff2");
+  	font-style: normal;
+  	font-weight: 400;
+  	font-display: swap;
+}
 html, body {
 	margin: 0;
 	padding: 0;
@@ -24,7 +38,7 @@ body {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	font-family: Arial, sans-serif;
+	font-family: "Merriweather Sans", Arial, sans-serif;
 	left: 0;
 	right: 0;
 	-moz-transition: all .3s ease;
@@ -53,10 +67,6 @@ body:before {
 	background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,rgba(254,254,254,1) 60%,rgba(254,254,254,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#00fefefe',GradientType=0 ); /* IE6-9 */
 }
-.fonts-loaded body {
-	font-family: "Merriweather Sans";
-	font-weight: 400;
-}
 a {
 	color: #335fac;
 	text-decoration: none;
@@ -76,7 +86,7 @@ a:hover {
 	transition: all .3s ease;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: Times;
+	font-family: "Kadwa", Times;
 	font-weight: 700;
 	color: rgba(171, 79, 4, 1);
 	margin: 0 0 1rem;
@@ -104,9 +114,6 @@ h6 {
 p, li {
 	margin-top: 0;
 	margin-bottom: 1rem;
-}
-.fonts-loaded h1, .fonts-loaded h2, .fonts-loaded h3, .fonts-loaded h4, .fonts-loaded h5, .fonts-loaded h6 {
-	font-family: "Kadwa";
 }
 strong {
 	font-weight: 700;
