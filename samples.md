@@ -113,10 +113,10 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 			</p>
 			<ul>
 				<li>
-					Built and maintained company's <a href="lchome.html" target="_blank" rel="noopener">public-facing website</a>.
+					Built and maintained company's <a href="/work/lchome.html" target="_blank" rel="noopener">public-facing website</a>.
 				</li>
 				<li>
-					Designed, produced and distributed <a href="connection.html" target="_blank" rel="noopener">LifeCare <em>Connection</em></a>, 
+					Designed, produced and distributed <a href="/work/connection.html" target="_blank" rel="noopener">LifeCare <em>Connection</em></a>, 
 					a quarterly sales and marketing newsletter promoting the company's new products and services.
 				</li>
 				<li>
@@ -125,8 +125,8 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 				</li>
 				<li>
 					Designed and coded multiple custom landing pages for promotional campaigns.<br />
-					(<a href="lcpg.html" target="_blank" rel="noopener">Sample screen 1</a>)<br />
-					(<a href="lcpg2.html" target="_blank" rel="noopener">Sample screen 2</a>)
+					(<a href="/work/lcpg.html" target="_blank" rel="noopener">Sample screen 1</a>)<br />
+					(<a href="/work/lcpg2.html" target="_blank" rel="noopener">Sample screen 2</a>)
 				</li>
 			</ul>
 		</div>
@@ -139,13 +139,13 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 			<h3>Down By The River</h3>
 			<ul>
 				<li>
-					Designed <a href="art/dbtr_logo_2014.jpg" target="_blank" rel="noopener">festival logo</a> and <a href="art/bfh_logo_2014.jpg" target="_blank" rel="noopener">charity bike ride logo</a> for non-profit fundraising event.
+					Designed <a href="/art/dbtr_logo_2014.jpg" target="_blank" rel="noopener">festival logo</a> and <a href="art/bfh_logo_2014.jpg" target="_blank" rel="noopener">charity bike ride logo</a> for non-profit fundraising event.
 				</li>
 				<li>
 					Designed and developed <a href="http://dbtr.markkimmerle.com/" target="_blank" rel="noopener">web site</a> to promote non-profit fundraising event.
 				</li>
 				<li>
-					Designed additional event-related <a href="dbtr_flyer_2014.pdf" target="_blank" rel="noopener">print promotional materials</a>.
+					Designed additional event-related <a href="/work/dbtr_flyer_2014.pdf" target="_blank" rel="noopener">print promotional materials</a>.
 				</li>
 			</ul>
 		</div>
@@ -158,14 +158,14 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 			<h3>B&amp;B Cages</h3>
 			<ul>
 				<li>
-					Designed <a href="art/bandb_logo.jpg" target="_blank" rel="noopener">logo</a> and <a href="bandb.html" target="_blank" rel="noopener">web site</a> for baseball, softball and golf training facility.
+					Designed <a href="/art/bandb_logo.jpg" target="_blank" rel="noopener">logo</a> and <a href="/work/bandb.html" target="_blank" rel="noopener">web site</a> for baseball, softball and golf training facility.
 				</li>
 				<li>
 					Hand-coded HTML for site pages, using a responsive CSS-based layout and semantic HTML5 elements for optimal display 
 					across multiple platforms and devices, while also maintaining graceful degradation in older web browsers.
 				</li>
 				<li>
-					Additional <a href="golf_flyer_031314.pdf" target="_blank" rel="noopener">print promotional materials</a>.
+					Additional <a href="/work/golf_flyer_031314.pdf" target="_blank" rel="noopener">print promotional materials</a>.
 				</li>
 			</ul>
 		</div>
@@ -194,7 +194,7 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 		<div class="sampletxt">
 			<h3>MovingWithHOPE, Inc.</h3>
 			<p>
-				<a href="mwh.html" target="_blank" rel="noopener">Designed and coded website</a> for 
+				<a href="/work/mwh.html" target="_blank" rel="noopener">Designed and coded website</a> for 
 				non-profit organization in Shelton, CT. Additional materials include:
 			</p>
 			<ul>
@@ -203,10 +203,10 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 					<a href="http://www.movingwithhope.org/email/mwh_dadsandgrads_0611.html" target="_blank" rel="noopener">June 2011</a>).
 				</li>
 				<li>
-					<a href="/mwh_brochure.pdf" target="_blank" rel="noopener">Tri-fold marketing brochure</a>.
+					<a href="/work/mwh_brochure.pdf" target="_blank" rel="noopener">Tri-fold marketing brochure</a>.
 				</li>
 				<li>
-					Additional <a href="art/MWH_0721_Event_Flyer.jpg" target="_blank" rel="noopener">event marketing materials</a>.
+					Additional <a href="/art/MWH_0721_Event_Flyer.jpg" target="_blank" rel="noopener">event marketing materials</a>.
 				</li>
 			</ul>
 		</div>
