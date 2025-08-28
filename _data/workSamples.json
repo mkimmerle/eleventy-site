@@ -30,7 +30,7 @@
     "role": "Front-End Web Developer",
     "image": "/art/lmscreen.jpg",
     "highlights": [
-      "Designed and developed a responsive framework for the company's <a href=\"http://lm.markkimmerle.com/2014.html\" target=\"_blank\" rel=\"noopener\">discount shopping platform</a>, increasing mobile utilization by 20%.",
+      "<a href=\"http://lm.markkimmerle.com/2014.html\" target=\"_blank\" rel=\"noopener\">Designed and developed a responsive framework</a> for the company's <a href=\"http://lm.markkimmerle.com/2015.html\" target=\"_blank\" rel=\"noopener\">discount shopping platform</a>, increasing mobile utilization by 20%.",
       "Defined development standards and optimization practices, including file minification and image optimization procedures, improving page load speeds by 10%.",
       "Partnered with stakeholders to establish guidelines for creating workflows and requirements documentation."
     ]
@@ -81,10 +81,10 @@
     "company": "MovingWithHOPE, Inc.",
     "image": "/art/mwhscreen.jpg",
     "highlights": [
-      "<a href=\"/work/mwh.html\" target=\"_blank\" rel=\"noopener\">Designed and coded website</a> for non-profit organization in Shelton, CT. Additional materials include:",
-      "E-mail marketing campaigns (<a href=\"http://www.movingwithhope.org/email/mwh_mothersday_042911.html\" target=\"_blank\" rel=\"noopener\">May 2011</a>, <a href=\"http://www.movingwithhope.org/email/mwh_dadsandgrads_0611.html\" target=\"_blank\" rel=\"noopener\">June 2011</a>).",
+      "<a href=\"/work/mwh.html\" target=\"_blank\" rel=\"noopener\">Designed and coded website</a> for non-profit organization in Shelton, CT.",
       "<a href=\"/work/mwh_brochure.pdf\" target=\"_blank\" rel=\"noopener\">Tri-fold marketing brochure</a>.",
-      "Additional <a href=\"/art/MWH_0721_Event_Flyer.jpg\" target=\"_blank\" rel=\"noopener\">event marketing materials</a>."
+      "Additional <a href=\"/art/MWH_0721_Event_Flyer.jpg\" target=\"_blank\" rel=\"noopener\">Event marketing materials</a>.",
+      "E-mail marketing campaigns."
     ]
   },
   {
