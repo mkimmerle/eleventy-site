@@ -1,0 +1,70 @@
+.footer, .footer:hover {
+	background: #e0e0e0;
+	padding: .5em 0;
+	font-size: .8em;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+	transition: all .3s ease;
+}
+
+.footer p {
+	margin: 0;
+}
+
+.footer-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+}
+
+.footer-nav a, .footer-nav a:hover {
+	display: block;
+	margin-left: .5em;
+	border-bottom: none;
+}
+
+.footer-icon {
+	color: #222;
+	cursor: pointer;
+	vertical-align: bottom;
+	width: 30px;
+	height: 30px;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+	transition: all .3s ease;
+}
+
+.footer-icon path, .footer-icon circle {
+	fill: currentColor;
+}
+
+.footer:hover .footer-icon {
+	color: #666;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+	transition: all .3s ease;
+}
+
+.footer:hover .footer-icon:hover {
+	color: #369;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+    -o-transition: all 0.3s ease;
+	transition: all .3s ease;
+}
+
+@media screen and (min-width: 0) and (max-width: 800px) {
+	.footer-icon {
+		width: 45px;
+		height: 45px;
+	}
+}
