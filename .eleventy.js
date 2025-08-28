@@ -3,4 +3,5 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("art");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("work");
 }
