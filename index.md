@@ -11,8 +11,8 @@ title: CT Web Designer and Website Developer - Mark Kimmerle
 	</svg>
 </section>
 <section class="content-container home-welcome">
-	<h1>Hi there! I'm Mark Kimmerle</h1>
-	<p>
+	<h1 class="u-hXL">Hi there! I'm Mark Kimmerle</h1>
+	<p class="home-copy u-bXL">
 		I'm a front-end web developer and web designer based in Shelton, CT. I like to build fast, user-friendly websites. Good content, usability, accessibility and performance are some of my favorite things. I have over 25 years of experience in web design and web development, and I also do e-commerce development, logo/print design and e-mail marketing. <a href="/samples.html">Check out some of my work</a>, or <a href="/contact.html">drop me a line</a> if you're interested in working with me.
 	</p>
 </section>

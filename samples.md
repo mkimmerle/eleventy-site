@@ -5,7 +5,7 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 ---
 
 <section class="content-container">
-	<h1>Work Samples</h1>
+	<h1 class="u-h1">Work Samples</h1>
 
 	{% for sample in workSamples %}
 		<div id="{{ sample.id }}" class="samplebox">
@@ -13,16 +13,16 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 				<img src="{{ sample.image }}" alt="">
 			</div>
 			<div class="sampletxt">
-				<h2>{{ sample.company }}</h2>
+				<h2 class="u-h2">{{ sample.company }}</h2>
 				{% if sample.role != blank %}
-				<p>
+				<p class="u-b1">
 					<em>({{ sample.role }})</em>
 				</p>
 				{% endif %}
 				{% if sample.highlights %}
 					<ul>
 						{% for highlight in sample.highlights %}
-							<li>{{ highlight }}</li>
+							<li class="u-b2">{{ highlight }}</li>
 						{% endfor %}
 					</ul>
 				{% endif %}

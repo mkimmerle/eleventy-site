@@ -5,8 +5,8 @@ title: Contact Mark Kimmerle  - CT Web Design & Development
 ---
 
 <section class="content-container">
-<h1>Contact Me</h1>
-<p>
+<h1 class="u-h1">Contact Me</h1>
+<p class="u-b1">
 	Please fill out the form below to send me a message, and I'll get back to you as soon as possible.<br>
 	<strong>Remember: All fields are required.</strong>
 </p>
