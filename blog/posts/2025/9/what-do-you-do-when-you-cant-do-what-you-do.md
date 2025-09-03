@@ -11,7 +11,11 @@ tags: post
 ---
 
 <section class="content-container">
-<h1>{{ page-title }}</h1>
+<h1 class="u-h1">{{ page-title }}</h1>
+
+*{{ page-datetime }}*
+
+<div class="u-b1">
 
 Nine months. 179 applications. Four interviews.
 
@@ -23,8 +27,8 @@ And that's terrifying.
 
 So...  what *do* you do when the world is telling you that you can't do the only thing you know how to do anymore??
 
-Filed under:
+</div>
 
-- {{ tags }}
+**Filed under** {{ tags }}
 
 </section>

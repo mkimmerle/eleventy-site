@@ -11,12 +11,16 @@ tags: post
 ---
 
 <section class="content-container">
-<h1>{{ page-title }}</h1>
+<h1 class="u-h1">{{ page-title }}</h1>
+
+*{{ page-datetime }}*
+
+<div class="u-b1">
 
 Just testing my Markdown skilz.
 
-Filed under:
+</div>
 
-- {{ tags }}
+**Filed under** {{ tags }}
 
 </section>

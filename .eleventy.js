@@ -1,7 +1,9 @@
 const sass = require("sass");
 const path = require('node:path');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setIncludesDirectory("_includes");
   eleventyConfig.addPassthroughCopy("art");
   eleventyConfig.addPassthroughCopy("css");
