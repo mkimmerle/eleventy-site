@@ -112,8 +112,7 @@ strong {
 .content-container {
 	margin: 0 auto;
 	width: calc(100% - 60px);
-	max-width:  70ch;
-	/*max-width: 1400px;*/
+	max-width: 1400px;
 }
 .fluid-container {
 	margin: 0 auto;
