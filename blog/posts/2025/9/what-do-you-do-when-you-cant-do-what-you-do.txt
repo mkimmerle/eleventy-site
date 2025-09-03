@@ -29,6 +29,4 @@ So...  what *do* you do when the world is telling you that you can't do the only
 
 </div>
 
-**Filed under** {{ tags }}
-
 </section>

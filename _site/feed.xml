@@ -4,7 +4,7 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2025-09-02T14:09:03Z</updated>
+  <updated>2025-09-03T17:34:58Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
@@ -12,37 +12,18 @@
   </author>
   
   <entry>
-    <title>What do you do when you can&#39;t do what you do? - Mark Kimmerle&#39;s Blog  - CT Web Design &amp; Development</title>
-    <link href="https://www.markkimmerle.com/blog/posts/2025/9/what-do-you-do-when-you-cant-do-what-you-do/"/>
-    <updated>2025-09-02T14:09:03Z</updated>
-    <id>https://www.markkimmerle.com/blog/posts/2025/9/what-do-you-do-when-you-cant-do-what-you-do/</id>
+    <title>Welcome to my Blog - Mark Kimmerle&#39;s Blog  - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2025/9/welcome-to-my-blog/"/>
+    <updated>2025-09-03T17:34:58Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2025/9/welcome-to-my-blog/</id>
     <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;What do you do when you can&#39;t do what you do?&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-09-02&lt;/em&gt;&lt;/p&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;Welcome to my Blog&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2025-09-03&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&quot;u-b1&quot;&gt;
-&lt;p&gt;Nine months. 179 applications. Four interviews.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Zero jobs.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;After 26 years as a web developer, it seems like the global consensus is that I&#39;m not qualified to be a web developer anymore.&lt;/p&gt;
-&lt;p&gt;And that&#39;s terrifying.&lt;/p&gt;
-&lt;p&gt;So...  what &lt;em&gt;do&lt;/em&gt; you do when the world is telling you that you can&#39;t do the only thing you know how to do anymore??&lt;/p&gt;
+&lt;p&gt;At long last, I finally have a blog. And this is the first post. I should&#39;ve done this a long time ago -- both writing a blog &lt;em&gt;AND&lt;/em&gt; switching from pure static HTML to &lt;a href=&quot;https://www.11ty.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Eleventy&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Anyway, I don&#39;t have much to say yet, other than I like Eleventy so far. It&#39;s fast and the templating is very nice.&lt;/p&gt;
+&lt;p&gt;Stay tuned, and hopefully once in a while I&#39;ll have some ideas that are worth sharing.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Filed under&lt;/strong&gt; post&lt;/p&gt;
-&lt;/section&gt;
-</content>
-  </entry>
-  
-  <entry>
-    <title>What should I write here? - Mark Kimmerle&#39;s Blog  - CT Web Design &amp; Development</title>
-    <link href="https://www.markkimmerle.com/blog/posts/2025/9/this-is-a-test-post/"/>
-    <updated>2025-08-28T16:57:15Z</updated>
-    <id>https://www.markkimmerle.com/blog/posts/2025/9/this-is-a-test-post/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;What should I write here?&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-08-28&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
-&lt;p&gt;Just testing my Markdown skilz.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Filed under&lt;/strong&gt; post&lt;/p&gt;
 &lt;/section&gt;
 </content>
   </entry>
