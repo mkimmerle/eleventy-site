@@ -50,13 +50,8 @@
 		ga('create', 'UA-1531584-6', 'auto');
 		ga('send', 'pageview');
 		//Service Worker
-		if('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/service-worker.js', { scope: '/' }).then(function(registration) {
-				//console.log('Service Worker Registered');
-			});
-			navigator.serviceWorker.ready.then(function(registration) {
-				 //console.log('Service Worker Ready');
-			});
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('service-worker.js');
 		}
 	</script>
 
