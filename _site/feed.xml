@@ -4,12 +4,33 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2025-09-05T22:39:55Z</updated>
+  <updated>2025-09-06T11:41:44Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>You Are Not Eligible - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2025/9/you-are-not-eligible/"/>
+    <updated>2025-09-06T11:41:44Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2025/9/you-are-not-eligible/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;You Are Not Eligible&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2025-09-06&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;I applied for a job yesterday. At 8PM. On a Friday night. Within 10 minutes, I got the following (automated, of course) response:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Thank you for your interest in the position of XXXX.  Based on your responses to the application questionnaire, you are ineligible to submit an application.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So... Company X, are you saying that my not having a Bachelor&#39;s degree (in a completely unrelated field, btw) is somehow more important than my 26 years of experience in this field?  Or are you saying this isn&#39;t really a remote job and you just don&#39;t want to be upfront about making people relocate?&lt;/p&gt;
+&lt;p&gt;Look, I&#39;ll be the first to admit that I&#39;m probably not the magical unicorn wizard ninja you&#39;re hoping to find out here. But I can&#39;t help but wonder -- if you&#39;ve done such a bad job configuring your robot gatekeepers that qualified candidates can&#39;t even get in front of human eyes, then has it ever occurred to you that you&#39;re likely missing out on a ton of candidates that come pretty close to being that magical unicorn wizard ninja, all because your people aren&#39;t willing to do the job that people should be doing??&lt;/p&gt;
+&lt;p&gt;Stop relying on the machines for &lt;em&gt;everything&lt;/em&gt;, and do your own job once in a while.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Two Down, One To Go - Mark Kimmerle&#39;s Blog  - CT Web Design &amp; Development</title>
