@@ -4,12 +4,30 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2025-09-06T11:41:44Z</updated>
+  <updated>2025-09-11T18:54:38Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>You Are Not Eligible - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2025/9/use-the-drawer/"/>
+    <updated>2025-09-11T18:54:38Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2025/9/use-the-drawer/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;USE THE DRAWER!!&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2025-09-11&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;To whom it may concern,&lt;/p&gt;
+&lt;p&gt;The oven is &lt;strong&gt;NOT&lt;/strong&gt; an appropriate place to store the cookie sheets when you&#39;re not actually baking.&lt;/p&gt;
+&lt;p&gt;Thank you,&lt;/p&gt;
+&lt;p&gt;The Management&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>You Are Not Eligible - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
