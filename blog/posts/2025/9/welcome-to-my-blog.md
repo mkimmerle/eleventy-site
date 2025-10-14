@@ -2,6 +2,7 @@
 layout: blogpost.html
 meta-description: I'm finally launching a blog
 title: Welcome to my Blog - Mark Kimmerle's Blog  - CT Web Design & Development
+date: 2025-09-03
 page-title: Welcome to my Blog
 page-datetime: "2025-09-03"
 authored-date: September 3, 2025

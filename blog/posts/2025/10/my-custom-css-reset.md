@@ -2,6 +2,7 @@
 layout: blogpost.html
 meta-description: Because apparently everyone needs one.
 title: My Custom CSS Reset - Mark Kimmerle's Blog - CT Web Design & Development
+date: 2025-10-14
 page-title: My Custom CSS Reset
 page-datetime: "2025-10-14"
 authored-date: October 14, 2025

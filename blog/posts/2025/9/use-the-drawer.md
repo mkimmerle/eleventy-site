@@ -2,6 +2,7 @@
 layout: blogpost.html
 meta-description: That's what it's there for.
 title: You Are Not Eligible - Mark Kimmerle's Blog - CT Web Design & Development
+date: 2025-09-11
 page-title: USE THE DRAWER!!
 page-datetime: "2025-09-11"
 authored-date: September 11, 2025

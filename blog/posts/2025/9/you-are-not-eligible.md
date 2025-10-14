@@ -2,6 +2,7 @@
 layout: blogpost.html
 meta-description: Based on your responses to the application questionnaire...
 title: You Are Not Eligible - Mark Kimmerle's Blog - CT Web Design & Development
+date: 2025-09-06
 page-title: You Are Not Eligible
 page-datetime: "2025-09-06"
 authored-date: September 6, 2025
