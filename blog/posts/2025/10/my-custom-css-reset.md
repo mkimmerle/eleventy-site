@@ -18,7 +18,7 @@ tags: post
 
 <div class="u-b1">
 
-For... reasons? :man_shrugging: ... I went down the rabbit hole of CSS resets. It seems like everyone else in the world has one, and even though I've used some of these ideas in some capacity for a long time, I've never formally gathered them up into one file.  So from now on, this is going to be the starter kit that I use for anything I build.
+For... reasons? ... I went down the rabbit hole of CSS resets. It seems like everyone else in the world has one, and even though I've used some of these ideas in some capacity for a long time, I've never formally gathered them up into one file.  So from now on, this is going to be the starter kit that I use for anything I build.
 
 Here's a [CodePen link to my version](https://codepen.io/mkimmerle/pen/WbrEPjz), with some explanations below.
 
