@@ -4,12 +4,283 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2025-09-11T18:54:38Z</updated>
+  <updated>2025-10-13T17:16:10Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>My Custom CSS Reset - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2025/10/my-custom-css-reset/"/>
+    <updated>2025-10-13T17:16:10Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2025/10/my-custom-css-reset/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;My Custom CSS Reset&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2025-10-14&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;For... reasons? :man_shrugging: ... I went down the rabbit hole of CSS resets. It seems like everyone else in the world has one, and even though I&#39;ve used some of these ideas in some capacity for a long time, I&#39;ve never formally gathered them up into one file.  So from now on, this is going to be the starter kit that I use for anything I build.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a &lt;a href=&quot;https://codepen.io/mkimmerle/pen/WbrEPjz&quot;&gt;CodePen link to my version&lt;/a&gt;, with some explanations below.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;This is fairly short and fairly simple.  Like, there are a TON of fancy new whiz-bang CSS features that you &lt;strong&gt;won&#39;t&lt;/strong&gt; see here -- you&#39;re free to use them if you want to, of course, but to me, they don&#39;t feel necessary for a starter/reset.  Keep it simple, amirite?&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;The File&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;	
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light-dark;
+  font-size: clamp(1rem, 1rem + 0.5vw, 2rem);
+  line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-feature-settings: &quot;kern&quot;;
+  font-kerning: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+p, li {
+  text-wrap: pretty;
+}
+
+img, svg, video, iframe, canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  border-style: none;
+}
+
+svg {
+  fill: currentColor;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  inset-block-end: -0.25em;
+}
+
+sup {
+  inset-block-start: -0.5em;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:is([type=&quot;checkbox&quot;], [type=&quot;radio&quot;]), select, label, button {
+  cursor: pointer;
+  line-height: 1;
+}
+
+fieldset {
+  border:  0;
+  margin:  0;
+  padding:  0;
+}
+
+[aria-disabled=&quot;true&quot;], [disabled] {
+  cursor: not-allowed;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+*:focus-visible {
+  outline: 2px solid crimson;
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+    interpolate-size: allow-keywords;
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;The Reasons&lt;/h2&gt;
+&lt;h3 class=&quot;u-h3&quot;&gt;The Basics&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;	
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&#39;ve all been using this since, like, forever at this point, so... duh.&lt;/p&gt;
+&lt;h3 class=&quot;u-h3&quot;&gt;Typography... mostly&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;	
+html {
+  color-scheme: light-dark;
+  font-size: clamp(1rem, 1rem + 0.5vw, 2rem);
+  line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-feature-settings: &quot;kern&quot;;
+  font-kerning: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Most of these are design-ish text-related things to help me get away with faux font styling without annoying the designers too badly, but there are also a few noteworthy things I like, such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fluid font sizes, which I haven&#39;t used enough over the years but probably should&lt;/li&gt;
+&lt;li&gt;A readable line height, to help make things look nice and to meet some accessibility guidelines&lt;/li&gt;
+&lt;li&gt;Some guardrails to break up and hyphenate the occasional long word that usually sneaks into production unnoticed because it wasn&#39;t in your &amp;quot;Lorem ipsum&amp;quot; dummy copy when you dev-ed and QA-ed the site&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For me, the big one here is &lt;code&gt;color-scheme&lt;/code&gt;. Believe it or not, I&#39;ve never had a chance to build a dark mode on a real site before. It&#39;s about time I forced myself to try, though.  Do unto others and all that, y&#39;know?&lt;/p&gt;
+&lt;h3 class=&quot;u-h3&quot;&gt;Nuke it from orbit&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;	
+body {
+  margin: 0;
+  padding: 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Sooner or later, we almost always end up overriding the browser&#39;s default &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; spacing. Might as well get that out of the way now.&lt;/p&gt;
+&lt;h3 class=&quot;u-h3&quot;&gt;More typography&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;	
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+p, li {
+  text-wrap: pretty;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some baseline styles for heading elements, like bold type and a tighter line height.  I like using &lt;code&gt;text-wrap: balance&lt;/code&gt; for headings and &lt;code&gt;text-wrap: pretty&lt;/code&gt; for copy to help make the text more balanced and readable (even though &lt;strong&gt;pretty&lt;/strong&gt; isn&#39;t widely supported yet, but why not future-proof while we&#39;re here?).&lt;/p&gt;
+&lt;h3 class=&quot;u-h3&quot;&gt;Set it and forget it&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;	
+img, svg, video, iframe, canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  border-style: none;
+}
+
+svg {
+  fill: currentColor;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  inset-block-end: -0.25em;
+}
+
+sup {
+  inset-block-start: -0.5em;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pretty self-explanatory here.&lt;/p&gt;
+&lt;h3 class=&quot;u-h3&quot;&gt;Mostly accessibility&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;	
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:is([type=&quot;checkbox&quot;], [type=&quot;radio&quot;]), select, label, button {
+  cursor: pointer;
+  line-height: 1;
+}
+
+fieldset {
+  border:  0;
+  margin:  0;
+  padding:  0;
+}
+
+[aria-disabled=&quot;true&quot;], [disabled] {
+  cursor: not-allowed;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+*:focus-visible {
+  outline: 2px solid crimson;
+  outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+    interpolate-size: allow-keywords;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, we&#39;re doing stuff like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Handling &#39;visually-hidden&#39; text like skip links&lt;/li&gt;
+&lt;li&gt;Making sure interactive elements look interactive -- i.e., giving them the finger-style cursor on hover&lt;/li&gt;
+&lt;li&gt;Encouraging ourselves to properly use the &lt;code&gt;&amp;lt;fieldset&amp;gt;&lt;/code&gt; element when we put radio buttons or checkboxes in a form, but also removing the annoying grey border&lt;/li&gt;
+&lt;li&gt;Making sure non-interactive hidden and disabled elements look non-interactive by giving them a &#39;not-allowed&#39; hover cursor&lt;/li&gt;
+&lt;li&gt;Hiding hidden elements&lt;/li&gt;
+&lt;li&gt;Adding focus highlighting for keyboard navigation (I know designers don&#39;t like to see the border around links and form fields and whatnot, but...  it&#39;s important, folks)&lt;/li&gt;
+&lt;li&gt;Not using fancy scrolling behavior and other animations when someone tells their browser to minimize unnecessary motion (again, respect the user)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;Thoughts?&lt;/h2&gt;
+&lt;p&gt;The more I look at this, the more I&#39;m likely to find things I should change (for instance, I should probably add a &lt;code&gt;max-width&lt;/code&gt; character setting for content pages), so I bet this will evolve over the days/weeks/months ahead. If anyone ever actually reads this and has any suggestions, I&#39;d really appreciate the feedback.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>You Are Not Eligible - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
