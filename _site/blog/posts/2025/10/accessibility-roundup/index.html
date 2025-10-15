@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Blog by Mark Kimmerle, a web designer and developer in Fairfield County, CT.">
+	<meta name="description" content="Collecting some worthwhile links.">
     <meta name="theme-color" content="#335fac">
 	<link rel="stylesheet" media="screen" href="/css/main.min.101425.css">
 	<link rel="stylesheet" media="print" href="/css/print.css">
@@ -14,7 +14,29 @@
     <link rel="apple-touch-icon" sizes="120x120" href="/art/touch-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/art/touch-icon-ipad-retina.png">
 	<link rel="manifest" href="manifest.json">
-	<title>Mark Kimmerle's Blog  - CT Web Design & Development</title>
+	<title>Accessibility Roundup - Mark Kimmerle's Blog - CT Web Design & Development</title>
+	<style>
+		blockquote {
+			margin:  3rem auto;
+			padding: 1.5rem;
+			background-color: #e0e0e0;
+			font-size: 1.5rem;
+			font-style: italic;
+		}
+		blockquote p:last-child {
+			margin-bottom: 0;
+		}
+		pre {
+			margin: 1rem 0;
+			padding: 2rem;
+			background-color: #efefef;
+			border-left: 2px solid #ccc;
+			border-top: 2px solid #ccc;
+			word-break: break-word;
+			overflow-wrap: break-word;
+			font-size: .9rem;
+		}
+	</style>
 </head>
 <body>
 
@@ -56,45 +78,43 @@
 
 	<main role="main" class="main">
 		<section class="content-container">
-	<h1 class="u-h1">Blog</h1>
-	<p class="u-b1">
-		Here's the part where I say a whole bunch of stuff that doesn't mean anything.
-	</p>
-<p><h2 class="u-h2">Recent Posts</h2></p>
-<p><ul></p>
-<p><li>
-<b><time datetime="2025-10-15">October 15, 2025</time></b><br>
-<a href="/blog/posts/2025/10/accessibility-roundup/">Accessibility Roundup</a><br>
-<i>Collecting some worthwhile links.</i>
-</li></p>
-<p><li>
-<b><time datetime="2025-10-14">October 14, 2025</time></b><br>
-<a href="/blog/posts/2025/10/my-custom-css-reset/">My Custom CSS Reset</a><br>
-<i>Because apparently everyone needs one.</i>
-</li></p>
-<p><li>
-<b><time datetime="2025-09-11">September 11, 2025</time></b><br>
-<a href="/blog/posts/2025/9/use-the-drawer/">USE THE DRAWER!!</a><br>
-<i>That's what it's there for.</i>
-</li></p>
-<p><li>
-<b><time datetime="2025-09-06">September 6, 2025</time></b><br>
-<a href="/blog/posts/2025/9/you-are-not-eligible/">You Are Not Eligible</a><br>
-<i>Based on your responses to the application questionnaire...</i>
-</li></p>
-<p><li>
-<b><time datetime="2025-09-05">September 5, 2025</time></b><br>
-<a href="/blog/posts/2025/9/two-down-one-to-go/">Two Down, One To Go</a><br>
-<i>IYKYK</i>
-</li></p>
-<p><li>
-<b><time datetime="2025-09-03">September 3, 2025</time></b><br>
-<a href="/blog/posts/2025/9/welcome-to-my-blog/">Welcome to my Blog</a><br>
-<i>It only took me 26 years to get around to a 26-years-ago concept.</i>
-</li></p>
-<p></ul></p>
+<h1 class="u-h1">Accessibility Roundup</h1>
+<p><em>2025-10-15</em></p>
+<div class="u-b1">
+<p>A handful of a11y-related links I found this week that I thought were useful and thoughtful...</p>
+<ul>
+<li>
+<p><a href="https://overlayfactsheet.com/en/" target="_blank" rel="noopener" class="u-h5">Overlay Fact Sheet</a><br>
+Great breakdown of why those accessibility overlays generally create more problems than they're worth, and why you should just put some time into building your site for accessibility in the first place.</p>
+</li>
+<li>
+<p><a href="https://tetralogical.com/blog/2025/10/14/common-misconceptions-about-screen-readers/" target="_blank" rel="noopener" class="u-h5">Common misconceptions about screen readers</a><br>
+If I had a nickel for every time I had an exec tell me, &quot;we don't need to worry about screen readers; we don't have any blind users,&quot; I wouldn't have to worry about how I'm going to pay my bills while I'm unemployed. But if nothing else, at least now I've got some good rebuttals to their &quot;arguments&quot; when (if?) I start working again.</p>
+</li>
+<li>
+<p><a href="https://www.a11y-collective.com/blog/focus-indicator/" target="_blank" rel="noopener" class="u-h5">Understanding Focus Indicators for Web Accessibility</a><br>
+One of the most common issues I've seen in my career is the way people keep nuking focus rings to make their pages look &quot;cleaner&quot; or something.  But especially now that we've got <code>:focus-visible</code> to help us handle keyboard interactions, there's no excuse not to do it right. This is an excellent tutorial (and a reminder that color contrast is for more than just text, too).</p>
+</li>
+<li>
+<p><a href="https://tetralogical.github.io/screen-reader-HTML-support/lookup/lookup.html" target="_blank" rel="noopener" class="u-h5">Screen Reader HTML Support – Lookup</a><br>
+So glad I stumbled onto this one! Maybe now I'll finally learn the right way to use screen readers for testing, instead of just opening the software and hoping it passively reads the page the way I expect it to.</p>
+</li>
+<li>
+<p><a href="https://www.tempertemper.net/blog/focus-on-the-people-that-make-things-happen" target="_blank" rel="noopener" class="u-h5">Focus on the people that make things happen</a><br>
+This is a really insightful point, and I've actually seen this lesson work in practice without really noticing it, too. Pushing uphill is hard work, but if you and the people around you resolve to do the right thing for yourselves, you can still build the accessibility culture you want.</p>
+</li>
+</ul>
+</div>
 </section>
 
+
+		<script src="https://utteranc.es/client.js"
+		        repo="mkimmerle/eleventy-site"
+		        issue-term="pathname"
+		        theme="github-light"
+		        crossorigin="anonymous"
+		        async>
+		</script>
 	</main>
 
 	<footer role="contentinfo" class="footer">
