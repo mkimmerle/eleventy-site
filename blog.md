@@ -13,13 +13,13 @@ title: Mark Kimmerle's Blog  - CT Web Design & Development
 	<h2 class="u-h2">Recent Posts</h2>
 
 	<ul>
-		{% for post in collections.post reversed %}
+		{%- for post in collections.post reversed -%}
 		<li>
 			<b><time datetime="{{post.data.page-datetime}}">{{ post.data.authored-date }}</time></b><br>
 			<a href="{{post.url}}">{{ post.data.page-title }}</a><br>
 			<i>{{ post.data.page-excerpt }}</i>
 		</li>
-		{% endfor %}
+		{%- endfor -%}
 	</ul>
 
 </section>

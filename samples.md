@@ -7,27 +7,27 @@ title: Web Design &amp; Print Design Samples by Mark Kimmerle - CT Web Design &a
 <section class="content-container">
 	<h1 class="u-h1">Work Samples</h1>
 
-	{% for sample in workSamples %}
+	{%- for sample in workSamples -%}
 		<div id="{{ sample.id }}" class="samplebox">
 			<div class="samplepic">
 				<img src="{{ sample.image }}" alt="">
 			</div>
 			<div class="sampletxt">
 				<h2 class="u-h2">{{ sample.company }}</h2>
-				{% if sample.role != blank %}
+				{%- if sample.role != blank -%}
 				<p class="u-b1">
 					<em>({{ sample.role }})</em>
 				</p>
-				{% endif %}
-				{% if sample.highlights %}
+				{%- endif %}
+				{%- if sample.highlights %}
 					<ul>
-						{% for highlight in sample.highlights %}
+						{%- for highlight in sample.highlights -%}
 							<li class="u-b2">{{ highlight }}</li>
-						{% endfor %}
+						{%- endfor -%}
 					</ul>
-				{% endif %}
+				{%- endif %}
 			</div>
 		</div>
-	{% endfor %}
+	{%- endfor %}
 
 </section>

@@ -13,7 +13,7 @@ title: CT Web Designer and Website Developer - Mark Kimmerle
 <section class="content-container home-welcome">
 	<h1 class="u-hXL">Hi there! I'm Mark Kimmerle</h1>
 	<p class="home-copy u-bXL">
-		I'm a front-end web developer and web designer based in Shelton, CT. I like to build fast, user-friendly websites. Good content, usability, accessibility and performance are some of my favorite things. I have over 25 years of experience in web design and web development, and I also do e-commerce development, logo/print design and e-mail marketing. <a href="/samples.html">Check out some of my work</a>, or <a href="/contact.html">drop me a line</a> if you're interested in working with me.
+		I'm a front-end web developer and web designer based in Shelton, CT. I like to build fast, user-friendly websites. Good content, usability, accessibility and performance are some of my favorite things. I have over 25 years of experience in web design and web development, and I also do e-commerce development, logo/print design and e-mail marketing. <a href="/samples">Check out some of my work</a>, or <a href="/contact">drop me a line</a> if you're interested in working with me.
 	</p>
 </section>
 
@@ -21,12 +21,12 @@ title: CT Web Designer and Website Developer - Mark Kimmerle
 	<h2 class="u-h1">Posts</h2>
 
 	<ul>
-		{% for post in collections.post reversed %}
+		{%- for post in collections.post reversed -%}
 		<li class="home-blog__item">
 			<b class="u-b1"><time datetime="{{post.data.page-datetime}}">{{ post.data.authored-date }}</time></b><br>
 			<a href="{{post.url}}" class="u-b1">{{ post.data.page-title }}</a><br>
 			<i class="u-b1">{{ post.data.page-excerpt }}</i>
 		</li>
-		{% endfor %}
+		{%- endfor -%}
 	</ul>
 </section>
