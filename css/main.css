@@ -18,6 +18,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   	font-weight: 400;
   	font-display: swap;
 }
+@view-transition {
+  navigation: auto;
+}
 html, body {
 	margin: 0;
 	padding: 0;
