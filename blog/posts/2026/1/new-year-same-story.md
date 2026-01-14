@@ -2,7 +2,7 @@
 layout: blogpost.html
 meta-description: Some things don't change
 title: New Year, Same Story - Mark Kimmerle's Blog - CT Web Design & Development
-date: 2025-12-29
+date: 2026-01-05
 page-title: New Year, Same Story
 page-datetime: "2026-01-05"
 authored-date: January 5, 2026
