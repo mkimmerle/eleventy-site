@@ -1,0 +1,20 @@
+---
+permalink: "/sitemap.xml"
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign allPages = collections.all %}
+  {% for page in allPages %}
+    {% if page.url and page.data.sitemap != false %}
+    {% if page.url contains '/sass/' or page.url contains '404' or page.url contains 'offline' or page.url == '/sitemap.xml' %}
+      {% comment %}skip this page{% endcomment %}
+    {% else %}
+  <url>
+    <loc>https://markkimmerle.com{{ page.url }}</loc>
+    {% if page.date %}<lastmod>{{ page.date | date: "%Y-%m-%d" }}</lastmod>{% endif %}
+  </url>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
+</urlset>
