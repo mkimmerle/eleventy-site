@@ -1,3 +1,7 @@
-/contact.html /contact/ 301
-/samples.html /samples/ 301
-/index.html / 301
+/index.html     /           301
+
+/contact.html   /contact/   301
+/contact        /contact/   301
+
+/samples.html   /samples/  301
+/samples        /samples/  301
