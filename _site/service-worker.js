@@ -12,7 +12,7 @@
 */
 
 // Cache names
-const PRECACHE = 'precache-v012326';
+const PRECACHE = 'precache-v012426';
 const RUNTIME = 'runtime';
 
 // Files that must always be available offline
