@@ -14,11 +14,12 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v012026';
+const PRECACHE = 'precache-v012126';
 const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
+  '/offline/',
   './art/mk_profile_img.webp',
   './css/main.min.090325.css',
   './css/kadwa-v12-latin-700.woff2',
@@ -53,23 +54,25 @@ self.addEventListener('activate', event => {
 // If no response is found, it populates the runtime cache with the response
 // from the network before returning it to the page.
 self.addEventListener('fetch', event => {
-  // Skip cross-origin requests, like those for Google Analytics.
-  if (event.request.url.startsWith(self.location.origin)) {
-    event.respondWith(
-      caches.match(event.request).then(cachedResponse => {
-        if (cachedResponse) {
-          return cachedResponse;
-        }
-
-        return caches.open(RUNTIME).then(cache => {
-          return fetch(event.request).then(response => {
-            // Put a copy of the response in the runtime cache.
-            return cache.put(event.request, response.clone()).then(() => {
-              return response;
-            });
+  if (!event.request.url.startsWith(self.location.origin)) return;
+  event.respondWith(
+    caches.match(event.request).then(cachedResponse => {
+      if (cachedResponse) {
+        return cachedResponse;
+      }
+      return fetch(event.request)
+        .then(response => {
+          return caches.open(RUNTIME).then(cache => {
+            cache.put(event.request, response.clone());
+            return response;
           });
+        })
+        .catch(() => {
+          // Network failed — return offline page for navigations
+          if (event.request.mode === 'navigate') {
+            return caches.match('/offline/');
+          }
         });
-      })
-    );
-  }
+    })
+  );
 });
