@@ -14,7 +14,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'precache-v090325';
+const PRECACHE = 'precache-v012026';
 const RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
@@ -22,8 +22,8 @@ const PRECACHE_URLS = [
   './art/mk_profile_img.webp',
   './css/main.min.090325.css',
   './css/kadwa-v12-latin-700.woff2',
-  './css/merriweather-sans-latin-700.woff2',
-  './css/merriweather-sans-latin-7regular.woff2'
+  './css/merriweather-sans-v27-latin-700.woff2',
+  './css/merriweather-sans-v27-latin-regular.woff2'
 ];
 
 // The install handler takes care of precaching the resources we always need.
