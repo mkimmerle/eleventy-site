@@ -33,19 +33,19 @@
 &lt;p&gt;Most of the free, approachable tools are designed for one page at a time. That’s fine when you’re spot-checking, but it falls apart as soon as you need to understand how accessible an entire site really is.&lt;/p&gt;
 &lt;p&gt;There are ways around that. If you’re a developer, you can wire &lt;code&gt;axe-core&lt;/code&gt; into your pipeline and get solid coverage. That’s awesome... but also very easy to put off when you’re busy shipping actual features. It’s even less helpful if you don’t have a pipeline (guilty), or if you’re working on something small or static (hi again).&lt;/p&gt;
 &lt;p&gt;And sometimes, you’re not a developer at all. Maybe you’re a QA analyst, a project manager, or the unlucky person who inherited “accessibility” as a responsibility and now just needs a tool that answers reasonable questions without requiring a deep dive into build systems and configuration files.&lt;/p&gt;
-&lt;p&gt;Tools that solve all of this do exist. I&#39;ve used several of them, and they’re very good. They’re also priced for organizations that already have accessibility budgets, not for individuals, small teams, or people just trying to do the right thing.&lt;/p&gt;
+&lt;p&gt;Tools that solve all of this do exist. I’ve used several of them, and they’re very good. They’re also priced for organizations that already have accessibility budgets, not for individuals, small teams, or people just trying to do the right thing.&lt;/p&gt;
 &lt;p&gt;I checked pretty much every box on that list at some point, so I tried to build the simplest version of the tool I wished I’d had myself.&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2&gt;What This Thing Does (In a Nutshell)&lt;/h2&gt;
 &lt;p&gt;I wanted something simple and practical:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;it runs in a browser&lt;/li&gt;
-&lt;li&gt;it reads an XML sitemap&lt;/li&gt;
-&lt;li&gt;it visits every page it finds&lt;/li&gt;
-&lt;li&gt;it runs familiar accessibility checks&lt;/li&gt;
-&lt;li&gt;and it produces reports that a human can actually read&lt;/li&gt;
+&lt;li&gt;It runs in a browser;&lt;/li&gt;
+&lt;li&gt;It reads an XML sitemap;&lt;/li&gt;
+&lt;li&gt;It visits every page it finds;&lt;/li&gt;
+&lt;li&gt;It runs familiar accessibility checks;&lt;/li&gt;
+&lt;li&gt;And it produces reports that a human can actually read&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;That’s it. Minimal setup (you&#39;ll still need Node, npm and Git). No pipeline required.&lt;/p&gt;
+&lt;p&gt;That’s it. Minimal setup (you’ll still need Node, npm and Git). No pipeline required.&lt;/p&gt;
 &lt;p&gt;You point it at a site, it looks at the whole thing, and it helps you see patterns that are invisible when you’re only testing one page at a time.&lt;/p&gt;
 &lt;p&gt;This is probably most useful if you’re a developer, QA analyst, or PM working on a site that doesn’t have a full accessibility pipeline or where accessibility checks tend to happen late, inconsistently, or only on a handful of pages.&lt;/p&gt;
 &lt;p&gt;You don’t need to be an accessibility expert to use it, but today you do need to be comfortable running a local tool (or know someone who is). Hopefully it lowers the barrier enough to make whole-site checks more common, even if they’re imperfect.&lt;/p&gt;
@@ -72,8 +72,8 @@
 &lt;li&gt;Places where the language could be clearer&lt;/li&gt;
 &lt;li&gt;Actual bugs where something doesn&#39;t work&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;You don’t have to be polite, but I&#39;d ask that you please be constructive. The goal is to see if this could potentially be useful to anyone who&#39;s not me, and then find ways to make it more useful.&lt;/p&gt;
-&lt;p&gt;Worst case, you’ll tell me someone else already built it (and built it better), at which point I&#39;m happy to say I learned a lot of new stuff making this and I&#39;ll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.&lt;/p&gt;
+&lt;p&gt;You don’t have to be polite, but I’d ask that you please be constructive. The goal is to see if this could potentially be useful to anyone who’s not me, and then find ways to make it more useful.&lt;/p&gt;
+&lt;p&gt;Worst case, you’ll tell me someone else already built it (and built it better), at which point I’m happy to say I learned a lot of new stuff making this and I’ll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/section&gt;</content>
   </entry>

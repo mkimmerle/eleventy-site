@@ -45,7 +45,7 @@ There are ways around that. If you’re a developer, you can wire `axe-core` int
 
 And sometimes, you’re not a developer at all. Maybe you’re a QA analyst, a project manager, or the unlucky person who inherited “accessibility” as a responsibility and now just needs a tool that answers reasonable questions without requiring a deep dive into build systems and configuration files.
 
-Tools that solve all of this do exist. I've used several of them, and they’re very good. They’re also priced for organizations that already have accessibility budgets, not for individuals, small teams, or people just trying to do the right thing.
+Tools that solve all of this do exist. I’ve used several of them, and they’re very good. They’re also priced for organizations that already have accessibility budgets, not for individuals, small teams, or people just trying to do the right thing.
 
 I checked pretty much every box on that list at some point, so I tried to build the simplest version of the tool I wished I’d had myself.
 
@@ -55,13 +55,13 @@ I checked pretty much every box on that list at some point, so I tried to build 
 
 I wanted something simple and practical:
 
-- it runs in a browser
-- it reads an XML sitemap
-- it visits every page it finds
-- it runs familiar accessibility checks
-- and it produces reports that a human can actually read
+- It runs in a browser;
+- It reads an XML sitemap;
+- It visits every page it finds;
+- It runs familiar accessibility checks;
+- And it produces reports that a human can actually read
 
-That’s it. Minimal setup (you'll still need Node, npm and Git). No pipeline required.
+That’s it. Minimal setup (you’ll still need Node, npm and Git). No pipeline required.
 
 You point it at a site, it looks at the whole thing, and it helps you see patterns that are invisible when you’re only testing one page at a time.
 
@@ -99,9 +99,9 @@ If you work in web development, accessibility, or adjacent spaces — or if you�
 - Places where the language could be clearer
 - Actual bugs where something doesn't work
 
-You don’t have to be polite, but I'd ask that you please be constructive. The goal is to see if this could potentially be useful to anyone who's not me, and then find ways to make it more useful.
+You don’t have to be polite, but I’d ask that you please be constructive. The goal is to see if this could potentially be useful to anyone who’s not me, and then find ways to make it more useful.
 
-Worst case, you’ll tell me someone else already built it (and built it better), at which point I'm happy to say I learned a lot of new stuff making this and I'll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.
+Worst case, you’ll tell me someone else already built it (and built it better), at which point I’m happy to say I learned a lot of new stuff making this and I’ll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.
 
 </div>
 
