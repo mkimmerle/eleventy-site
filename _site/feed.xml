@@ -4,7 +4,7 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2025-12-29T00:00:00Z</updated>
+  <updated>2026-02-05T00:00:00Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
@@ -12,9 +12,250 @@
   </author>
   
   <entry>
+    <title>I Built A Thing - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/2/i-built-a-thing/"/>
+    <updated>2026-02-05T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/2/i-built-a-thing/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;I Built A Thing&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-02-05&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;Honestly, this all started with boredom.&lt;/p&gt;
+&lt;p&gt;Not the fun kind of boredom where you learn to cook or binge &lt;em&gt;Cheers&lt;/em&gt; for the bajillionth time, but the kind where you’ve been job hunting for far too long, your whole portfolio is expired or inactive, and you’ve lost track of what day it is.&lt;/p&gt;
+&lt;p&gt;I needed a project. Something more than a React calculator or a grocery list app or whatever. Something that helped solve an actual problem. Something I could point to and say, “I made &lt;em&gt;this&lt;/em&gt;,” and maybe someone on the other end of an application would actually look at it.&lt;/p&gt;
+&lt;p&gt;Web accessibility is important to me. I run the usual tools. I fix what they flag. I try to be thoughtful and proactive. But I keep feeling like I&#39;m only ever checking boxes on a single page at a time, hoping the rest of the site was fine. That’s what most free accessibility tools do: one page in, one page out. Helpful, for sure. And necessary. But also narrow.&lt;/p&gt;
+&lt;p&gt;The moment you try to understand an entire site — shared components, repeated patterns, forgotten one-off marketing pages with who-knows-what embedded in them — things get trickier. To be fair, there are lots of good tools that handle all that. But they’re usually aimed at organizations with accessibility budgets, not individuals trying to learn or improve on their own.&lt;/p&gt;
+&lt;p&gt;So, finally (MUCH later than I really should admit), it occurred to me: &lt;em&gt;Why not make my own?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;And that’s how I ended up building an accessibility auditing tool. Not as a grand vision, but as a way to stay busy, learn something useful, and maybe make a dent in a problem I already cared about.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Why I Made This Thing&lt;/h2&gt;
+&lt;p&gt;If you already use tools like axe or WAVE or Lighthouse, you know they’re great. The problem isn’t what they test, it’s how much they test.&lt;/p&gt;
+&lt;p&gt;Most of the free, approachable tools are designed for one page at a time. That’s fine when you’re spot-checking, but it falls apart as soon as you need to understand how accessible an entire site really is.&lt;/p&gt;
+&lt;p&gt;There are ways around that. If you’re a developer, you can wire &lt;code&gt;axe-core&lt;/code&gt; into your pipeline and get solid coverage. That’s awesome... but also very easy to put off when you’re busy shipping actual features. It’s even less helpful if you don’t have a pipeline (guilty), or if you’re working on something small or static (hi again).&lt;/p&gt;
+&lt;p&gt;And sometimes, you’re not a developer at all. Maybe you’re a QA analyst, a project manager, or the unlucky person who inherited “accessibility” as a responsibility and now just needs a tool that answers reasonable questions without requiring a deep dive into build systems and configuration files.&lt;/p&gt;
+&lt;p&gt;Tools that solve all of this do exist. I&#39;ve used several of them, and they’re very good. They’re also priced for organizations that already have accessibility budgets, not for individuals, small teams, or people just trying to do the right thing.&lt;/p&gt;
+&lt;p&gt;I checked pretty much every box on that list at some point, so I tried to build the simplest version of the tool I wished I’d had myself.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;What This Thing Does (In a Nutshell)&lt;/h2&gt;
+&lt;p&gt;I wanted something simple and practical:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it runs in a browser&lt;/li&gt;
+&lt;li&gt;it reads an XML sitemap&lt;/li&gt;
+&lt;li&gt;it visits every page it finds&lt;/li&gt;
+&lt;li&gt;it runs familiar accessibility checks&lt;/li&gt;
+&lt;li&gt;and it produces reports that a human can actually read&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That’s it. Minimal setup (you&#39;ll still need Node, npm and Git). No pipeline required.&lt;/p&gt;
+&lt;p&gt;You point it at a site, it looks at the whole thing, and it helps you see patterns that are invisible when you’re only testing one page at a time.&lt;/p&gt;
+&lt;p&gt;This is probably most useful if you’re a developer, QA analyst, or PM working on a site that doesn’t have a full accessibility pipeline or where accessibility checks tend to happen late, inconsistently, or only on a handful of pages.&lt;/p&gt;
+&lt;p&gt;You don’t need to be an accessibility expert to use it, but today you do need to be comfortable running a local tool (or know someone who is). Hopefully it lowers the barrier enough to make whole-site checks more common, even if they’re imperfect.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;This Thing Isn&#39;t Perfect&lt;/h2&gt;
+&lt;p&gt;Let&#39;s be clear and up-front, because this matters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This tool is &lt;strong&gt;NOT&lt;/strong&gt; point-and-click — some local setup is required.&lt;/li&gt;
+&lt;li&gt;It is &lt;strong&gt;NOT&lt;/strong&gt; an accessibility expert.&lt;/li&gt;
+&lt;li&gt;It &lt;strong&gt;does not&lt;/strong&gt; replace manual audits.&lt;/li&gt;
+&lt;li&gt;It &lt;strong&gt;does not&lt;/strong&gt; replace testing with real users.&lt;/li&gt;
+&lt;li&gt;And it &lt;strong&gt;&lt;em&gt;definitely&lt;/em&gt; does not&lt;/strong&gt; replace people who do this work professionally, every day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Real accessibility is a human problem. It requires human judgment. No amount of scripting gets you around that. This tool just helps find patterns and questions earlier, not stamp a seal of approval at the end.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;If You’re Curious&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mkimmerle/accessibility-audit-tool&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Here&#39;s the repo. Give it a look.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This thing is still pretty rough. There are decisions I’m not 100% confident about yet. Some (most, if history is any indication) of them may be wrong.&lt;/p&gt;
+&lt;p&gt;If you work in web development, accessibility, or adjacent spaces — or if you’ve ever used an audit tool and thought “this doesn’t quite tell me what I need” — I’d genuinely love your feedback. Especially if you find things like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;False positives or things that don’t matter&lt;/li&gt;
+&lt;li&gt;Things it misses that absolutely should be flagged&lt;/li&gt;
+&lt;li&gt;Features you&#39;d like to see&lt;/li&gt;
+&lt;li&gt;Places where the language could be clearer&lt;/li&gt;
+&lt;li&gt;Actual bugs where something doesn&#39;t work&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You don’t have to be polite, but I&#39;d ask that you please be constructive. The goal is to see if this could potentially be useful to anyone who&#39;s not me, and then find ways to make it more useful.&lt;/p&gt;
+&lt;p&gt;Worst case, you’ll tell me someone else already built it (and built it better), at which point I&#39;m happy to say I learned a lot of new stuff making this and I&#39;ll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>The Deep Freeze List - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/2/the-deep-freeze-list/"/>
+    <updated>2026-02-02T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/2/the-deep-freeze-list/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;The Deep Freeze List&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-02-02&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;Time for the list…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Winter in New England: There&#39;s &amp;quot;cold,&amp;quot; and then there&#39;s &amp;quot;the dog wants to pee at 4AM and you pretend you don&#39;t hear him&amp;quot; cold.&lt;/li&gt;
+&lt;li&gt;If it’s supposed to be a &amp;quot;childproof&amp;quot; container, why are adult hands the only ones that can’t fit inside?&lt;/li&gt;
+&lt;li&gt;Breakfast cereals, ranked: Cinnamon Toast Crunch, pretty much everything else, Grape Nuts.&lt;/li&gt;
+&lt;li&gt;Finally tried the new Colony Grill on Friday. Put it this way: I was &lt;strong&gt;NOT&lt;/strong&gt; entertained.&lt;/li&gt;
+&lt;li&gt;Who decided &lt;em&gt;Bob the Builder&lt;/em&gt; needed a glow-up? It&#39;s not like anyone ever trusted Ty Pennington more than Tom Silva.&lt;/li&gt;
+&lt;li&gt;Can you skip diet and exercise and just do a montage set to the Fabulous Thunderbirds’ “Tuff Enuff” instead? Asking for a friend…&lt;/li&gt;
+&lt;li&gt;John Ratzenberger is the sixth man, but Richard Kind is the stealth MVP of the Pixar universe.&lt;/li&gt;
+&lt;li&gt;Credit where credit is due — nobody has ever made shameless nostalgia and self-reference nearly as entertaining as &lt;em&gt;Cobra Kai&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;’80s mullets, ranked: Adam Curry, Richard Marx, Daryl Hall, John Stamos, Andre Agassi. (Sorry, Bono.)&lt;/li&gt;
+&lt;li&gt;The worst thing to ever happen in the entire history of organized sports was the 1995 New Jersey Devils and the neutral-zone trap.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>The Snow Day List - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/1/the-snow-day-list/"/>
+    <updated>2026-01-26T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/1/the-snow-day-list/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;The Snow Day List&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-01-26&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;This week&#39;s list…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You know automated tipping prompts have gone too far when they show up in the check-in kiosk at your doctor’s office.&lt;/li&gt;
+&lt;li&gt;The fastest way for a restaurant to earn zero stars on Yelp is putting provolone on French onion soup.&lt;/li&gt;
+&lt;li&gt;Anyone who says turkey bacon is &amp;quot;not that bad&amp;quot; is either lying to themselves or over 50.&lt;/li&gt;
+&lt;li&gt;You probably shouldn&#39;t ask me for investment advice — it&#39;s been over 40 years, and I STILL don&#39;t understand the ending of &lt;em&gt;Trading Places&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;The longest week of my life was the afternoon I forgot my glasses when I went to see &lt;em&gt;Dances with Wolves&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;The best &lt;em&gt;Fantastic Four&lt;/em&gt; movie is — and always will be — &lt;em&gt;The Incredibles&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;If Peter Forsberg had entered the NHL five years earlier or five years later, he would&#39;ve been his generation’s Mark Messier. Instead, he was wasted on the dead-puck era. Alas…&lt;/li&gt;
+&lt;li&gt;Signing Bo Bichette when you&#39;re still paying for Bobby Bonilla is like refinancing your mortgage to buy a time share.&lt;/li&gt;
+&lt;li&gt;Forget &lt;em&gt;Scrubs: Med School&lt;/em&gt;, &lt;em&gt;The Golden Palace&lt;/em&gt; and even &lt;em&gt;Joey&lt;/em&gt; — &lt;em&gt;Frasier&lt;/em&gt; is the most disappointing spinoff of all time. (Yep, I said it. Come at me, bro.)&lt;/li&gt;
+&lt;li&gt;How come people in monster movies never yell “SKIP FOR YOUR LIVES!!!”? If Tokyo had started skipping, Godzilla would’ve been too confused to destroy the city.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Bad UX In Hiring - Mark Kimmerle’s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/1/bad-ux-in-hiring/"/>
+    <updated>2026-01-21T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/1/bad-ux-in-hiring/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;Bad UX In Hiring&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-01-21&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;I almost didn’t post this because it happens so often now that telling the story again seems pointless. But silence is compliance, and we &lt;strong&gt;HAVE&lt;/strong&gt; to keep calling out this behavior instead of just accepting it and moving on.&lt;/p&gt;
+&lt;p&gt;Last week, I went through an interview process that was a textbook example of how bad hiring is these days — even (and especially) for UX-adjacent roles.&lt;/p&gt;
+&lt;p&gt;Here’s what happened.&lt;/p&gt;
+&lt;p&gt;I submitted my application on Monday evening.&lt;/p&gt;
+&lt;p&gt;On Thursday at 3:30 PM, I received an email (from an anonymous “Human Resources” address) requesting an interview at 9:30 AM the following morning.&lt;/p&gt;
+&lt;p&gt;The email thanked me for “the videos I submitted,” even though I hadn’t submitted anything beyond a PDF resume.&lt;/p&gt;
+&lt;p&gt;When I joined the video call on Friday morning, there were five other people present. Four kept their cameras off and never spoke. Only one person actually conducted the interview.&lt;/p&gt;
+&lt;p&gt;Roughly 90% of the questions focused on the tasks in the bottom 10% of the job description.&lt;/p&gt;
+&lt;p&gt;When it was my turn to ask questions, I stuck to the kind of basic questions that any serious, professional should be asking:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;How many people are on the team, and who would this role primarily work with?&lt;/strong&gt;
+“Umm… basically everyone.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Since you’re a remote company hiring a remote employee, how do you handle onboarding?&lt;/strong&gt;
+(Long pause.) “Umm… we have an online portal.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;If something goes wrong during setup or I need context on the codebase, who would I go to?&lt;/strong&gt;
+(No answer.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;What would you want a new hire to focus on in their first 30/60/90 days, and how would success be measured?&lt;/strong&gt;
+“Y’know… pretty much whatever comes up.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As the call wrapped up, I asked about next steps. They requested references… after the first interview.&lt;/p&gt;
+&lt;p&gt;Since it was already midday Friday, I told them I’d confirm my references’ availability and send the list early the following week. When I sat down on Monday to do that, I found a rejection email waiting for me — automated, anonymous, and sent less than 24 hours after they’d requested references I never even had a chance to provide.&lt;/p&gt;
+&lt;p&gt;Bottom line - there is &lt;strong&gt;NOTHING&lt;/strong&gt; a candidate can do to prepare for or optimize for in a &amp;quot;process&amp;quot; like this.&lt;/p&gt;
+&lt;p&gt;On their own, none of these issues would’ve been a deal-breaker. But taken together, the UX problems are glaring:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Asking for references indicates you’re moving forward — and immediately reversing course breaks a basic contract with the user.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Auto-generated content thanking candidates for things they never submitted destroys trust.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vague, non-answers to basic questions reveal a &amp;quot;system&amp;quot; that cannot explain itself (if one even exists).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anonymity — especially at the first AND last steps - removes accountability and reinforces the sense that candidates are interchangeable inputs, not people.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And requesting references after a first-round interview — then rejecting the candidate &lt;strong&gt;BEFORE&lt;/strong&gt; those references are even provided — is reprehensible. If you’re confident enough to ask for references, you should be confident enough to wait for them. If you’re not, then don’t ask.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The slight optimist in me wants to say I dodged a bullet here, because if this is how a company behaves when everyone is still supposedly trying to make a good impression, you have to wonder how they treat real employees once the stakes are higher and the incentives are lower. But whether this was a “bullet dodged” isn’t really the point. The point is that this process consumed real time, attention, and emotional energy — and treated all three as disposable.&lt;/p&gt;
+&lt;p&gt;Hiring is a UX problem. It has users. It has states, signals, and failure modes. When companies get it this wrong, particularly while hiring for UX-related roles, it isn’t ironic. It’s disqualifying.&lt;/p&gt;
+&lt;p&gt;Just like customers, candidates talk. Their negative experiences can damage your brand just as much as a bad product review.&lt;/p&gt;
+&lt;p&gt;Bad UX shouldn’t be part of your recruiting any more than it should be part of your product.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>The List, Again - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/1/the-list-again/"/>
+    <updated>2026-01-19T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/1/the-list-again/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;The List, Again&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-01-19&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;Away we go…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IANAL, but Josh Allen should sue the Bills front office for workplace discrimination over the way they&#39;re wasting his career.&lt;/li&gt;
+&lt;li&gt;After clearing my driveway four times in two days, I should be able to bill Scot Haney and Gil Simmons for mileage on my snowblower.&lt;/li&gt;
+&lt;li&gt;Restaurant servers have an uncanny ability to arrive at the table at the exact moment when every single person has a mouthful.&lt;/li&gt;
+&lt;li&gt;Whenever I end up behind a Honda CR-V, I instantly know my trip just got 20 minutes longer.&lt;/li&gt;
+&lt;li&gt;Attention radio stations: just because a song is 20 years old doesn’t automatically make it “classic rock.” I didn’t want to hear Shinedown then, and I certainly don’t want to hear them now.&lt;/li&gt;
+&lt;li&gt;I wish I’d learned about the sunk cost fallacy &lt;em&gt;&lt;strong&gt;before&lt;/strong&gt;&lt;/em&gt; I sat through all ten seasons of &lt;em&gt;The Goldbergs&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Cheers&lt;/em&gt; barflies, ranked: Paul Krapence, Pete, Phil, Al, Steve, Tim, Alan, Tom. (Not ranked: Original Paul.)&lt;/li&gt;
+&lt;li&gt;If we ever meet in person and you introduce yourself with the Universal Greeting, I&#39;ll buy you a burger, no questions asked.&lt;/li&gt;
+&lt;li&gt;I’d like to be neighbors with Craig Ferguson — just not next-door neighbors. More like across-the-street neighbors who shoot the breeze on trash day.&lt;/li&gt;
+&lt;li&gt;Pro tip: Next time you need dessert, make — don’t buy — a tres leches cake. It’s wicked easy, crazy good, and racks up serious baking cred.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Another List - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/1/another-list/"/>
+    <updated>2026-01-12T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/1/another-list/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;Another List&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-01-12&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;Let&#39;s do this…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The only person on earth who goes through more outfits in a three-hour period than my wife is Elton John.&lt;/li&gt;
+&lt;li&gt;When I was a kid, I kept trying to convince my little brother that all the pro wrestlers who came from &amp;quot;parts unknown&amp;quot; actually lived together on a small island off the coast of Japan.&lt;/li&gt;
+&lt;li&gt;If I&#39;m in a bar and 38 Special comes on stage, I&#39;ll stay long enough to finish my drink… but if you tell me they&#39;re headlining the Oyster Fest this summer, I&#39;m totally not going.&lt;/li&gt;
+&lt;li&gt;The pinnacle of reality TV was the &lt;em&gt;Iron Chef&lt;/em&gt; / &lt;em&gt;Trading Spaces&lt;/em&gt; block on Saturday nights in the early ’00s. Oh, the drinking games we’d play…&lt;/li&gt;
+&lt;li&gt;Forget &lt;em&gt;Groundhog Day&lt;/em&gt; and &lt;em&gt;What About Bob?&lt;/em&gt; — &lt;em&gt;Quick Change&lt;/em&gt; is the &lt;strong&gt;REAL&lt;/strong&gt; gem of the Bill Murray trilogy.&lt;/li&gt;
+&lt;li&gt;Instead of wasting time on Pat, Mary Catherine Gallagher and the Butabi brothers, &lt;em&gt;SNL&lt;/em&gt; should’ve been busy giving us the &lt;em&gt;Unfrozen Caveman Lawyer&lt;/em&gt; movie we so richly deserved.&lt;/li&gt;
+&lt;li&gt;It&#39;s simple physics, really — if anything, I should be able to have &lt;strong&gt;MORE&lt;/strong&gt; pudding if I don&#39;t eat my meat.&lt;/li&gt;
+&lt;li&gt;I&#39;d follow Captain Picard to the edge of the galaxy, but…  &amp;quot;tea, Earl Grey, hot&amp;quot;? The line must be drawn HERE!! This far, no further!!! Computer, gimme some Irish Breakfast, please and thank you.&lt;/li&gt;
+&lt;li&gt;If you ever need a wedding toast, keep this one in your back pocket (but remember that it sounds better in the original Klingon): &amp;quot;May you always love each other as much as Chris Frantz hates David Byrne.&amp;quot;&lt;/li&gt;
+&lt;li&gt;If the multiverse is real, I want — nay, &lt;strong&gt;NEED&lt;/strong&gt; — to visit the world where Van Halen teamed up with Chris Cornell instead of Gary Cherone in the late ’90s.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
+  
+  <entry>
     <title>New Year, Same Story - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
     <link href="https://www.markkimmerle.com/blog/posts/2026/1/new-year-same-story/"/>
-    <updated>2025-12-29T00:00:00Z</updated>
+    <updated>2026-01-05T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/1/new-year-same-story/</id>
     <content type="html">&lt;section class=&quot;content-container&quot;&gt;
 &lt;h1 class=&quot;u-h1&quot;&gt;New Year, Same Story&lt;/h1&gt;
