@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://markkimmerle.com/</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-09</lastmod>
   </url>
   <url>
     <loc>https://markkimmerle.com/samples/</loc>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://markkimmerle.com/blog/</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-09</lastmod>
   </url>
   <url>
     <loc>https://markkimmerle.com/blog/posts/2025/9/welcome-to-my-blog/</loc>
@@ -108,5 +108,9 @@
   <url>
     <loc>https://markkimmerle.com/blog/posts/2026/2/i-built-a-thing/</loc>
     <lastmod>2026-02-05</lastmod>
+  </url>
+  <url>
+    <loc>https://markkimmerle.com/blog/posts/2026/2/the-post-game-list/</loc>
+    <lastmod>2026-02-09</lastmod>
   </url>
 </urlset>

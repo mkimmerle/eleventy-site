@@ -4,12 +4,39 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2026-02-05T00:00:00Z</updated>
+  <updated>2026-02-09T00:00:00Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>The Post-Game List - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/2/the-post-game-list/"/>
+    <updated>2026-02-09T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/2/the-post-game-list/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;The Post-Game List&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-02-02&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;On to this week&#39;s list…&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The difference between men and women is that women call it &amp;quot;Valentine&#39;s Day&amp;quot; while men call it &amp;quot;pitchers and catchers report.&amp;quot;&lt;/li&gt;
+&lt;li&gt;The secret to a good tomato sauce? Carrots.&lt;/li&gt;
+&lt;li&gt;It&#39;s weird how Boston kreme donuts are so much better than éclairs even though they&#39;re basically the same thing.&lt;/li&gt;
+&lt;li&gt;It&#39;s a shame they never tried to make a &lt;em&gt;Taken/Equalizer/John Wick&lt;/em&gt; crossover movie. I&#39;ve always wondered which of them would win that fight.&lt;/li&gt;
+&lt;li&gt;I&#39;m no scientist, but I&#39;m pretty sure we could&#39;ve stopped the pandemic in its tracks if we&#39;d just been able to open the Autobot Matrix of Leadership.&lt;/li&gt;
+&lt;li&gt;Which ’90s jam band did the best job of &lt;em&gt;almost&lt;/em&gt; tricking us into thinking they weren’t a jam band — Blues Traveler, Spin Doctors, or Dave Matthews Band? Discuss.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Frankenstein&amp;quot; is vastly superior to &amp;quot;Moby Dick&amp;quot;…  but &amp;quot;Cliffs of Dover&amp;quot; beats &#39;em both by a country mile.&lt;/li&gt;
+&lt;li&gt;Any NHL All-Star Skills Contest that doesn&#39;t include Ray Bourque&#39;s target shooting, Al Iafrate&#39;s slapshot and Mike Gartner&#39;s speed skating really isn&#39;t a contest at all.&lt;/li&gt;
+&lt;li&gt;I&#39;ll go to my grave believing that the Yankees would&#39;ve won AT LEAST two more World Series if Jeter had moved to CF when they traded for A-Rod.&lt;/li&gt;
+&lt;li&gt;Anyone who says Jim is the villain of &lt;em&gt;The Office&lt;/em&gt; only gets partial credit — the correct answer is, they all suck.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>I Built A Thing - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
