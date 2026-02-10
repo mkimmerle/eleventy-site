@@ -18,6 +18,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   	font-weight: 400;
   	font-display: swap;
 }
+@font-face {
+  	font-family: "Public Sans";
+  	src: url('public-sans.woff2') format("woff2");
+  	font-style: normal;
+  	font-weight: 400;
+  	font-display: swap;
+}
 @view-transition {
   navigation: auto;
 }
@@ -39,7 +46,7 @@ body {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	font-family: "Merriweather Sans", Arial, sans-serif;
+	font-family: "Public Sans", Arial, sans-serif;
 	left: 0;
 	right: 0;
 	transition: all .3s ease;
@@ -277,6 +284,7 @@ strong {
 .main-nav a {
 	color: #fefefe;
 	font-size: 2em;
+	font-family: "Merriweather Sans", Arial, sans-serif;
 	border-bottom: 1px solid transparent;
 	transition: all .3s ease;
 }
@@ -363,6 +371,7 @@ textarea {
 	padding: 15px;
 	text-transform: uppercase;
 	border: 0;
+	font-family: "Merriweather Sans", Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1;
 	cursor: pointer;
