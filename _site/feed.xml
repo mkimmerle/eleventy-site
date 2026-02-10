@@ -47,6 +47,8 @@
 &lt;h1 class=&quot;u-h1&quot;&gt;I Built A Thing&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;2026-02-05&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&quot;u-b1&quot;&gt;
+&lt;style&gt;img{display:block;width:100%;max-width:500px;border:1px solid #eee;border-radius:8px;box-shadow: 0 4px 12px rgba(0,0,0,0.1);}@media(min-width:600px){img{float:right;margin:0 0 2rem 2rem;}}&lt;/style&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.markkimmerle.com/art/a11y_audit_tool.jpg&quot; alt=&quot;Dashboard showing 27 new accessibility violations and 1 resolved issue&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;Honestly, this all started with boredom.&lt;/p&gt;
 &lt;p&gt;Not the fun kind of boredom where you learn to cook or binge &lt;em&gt;Cheers&lt;/em&gt; for the bajillionth time, but the kind where you’ve been job hunting for far too long, your whole portfolio is expired or inactive, and you’ve lost track of what day it is.&lt;/p&gt;
 &lt;p&gt;I needed a project. Something more than a React calculator or a grocery list app or whatever. Something that helped solve an actual problem. Something I could point to and say, “I made &lt;em&gt;this&lt;/em&gt;,” and maybe someone on the other end of an application would actually look at it.&lt;/p&gt;

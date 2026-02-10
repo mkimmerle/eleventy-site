@@ -19,6 +19,10 @@ tags: post
 
 <div class="u-b1">
 
+<style>img{display:block;width:100%;max-width:500px;border:1px solid #eee;border-radius:8px;box-shadow: 0 4px 12px rgba(0,0,0,0.1);}@media(min-width:600px){img{float:right;margin:0 0 2rem 2rem;}}</style>
+
+![Dashboard showing 27 new accessibility violations and 1 resolved issue](/art/a11y_audit_tool.jpg)
+
 Honestly, this all started with boredom.
 
 Not the fun kind of boredom where you learn to cook or binge *Cheers* for the bajillionth time, but the kind where you’ve been job hunting for far too long, your whole portfolio is expired or inactive, and you’ve lost track of what day it is.
