@@ -4,7 +4,7 @@ meta-description: Another Monday, another list
 title: The Mid-Winter List - Mark Kimmerle's Blog - CT Web Design & Development
 date: 2026-02-16
 page-title: The Mid-Winter List
-page-datetime: "2026-02-02"
+page-datetime: "2026-02-16"
 authored-date: February 16, 2026
 page-excerpt: Another Monday, another list
 categories: other
