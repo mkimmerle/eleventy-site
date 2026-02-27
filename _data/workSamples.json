@@ -1,5 +1,17 @@
 [
   {
+    "id": "sampleaudittool",
+    "company": "Accessibility Audit Tool",
+    "role": "<a href=\"https://github.com/mkimmerle/accessibility-audit-tool\" target=\"_blank\" rel=\"noopener\">https://github.com/mkimmerle/accessibility-audit-tool</a>",
+    "image": "/art/audittool.jpg",
+    "highlights": [
+      "Node.js/Express with Puppeteer for headless browser automation; tests sitemap.xml with fallback crawler.",
+      "Generates developer and stakeholder reports with diff tracking and weighted impact scoring benchmarked against the WebAIM Million study — translating technical findings into business-language risk assessment.",
+      "Security-hardened for SSRF prevention, path traversal protection, and XSS mitigation.",
+      "Built via AI-assisted development, directing architecture, security design, and product decisions throughout."
+    ]
+  },
+  {
     "id": "samplesepc",
     "company": "Edgewell Personal Care",
     "role": "Senior Frontend Developer",
