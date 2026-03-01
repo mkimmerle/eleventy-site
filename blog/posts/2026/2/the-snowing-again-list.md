@@ -32,13 +32,6 @@ Trying not to look out the window while I type this…
 - Restaurants are pretty disappointing these days, but you know what's still worth it? Hibachi. Always a fun show.
 - These lists usually have ten items, but I’m out of ideas this week. Drop me a line if you’d like to rent this item for advertising — I could sure use the dough.
 
-
-### testing a problem
-
-<p style="color: #f7f7f7">unreadable text here</p>
-
-<p><input type="text" placeholder="this should fail"></p>
-
 </div>
 
 </section>
