@@ -4,12 +4,77 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2026-02-23T00:00:00Z</updated>
+  <updated>2026-03-01T00:00:00Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>Automation Is Powerful. It’s Not Enough. - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/3/automation-is-powerful-its-not-enough/"/>
+    <updated>2026-03-01T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/3/automation-is-powerful-its-not-enough/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;Automation Is Powerful. It’s Not Enough.&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-03-01&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;I’ve spent years relying on automated accessibility tools. They’re part of my workflow. I use them in the browser. I use them in audits. I’ve trusted engines like axe-core to quickly show me issues before they make it to production.&lt;/p&gt;
+&lt;p&gt;So this weekend, while I was testing the &lt;a href=&quot;https://github.com/mkimmerle/accessibility-audit-tool&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;accessibility audit tool I’m building&lt;/a&gt;, I decided to run a simple experiment, where I intentionally planted three obvious issues on one of my own pages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Poor color contrast&lt;/li&gt;
+&lt;li&gt;A jump from &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; straight to &lt;code&gt;&amp;lt;h3&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A form &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt; with a placeholder, but no proper &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The tool caught the contrast issue.&lt;br /&gt;
+It caught the heading issue.&lt;br /&gt;
+But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
+&lt;p&gt;Meat Loaf once sang that &amp;quot;two out of three ain&#39;t bad.&amp;quot; But in this case, he&#39;s wrong.&lt;/p&gt;
+&lt;p&gt;Placeholder-only form fields are one of the most common accessibility mistakes on the web. And while the engine behind the scan — built by Deque Systems — is widely respected (for good reason; I wouldn&#39;t be using it otherwise), this was a reminder of something important:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Automated tools check rules. They don’t evaluate real-world experience.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;The Real-World Problem&lt;/h2&gt;
+&lt;p&gt;Imagine you click into a form field that says:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Phone number (include area code)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You click. The placeholder disappears. Your phone rings. Five seconds later, you come back.&lt;/p&gt;
+&lt;p&gt;Now, what format did it want? Dashes? No dashes? Parentheses? Do you even remember what field you clicked into?&lt;/p&gt;
+&lt;p&gt;For many users — including people with cognitive disabilities, memory challenges, or attention limitations — that tiny friction point becomes a barrier.&lt;/p&gt;
+&lt;p&gt;For screen reader users, placeholder text is often unreliable or inconsistently announced.&lt;/p&gt;
+&lt;p&gt;Technically, the field might pass some automated checks. But functionally, it can still fail a human being. That’s the gap.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Why This Matters for Businesses&lt;/h2&gt;
+&lt;p&gt;When a form can’t be completed smoothly, businesses lose money.&lt;/p&gt;
+&lt;p&gt;If someone can’t:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Schedule a dentist appointment&lt;/li&gt;
+&lt;li&gt;Submit a contact form&lt;/li&gt;
+&lt;li&gt;Complete a checkout&lt;/li&gt;
+&lt;li&gt;Request a quote&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;They don’t convert.&lt;/p&gt;
+&lt;p&gt;Accessibility barriers aren’t abstract compliance issues. They block transactions. They create frustration. They erode trust.&lt;/p&gt;
+&lt;p&gt;And beyond lost revenue, there’s legal exposure. When users are prevented from completing core functions, that’s where accessibility complaints — &lt;em&gt;and lawsuits&lt;/em&gt; — begin.&lt;/p&gt;
+&lt;p&gt;Automated tools dramatically reduce risk by catching systemic code-level issues early and helping teams find prevent patterns from spreading.&lt;/p&gt;
+&lt;p&gt;But they don’t guarantee that your site works for real people.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;The 30–50% Reality&lt;/h2&gt;
+&lt;p&gt;It&#39;s estimated that automated testing tools typically only catch 30–50% of accessibility issues. That’s not because the tools are bad. It’s because many accessibility problems depend on context, clarity, workflow, and human understanding.&lt;/p&gt;
+&lt;p&gt;If even a highly respected engine can miss a common real-world usability problem, that doesn’t mean automation failed. It means automation is limited.&lt;/p&gt;
+&lt;p&gt;Which is why tools like the one I’m building work best alongside human review: automation finds obvious patterns early, and humans fill in the gaps that rules alone can’t catch.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;The Right Way to Think About It&lt;/h2&gt;
+&lt;p&gt;The tool I’m building is designed to surface high-level issues quickly and consistently across an entire site. It’s a first layer of defense that reveals obvious problems before they become systemic.&lt;/p&gt;
+&lt;p&gt;But no automated tool (not even the one I&#39;m making) replaces informed human review.&lt;/p&gt;
+&lt;p&gt;Automation is powerful. It reduces risk, it improves quality, and it saves time.&lt;/p&gt;
+&lt;p&gt;But it’s not enough.&lt;/p&gt;
+&lt;p&gt;If you care about conversions, trust, or legal safety, accessibility can’t begin and end with a scan. It has to include human judgment.&lt;/p&gt;
+&lt;p&gt;Because at the end of the day, accessibility isn’t about passing a test — it’s about whether people can actually use your website.&lt;/p&gt;
+&lt;p&gt;That&#39;s why the most defensible approach combines the two: automated scanning to catch patterns at scale, and informed human review to catch what the rules miss. If you&#39;re not sure where your site stands on either front, that&#39;s worth knowing before someone else finds out for you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>The &quot;SNOWING AGAIN??!?&quot; List - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
