@@ -39,7 +39,7 @@ Placeholder-only form fields are one of the most common accessibility mistakes o
 
 ---
 
-## The Real-World Problem
+<h2 class="u-h2">The Real-World Problem</h2>
 
 Imagine you click into a form field that says:
 
@@ -57,7 +57,7 @@ Technically, the field might pass some automated checks. But functionally, it ca
 
 ---
 
-## Why This Matters for Businesses
+<h2 class="u-h2">Why This Matters for Businesses</h2>
 
 When a form can’t be completed smoothly, businesses lose money.
 
@@ -80,7 +80,7 @@ But they don’t guarantee that your site works for real people.
 
 ---
 
-## The 30–50% Reality
+<h2 class="u-h2">The 30–50% Reality</h2>
 
 It's estimated that automated testing tools typically only catch 30–50% of accessibility issues. That’s not because the tools are bad. It’s because many accessibility problems depend on context, clarity, workflow, and human understanding.
 
@@ -90,7 +90,7 @@ Which is why tools like the one I’m building work best alongside human review:
 
 ---
 
-## The Right Way to Think About It
+<h2 class="u-h2">The Right Way to Think About It</h2>
 
 The tool I’m building is designed to surface high-level issues quickly and consistently across an entire site. It’s a first layer of defense that reveals obvious problems before they become systemic.
 

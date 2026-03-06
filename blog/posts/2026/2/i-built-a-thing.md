@@ -39,7 +39,7 @@ And that’s how I ended up building an accessibility auditing tool. Not as a gr
 
 ---
 
-## Why I Made This Thing
+<h2 class="u-h2">Why I Made This Thing</h2>
 
 If you already use tools like axe or WAVE or Lighthouse, you know they’re great. The problem isn’t what they test, it’s how much they test.
 
@@ -55,7 +55,7 @@ I checked pretty much every box on that list at some point, so I tried to build 
 
 ---
 
-## What This Thing Does (In a Nutshell)
+<h2 class="u-h2">What This Thing Does (In a Nutshell)</h2>
 
 I wanted something simple and practical:
 
@@ -75,7 +75,7 @@ You don’t need to be an accessibility expert to use it, but today you do need 
 
 ---
 
-## This Thing Isn't Perfect
+<h2 class="u-h2">This Thing Isn't Perfect</h2>
 
 Let's be clear and up-front, because this matters:
 
@@ -89,7 +89,7 @@ Real accessibility is a human problem. It requires human judgment. No amount of 
 
 ---
 
-## If You’re Curious
+<h2 class="u-h2">If You’re Curious</h2>
 
 <a href="https://github.com/mkimmerle/accessibility-audit-tool" target="_blank" rel="noopener">Here's the repo. Give it a look.</a>
 

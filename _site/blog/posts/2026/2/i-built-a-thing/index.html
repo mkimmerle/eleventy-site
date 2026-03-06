@@ -10,7 +10,7 @@
     <link rel="preload" href="/css/kadwa-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/css/merriweather-sans-v27-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/css/public-sans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-	<link rel="stylesheet" media="screen" href="/css/main.min.021026.css">
+	<link rel="stylesheet" media="screen" href="/css/main.min.030626.css">
 	<link rel="stylesheet" media="print" href="/css/print.css">
     <link rel="icon" sizes="192x192" href="/art/touch-icon-highres.png">
     <link rel="apple-touch-icon" href="/art/touch-icon-iphone.png">
@@ -107,7 +107,7 @@
 <p>So, finally (MUCH later than I really should admit), it occurred to me: <em>Why not make my own?</em></p>
 <p>And that’s how I ended up building an accessibility auditing tool. Not as a grand vision, but as a way to stay busy, learn something useful, and maybe make a dent in a problem I already cared about.</p>
 <hr>
-<h2>Why I Made This Thing</h2>
+<h2 class="u-h2">Why I Made This Thing</h2>
 <p>If you already use tools like axe or WAVE or Lighthouse, you know they’re great. The problem isn’t what they test, it’s how much they test.</p>
 <p>Most of the free, approachable tools are designed for one page at a time. That’s fine when you’re spot-checking, but it falls apart as soon as you need to understand how accessible an entire site really is.</p>
 <p>There are ways around that. If you’re a developer, you can wire <code>axe-core</code> into your pipeline and get solid coverage. That’s awesome... but also very easy to put off when you’re busy shipping actual features. It’s even less helpful if you don’t have a pipeline (guilty), or if you’re working on something small or static (hi again).</p>
@@ -115,7 +115,7 @@
 <p>Tools that solve all of this do exist. I’ve used several of them, and they’re very good. They’re also priced for organizations that already have accessibility budgets, not for individuals, small teams, or people just trying to do the right thing.</p>
 <p>I checked pretty much every box on that list at some point, so I tried to build the simplest version of the tool I wished I’d had myself.</p>
 <hr>
-<h2>What This Thing Does (In a Nutshell)</h2>
+<h2 class="u-h2">What This Thing Does (In a Nutshell)</h2>
 <p>I wanted something simple and practical:</p>
 <ul>
 <li>It runs in a browser;</li>
@@ -129,7 +129,7 @@
 <p>This is probably most useful if you’re a developer, QA analyst, or PM working on a site that doesn’t have a full accessibility pipeline or where accessibility checks tend to happen late, inconsistently, or only on a handful of pages.</p>
 <p>You don’t need to be an accessibility expert to use it, but today you do need to be comfortable running a local tool (or know someone who is). Hopefully it lowers the barrier enough to make whole-site checks more common, even if they’re imperfect.</p>
 <hr>
-<h2>This Thing Isn't Perfect</h2>
+<h2 class="u-h2">This Thing Isn't Perfect</h2>
 <p>Let's be clear and up-front, because this matters:</p>
 <ul>
 <li>This tool is <strong>NOT</strong> point-and-click — some local setup is required.</li>
@@ -140,7 +140,7 @@
 </ul>
 <p>Real accessibility is a human problem. It requires human judgment. No amount of scripting gets you around that. This tool just helps find patterns and questions earlier, not stamp a seal of approval at the end.</p>
 <hr>
-<h2>If You’re Curious</h2>
+<h2 class="u-h2">If You’re Curious</h2>
 <p><a href="https://github.com/mkimmerle/accessibility-audit-tool" target="_blank" rel="noopener">Here's the repo. Give it a look.</a></p>
 <p>This thing is still pretty rough. There are decisions I’m not 100% confident about yet. Some (most, if history is any indication) of them may be wrong.</p>
 <p>If you work in web development, accessibility, or adjacent spaces — or if you’ve ever used an audit tool and thought “this doesn’t quite tell me what I need” — I’d genuinely love your feedback. Especially if you find things like:</p>
