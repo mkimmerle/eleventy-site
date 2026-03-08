@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
 	<meta name="text-scale" content="scale">
-	<meta name="description" content="More like a flashlight than a magic wand.">
+	<meta name="description" content="Website Accessibility Assessment in Shelton, CT.">
     <meta name="theme-color" content="#335fac">
     <link rel="preload" href="/css/kadwa-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="/css/merriweather-sans-v27-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -19,40 +19,9 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/art/touch-icon-ipad-retina.png">
 	<link rel="manifest" href="/manifest.json">
 	
-	 <link rel="canonical" href="https://markkimmerle.com/blog/posts/2026/2/i-built-a-thing/">
+	 <link rel="canonical" href="https://markkimmerle.com/accessibility/">
 	
-	<title>I Built A Thing - Mark Kimmerle's Blog - CT Web Design & Development</title>
-	<style>
-		blockquote {
-			margin:  3rem auto;
-			padding: 1.5rem;
-			background-color: #e0e0e0;
-			font-size: 1.5rem;
-			font-style: italic;
-		}
-		blockquote p:last-child {
-			margin-bottom: 0;
-		}
-		pre {
-			margin: 1rem 0;
-			padding: 2rem;
-			background-color: #efefef;
-			border-left: 2px solid #ccc;
-			border-top: 2px solid #ccc;
-			word-break: break-word;
-			overflow-wrap: break-word;
-			font-size: .9rem;
-		}
-		code {
-			display: inline-block;
-			margin: 0;
-			padding: 0 0.5rem;
-			background-color: #efefef;
-		}
-		hr {
-			margin-bottom: 2rem;
-		}
-	</style>
+	<title>Is Your Website an Accessibility Liability? Mark Kimmerle - CT Website Accessibility Testing</title>
 </head>
 <body>
 
@@ -96,75 +65,25 @@
 
 	<main class="main" id="main-content" tabindex="-1">
 		<section class="content-container">
-<h1 class="u-h1">I Built A Thing</h1>
-<p><em>2026-02-05</em></p>
-<div class="u-b1">
-<style>img{display:block;width:100%;max-width:500px;border:1px solid #eee;border-radius:8px;box-shadow: 0 4px 12px rgba(0,0,0,0.1);}@media(min-width:600px){img{float:right;margin:0 0 2rem 2rem;}}</style>
-<p><img src="/art/a11y_audit_tool.jpg" alt="Dashboard showing 27 new accessibility violations and 1 resolved issue"></p>
-<p>Honestly, this all started with boredom.</p>
-<p>Not the fun kind of boredom where you learn to cook or binge <em>Cheers</em> for the bajillionth time, but the kind where you’ve been job hunting for far too long, your whole portfolio is expired or inactive, and you’ve lost track of what day it is.</p>
-<p>I needed a project. Something more than a React calculator or a grocery list app or whatever. Something that helped solve an actual problem. Something I could point to and say, “I made <em>this</em>,” and maybe someone on the other end of an application would actually look at it.</p>
-<p>Web accessibility is important to me. I run the usual tools. I fix what they flag. I try to be thoughtful and proactive. But I keep feeling like I'm only ever checking boxes on a single page at a time, hoping the rest of the site was fine. That’s what most free accessibility tools do: one page in, one page out. Helpful, for sure. And necessary. But also narrow.</p>
-<p>The moment you try to understand an entire site — shared components, repeated patterns, forgotten one-off marketing pages with who-knows-what embedded in them — things get trickier. To be fair, there are lots of good tools that handle all that. But they’re usually aimed at organizations with accessibility budgets, not individuals trying to learn or improve on their own.</p>
-<p>So, finally (MUCH later than I really should admit), it occurred to me: <em>Why not make my own?</em></p>
-<p>And that’s how I ended up building an accessibility auditing tool. Not as a grand vision, but as a way to stay busy, learn something useful, and maybe make a dent in a problem I already cared about.</p>
-<hr>
-<h2 class="u-h2">Why I Made This Thing</h2>
-<p>If you already use tools like axe or WAVE or Lighthouse, you know they’re great. The problem isn’t what they test, it’s how much they test.</p>
-<p>Most of the free, approachable tools are designed for one page at a time. That’s fine when you’re spot-checking, but it falls apart as soon as you need to understand how accessible an entire site really is.</p>
-<p>There are ways around that. If you’re a developer, you can wire <code>axe-core</code> into your pipeline and get solid coverage. That’s awesome... but also very easy to put off when you’re busy shipping actual features. It’s even less helpful if you don’t have a pipeline (guilty), or if you’re working on something small or static (hi again).</p>
-<p>And sometimes, you’re not a developer at all. Maybe you’re a QA analyst, a project manager, or the unlucky person who inherited “accessibility” as a responsibility and now just needs a tool that answers reasonable questions without requiring a deep dive into build systems and configuration files.</p>
-<p>Tools that solve all of this do exist. I’ve used several of them, and they’re very good. They’re also priced for organizations that already have accessibility budgets, not for individuals, small teams, or people just trying to do the right thing.</p>
-<p>I checked pretty much every box on that list at some point, so I tried to build the simplest version of the tool I wished I’d had myself.</p>
-<hr>
-<h2 class="u-h2">What This Thing Does (In a Nutshell)</h2>
-<p>I wanted something simple and practical:</p>
-<ul>
-<li>It runs in a browser;</li>
-<li>It reads an XML sitemap;</li>
-<li>It visits every page it finds;</li>
-<li>It runs familiar accessibility checks;</li>
-<li>And it produces reports that a human can actually read</li>
-</ul>
-<p>That’s it. Minimal setup (you’ll still need Node, npm and Git). No pipeline required.</p>
-<p>You point it at a site, it looks at the whole thing, and it helps you see patterns that are invisible when you’re only testing one page at a time.</p>
-<p>This is probably most useful if you’re a developer, QA analyst, or PM working on a site that doesn’t have a full accessibility pipeline or where accessibility checks tend to happen late, inconsistently, or only on a handful of pages.</p>
-<p>You don’t need to be an accessibility expert to use it, but today you do need to be comfortable running a local tool (or know someone who is). Hopefully it lowers the barrier enough to make whole-site checks more common, even if they’re imperfect.</p>
-<hr>
-<h2 class="u-h2">This Thing Isn't Perfect</h2>
-<p>Let's be clear and up-front, because this matters:</p>
-<ul>
-<li>This tool is <strong>NOT</strong> point-and-click — some local setup is required.</li>
-<li>It is <strong>NOT</strong> an accessibility expert.</li>
-<li>It <strong>does not</strong> replace manual audits.</li>
-<li>It <strong>does not</strong> replace testing with real users.</li>
-<li>And it <strong><em>definitely</em> does not</strong> replace people who do this work professionally, every day.</li>
-</ul>
-<p>Real accessibility is a human problem. It requires human judgment. No amount of scripting gets you around that. This tool just helps find patterns and questions earlier, not stamp a seal of approval at the end.</p>
-<hr>
-<h2 class="u-h2">If You’re Curious</h2>
-<p><a href="https://github.com/mkimmerle/accessibility-audit-tool" target="_blank" rel="noopener">Here's the repo. Give it a look.</a></p>
-<p>This thing is still pretty rough. There are decisions I’m not 100% confident about yet. Some (most, if history is any indication) of them may be wrong.</p>
-<p>If you work in web development, accessibility, or adjacent spaces — or if you’ve ever used an audit tool and thought “this doesn’t quite tell me what I need” — I’d genuinely love your feedback. Especially if you find things like:</p>
-<ul>
-<li>False positives or things that don’t matter</li>
-<li>Things it misses that absolutely should be flagged</li>
-<li>Features you'd like to see</li>
-<li>Places where the language could be clearer</li>
-<li>Actual bugs where something doesn't work</li>
-</ul>
-<p>You don’t have to be polite, but I’d ask that you please be constructive. The goal is to see if this could potentially be useful to anyone who’s not me, and then find ways to make it more useful.</p>
-<p>Worst case, you’ll tell me someone else already built it (and built it better), at which point I’m happy to say I learned a lot of new stuff making this and I’ll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.</p>
-</div>
+	<h1 class="u-h1">Is Your Website an Accessibility Liability?</h1>
+	<style>img{display:block;width:100%;max-width:500px;border:1px solid #eee;border-radius:8px;box-shadow: 0 4px 12px rgba(0,0,0,0.1);}@media(min-width:600px){img{float:right;margin:0 0 2rem 2rem;}}</style>
+	<p><img src="/art/a11y_audit_tool.jpg" alt="Dashboard showing 27 new accessibility violations and 1 resolved issue"></p>
+	<p class="u-b1">
+		If your business has a website, it may be exposed to ADA accessibility complaints — even if you've never thought about it. A growing number of small businesses receive demand letters every year from plaintiffs' attorneys who use automated tools to identify accessibility failures. Having a documented, professional assessment on record is the difference between demonstrating good-faith effort and having nothing to show.
+	</p>
+	<h2 class="u-h2">What You Get</h2>
+	<p class="u-b1">I conduct a technical accessibility assessment of your website using industry-standard tools and manual review. You receive three reports:</p>
+	<ul>
+		<li class="u-b1">A technical findings document your developer can act on</li>
+		<li class="u-b1">An executive summary for decision-makers</li>
+		<li class="u-b1">A plain-English letter explaining what was found and what it means for your business</li>
+	</ul>
+	<h2 class="u-h2">About Me</h2>
+	<p class="u-b1">I'm a front-end developer based in Shelton, CT, with 25 years of experience building for the web. Accessibility has been a core part of my practice for years — not as an afterthought, but as a design constraint I take seriously on every project from start to finish. I've built my own auditing tools, and I understand both the technical and the human side of what makes a website work for everyone.</p>
+	<h2 class="u-h2">Let's Talk</h2>
+	<p class="u-b1">Curious whether your site has issues worth knowing about? Email me through this form — I'll take a quick look and tell you honestly what I find.</p>
 </section>
 
-		<script src="https://utteranc.es/client.js"
-		        repo="mkimmerle/eleventy-site"
-		        issue-term="pathname"
-		        theme="github-light"
-		        crossorigin="anonymous"
-		        async>
-		</script>
 	</main>
 
 	<footer role="contentinfo" class="footer">
