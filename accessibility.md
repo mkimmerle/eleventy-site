@@ -24,7 +24,7 @@ title: Is Your Website an Accessibility Liability? Mark Kimmerle - CT Website Ac
 	<p class="u-b1">Curious whether your site has issues worth knowing about? Email me through this form — I'll take a quick look and tell you honestly what I find.</p>
 	<p class="u-b2"><em>All fields are required</em></p>
 
-	<form name="accessibility" method="POST" data-netlify="true" id="jform">
+	<form name="accessibility" action="/thanks" method="POST" data-netlify="true" id="jform">
 	<div class="input-container">
 		<label for="name">
 			<span>Name</span>

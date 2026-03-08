@@ -10,7 +10,7 @@ title: Contact Mark Kimmerle  - CT Web Design & Development
 	Please fill out the form below to send me a message, and I'll get back to you as soon as possible.<br>
 	<strong>Remember: All fields are required.</strong>
 </p>
-<form name="contact" method="POST" data-netlify="true" id="jform">
+<form name="contact" method="POST" action="/thanks" data-netlify="true" id="jform">
 	<div class="input-container">
 		<label for="name">
 			<span class="sr-only">Name</span>
