@@ -1,12 +1,13 @@
 <?php
 /* Set e-mail recipient */
 $myemail  = "mkimmerle@yahoo.com";
-$subject  = "Portfolio Website Feedback";
+$subject  = "Audit Info Request";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['name'], "Please enter your name");
 $email    = check_input($_POST['email'], "Please enter a valid e-mail address");
 $phone    = check_input($_POST['phone'], "Please enter your telephone number");
+$url      = check_input($_POST['phone'], "Please enter your website URL");
 $comments = check_input($_POST['comments'], "Please provide questions or comments");
 
 /* If e-mail is not valid show error message */
@@ -21,6 +22,8 @@ $message = "
 Name: $name
 E-mail: $email
 Phone: $phone
+
+URL: $url
 
 Comments:
 
