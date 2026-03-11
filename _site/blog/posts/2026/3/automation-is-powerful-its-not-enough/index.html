@@ -194,9 +194,14 @@ But it did <strong>NOT</strong> flag the missing label.</p>
 		var date = new Date().getFullYear();
 		document.getElementById("copyrightYear").innerHTML = date;
 	    // Toggle Nav
-	    document.getElementsByClassName('btn-nav')[0].addEventListener('click', function() {
-		    document.getElementsByTagName('body')[0].classList.toggle('open');
-		});
+	    var navBtn = document.getElementsByClassName('btn-nav')[0];
+	    
+	    navBtn.addEventListener('click', function() {
+	        var body = document.getElementsByTagName('body')[0];
+	        body.classList.toggle('open');
+	        var isOpen = body.classList.contains('open');
+	        navBtn.setAttribute('aria-expanded', isOpen);
+	    });
 	    // Google Analytics
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -207,6 +212,3 @@ But it did <strong>NOT</strong> flag the missing label.</p>
 			navigator.serviceWorker.register('/service-worker.js');
 		}
 	</script>
-
-</body>
-</html>
