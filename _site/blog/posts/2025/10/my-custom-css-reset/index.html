@@ -397,31 +397,12 @@ fieldset {
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNJZCBHEMV"></script>
 	<script>
 		// Set Copyright Date
-	    var date = new Date().getFullYear();
-	    document.getElementById("copyrightYear").innerHTML = date;
-
+		var date = new Date().getFullYear();
+		document.getElementById("copyrightYear").innerHTML = date;
 	    // Toggle Nav
 	    document.getElementsByClassName('btn-nav')[0].addEventListener('click', function() {
-	        var body = document.body;
-	        var isOpen = body.classList.toggle('open');
-	        
-	        // Define the nav containers
-	        var navs = document.querySelectorAll('.main-nav, .top-icon-nav');
-	        
-	        // Update accessibility attributes based on the 'open' state
-	        navs.forEach(function(nav) {
-	            nav.inert = !isOpen; // If not open, make inert
-	            nav.setAttribute('aria-hidden', !isOpen);
-	        });
-	    });
-
-	    // Initialize state on load (ensure nav is inert by default)
-	    document.addEventListener('DOMContentLoaded', function() {
-	        document.querySelectorAll('.main-nav, .top-icon-nav').forEach(function(nav) {
-	            nav.inert = true;
-	            nav.setAttribute('aria-hidden', 'true');
-	        });
-	    });
+		    document.getElementsByTagName('body')[0].classList.toggle('open');
+		});
 	    // Google Analytics
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
