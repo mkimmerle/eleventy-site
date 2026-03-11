@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://markkimmerle.com/</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </url>
   <url>
     <loc>https://markkimmerle.com/samples/</loc>
@@ -15,7 +15,7 @@
   </url>
   <url>
     <loc>https://markkimmerle.com/blog/</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-03-11</lastmod>
   </url>
   <url>
     <loc>https://markkimmerle.com/blog/posts/2025/9/welcome-to-my-blog/</loc>
@@ -131,5 +131,9 @@
   <url>
     <loc>https://markkimmerle.com/blog/posts/2026/3/what-happened-to-costco/</loc>
     <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://markkimmerle.com/blog/posts/2026/3/five-fast-fixes/</loc>
+    <lastmod>2026-03-11</lastmod>
   </url>
 </urlset>

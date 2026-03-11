@@ -4,12 +4,51 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2026-03-08T00:00:00Z</updated>
+  <updated>2026-03-11T00:00:00Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>Five Fast Fixes - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/3/five-fast-fixes/"/>
+    <updated>2026-03-11T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/3/five-fast-fixes/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;Five Fast Fixes&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-03-11&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;I saw a LinkedIn post the other day that said something like: &lt;em&gt;“Here are the top accessibility fixes I&#39;d implement on a website to get the most bang for your buck.”&lt;/em&gt; The author was definitely on the right track, and it got me thinking about what my own “bang for your buck” list would look like. If you want to make a site meaningfully better and eliminate a huge percentage of real-world accessibility issues &lt;strong&gt;without rebuilding the entire thing&lt;/strong&gt;, start here.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BONUS:&lt;/strong&gt; None of these are rocket surgery that need JavaScript frameworks, accessibility overlays, or a week-long refactor.  Just some good old-fashioned HTML and a few lines of CSS.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;1. Semantic HTML&lt;/h2&gt;
+&lt;p&gt;Start with the basics.&lt;/p&gt;
+&lt;p&gt;Don’t “div soup” your way through a build. Need a button? Use &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt;, not &lt;code&gt;&amp;lt;div role=&amp;quot;button&amp;quot;&amp;gt;&lt;/code&gt;. Put your main content inside &lt;code&gt;&amp;lt;main&amp;gt;&lt;/code&gt;, not another random &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. Use &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt; for menus. Let HTML do its job. It already gives you a ton of accessibility for free — but only if you actually use it.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;2. Focus Highlighting&lt;/h2&gt;
+&lt;p&gt;For years, developers loved this CSS rule:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;outline: none;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It removed those “ugly dotted lines” around links, buttons, and form fields. Unfortunately, those outlines were the &lt;strong&gt;only navigation indicator for keyboard users&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Style your &lt;code&gt;:focus&lt;/code&gt; states so they’re visible and intentional. And if you really want to hide them from mouse users, use &lt;code&gt;:focus-visible&lt;/code&gt; instead. Anyone navigating with their keyboard while drinking their coffee will thank you, too.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;3. Form Labels&lt;/h2&gt;
+&lt;p&gt;Forms are probably the most notorious accessibility problem on the web.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Placeholders are &lt;em&gt;&lt;strong&gt;NOT&lt;/strong&gt;&lt;/em&gt; labels.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Every form field should have a &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt; whose &lt;code&gt;for&lt;/code&gt; attribute matches the field’s &lt;code&gt;id&lt;/code&gt;. And that label should actually be visible on the page. Clear labels help screen reader users, keyboard users, and — honestly — everyone else too.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;4. Color Contrast&lt;/h2&gt;
+&lt;p&gt;Check your text for &lt;strong&gt;4.5:1 contrast&lt;/strong&gt;, and your interactive icons for &lt;strong&gt;3:1&lt;/strong&gt;. There are dozens of free tools that will check this instantly, so there’s really no reason to get this wrong anymore. And trust me: anyone trying to read your site on their phone in bright sunlight will appreciate it.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;5. Image Alt Text&lt;/h2&gt;
+&lt;p&gt;Yeah, I know — sometimes it&#39;s contextual whether an image needs &lt;em&gt;meaningful&lt;/em&gt; alt text. But you know what&#39;s not up for debate? &lt;strong&gt;Every &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; needs an &lt;code&gt;alt&lt;/code&gt; attribute.&lt;/strong&gt;  At a bare minimum, even an empty &lt;code&gt;alt&lt;/code&gt; is better than no &lt;code&gt;alt&lt;/code&gt; at all. Go add one.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;Sixth Man Award - 200% Zoom Testing&lt;/h2&gt;
+&lt;p&gt;This one gets overlooked a lot, but it&#39;s an easy win if you remember to sneak it into the game.&lt;/p&gt;
+&lt;p&gt;Set your browser zoom to &lt;strong&gt;200%&lt;/strong&gt; and see what happens.&lt;/p&gt;
+&lt;p&gt;Does text overlap? Does content get cut off? Do you suddenly need to scroll horizontally just to read a paragraph? If everything still works at 200%, you’ve probably dodged a whole host of accessibility problems — and you’ll earn some serious tech-nerd street cred in the process.&lt;/p&gt;
+&lt;p&gt;If your site passes these five checks, you’re already doing better than a ton of live websites.&lt;/p&gt;
+&lt;p&gt;If not... get to work.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>What The Hell Happened To Costco? - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
