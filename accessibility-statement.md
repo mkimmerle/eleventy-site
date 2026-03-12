@@ -23,7 +23,6 @@ title: Accessibility Statement for MarkKimmerle.com
 
 	<ul>
 		<li class="u-b1"><strong>Mobile Navigation Keyboard Flow:</strong> I am currently refining the keyboard-only experience for the mobile menu. Users may find that the off-screen menu is reachable via Tab before it is triggered, and tabbing past the final menu item does not automatically close the menu. A fix is in progress.</li>
-
 		<li class="u-b1"><strong>Third-Party Commenting Widget:</strong> The "Submit" button on my blog comments uses a color palette that does not meet the minimum contrast ratio requirements under WCAG 1.4.3. This widget is provided by a third party and cannot be directly customized. I am evaluating alternative commenting platforms that offer better support for custom styling and accessibility.</li>
 	</ul>
 

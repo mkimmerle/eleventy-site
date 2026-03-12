@@ -19,9 +19,7 @@ tags: post
 
 <div class="u-b1">
 
-<style>img{display:block;width:100%;max-width:500px;border:1px solid #eee;border-radius:8px;box-shadow: 0 4px 12px rgba(0,0,0,0.1);}@media(min-width:600px){img{float:right;margin:0 0 2rem 2rem;}}</style>
-
-![Dashboard showing 27 new accessibility violations and 1 resolved issue](/art/a11y_audit_tool.jpg)
+<figure><img src="/art/a11y_audit_tool.jpg" alt="Dashboard showing 27 new accessibility violations and 1 resolved issue" class="blog-image"></figure>
 
 Honestly, this all started with boredom.
 
