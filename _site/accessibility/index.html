@@ -85,28 +85,28 @@
 	<div class="input-container">
 		<label for="name">
 			<span>Name (required)</span>
-			<input type="text" name="name" id="name" class="text-input" aria-describedby="name-error" required>
+			<input type="text" name="name" id="name" autocomplete="name" class="text-input" aria-describedby="name-error" required>
 			<div role="alert" id="name-error" class="error" hidden>Please enter your name</div>
 		</label>
 	</div>
 	<div class="input-container">
 		<label for="email">
 			<span>Email (required)</span>
-			<input type="email" name="email" id="email" class="text-input" aria-describedby="email-error" required>
+			<input type="email" name="email" id="email" autocomplete="email" class="text-input" aria-describedby="email-error" required>
 			<div role="alert" id="email-error" class="error" hidden>Please enter a valid email address</div>
 		</label>
 	</div>
 	<div class="input-container">
 		<label for="phone">
 			<span>Phone (ex: 203-555-1234) (required)</span>
-			<input type="tel" name="phone" id="phone" class="text-input" pattern="^\d{3}-\d{3}-\d{4}$" aria-describedby="phone-error" required>
+			<input type="tel" name="phone" id="phone" autocomplete="tel" class="text-input" pattern="^\d{3}-\d{3}-\d{4}$" aria-describedby="phone-error" required>
 			<div role="alert" id="phone-error" class="error" hidden>Please enter your phone number (ex: 203-555-1234)</div>
 		</label>
 	</div>
 	<div class="input-container">
 		<label for="url">
 			<span>Website URL (ex: https://www.yoursite.com) (required)</span>
-			<input type="url" name="url" id="url" class="text-input" aria-describedby="url-error" required>
+			<input type="url" name="url" id="url" autocomplete="url" class="text-input" aria-describedby="url-error" required>
 			<div role="alert" id="url-error" class="error" hidden>Please enter your website URL</div>
 		</label>
 	</div>

@@ -14,21 +14,21 @@ title: Contact Mark Kimmerle  - CT Web Design & Development
 		<div class="input-container">
 			<label for="name">
 				<span>Name</span>
-				<input type="text" name="name" id="name" class="text-input" aria-describedby="name-error" required>
+				<input type="text" name="name" id="name" autocomplete="name" class="text-input" aria-describedby="name-error" required>
 				<div role="alert" id="name-error" class="error" hidden>Please enter your name</div>
 			</label>
 		</div>
 		<div class="input-container">
 			<label for="email">
 				<span>Email</span>
-				<input type="email" name="email" id="email" class="text-input" aria-describedby="email-error" required>
+				<input type="email" name="email" id="email" autocomplete="email" class="text-input" aria-describedby="email-error" required>
 				<div role="alert" id="email-error" class="error" hidden>Please enter a valid email address</div>
 			</label>
 		</div>
 		<div class="input-container">
 			<label for="phone">
 				<span>Phone (ex: 203-555-1234)</span>
-				<input type="tel" name="phone" id="phone" class="text-input" pattern="^\d{3}-\d{3}-\d{4}$" aria-describedby="phone-error" required>
+				<input type="tel" name="phone" id="phone" autocomplete="tel" class="text-input" pattern="^\d{3}-\d{3}-\d{4}$" aria-describedby="phone-error" required>
 				<div role="alert" id="phone-error" class="error" hidden>Please enter your phone number (ex: 203-555-1234)</div>
 			</label>
 		</div>
