@@ -4,12 +4,38 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2026-03-11T00:00:00Z</updated>
+  <updated>2026-03-21T00:00:00Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>Five Fast Fixes - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/3/four/"/>
+    <updated>2026-03-21T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/3/four/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;Four&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-03-21&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;Today is my son&#39;s fourth birthday.&lt;/p&gt;
+&lt;p&gt;Wow.&lt;/p&gt;
+&lt;p&gt;It feels like forever and the blink of an eye all at the same time.&lt;/p&gt;
+&lt;p&gt;For the longest time, I never thought I&#39;d have a kid. Now I can&#39;t remember what life was like before he got here. And I wouldn&#39;t want to.&lt;/p&gt;
+&lt;p&gt;I never thought anything I was part of would turn out as well as he has.&lt;/p&gt;
+&lt;p&gt;I know all parents say this about their kids, but that little dude is awesome. He&#39;s sweet and funny and smart and clever and imaginative and amazing in so many ways. And as great as he is, he keeps getting better every day.&lt;/p&gt;
+&lt;p&gt;I hope he keeps it up.&lt;/p&gt;
+&lt;p&gt;I hope he stays like he is, but also grows into what it seems like he&#39;s going to become. I hope I can help him get there. I hope I live up to my responsibility. I hope I&#39;m able to make his life better than mine in the same way my parents did for me. I hope the world isn&#39;t too far gone and he gets a fair chance at everything he deserves. I hope I get to see it all happen.&lt;/p&gt;
+&lt;p&gt;If he somehow ever reads this, I&#39;d want him to know:&lt;/p&gt;
+&lt;p&gt;It&#39;s been wonderful seeing you be you. Keep it up.&lt;/p&gt;
+&lt;p&gt;Happy birthday, bubba. Te amo, señor.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/1hKIGOfZp8o?si=m0iduEYH2xTXAc3E&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Five Fast Fixes - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
