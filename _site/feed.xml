@@ -4,12 +4,47 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2026-03-21T00:00:00Z</updated>
+  <updated>2026-03-24T00:00:00Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>Bad UX In Live Events - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/3/bad-ux-in-live-events/"/>
+    <updated>2026-03-24T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/3/bad-ux-in-live-events/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;Bad UX In Live Events&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-03-24&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;If you only design the happy path, you’ll have a lot of unhappy users.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Over the weekend, I took my son to a monster truck show for his birthday. When I bought the tickets, they told me to install the app and show the QR code at the gate.&lt;/p&gt;
+&lt;p&gt;Sounds easy enough, right?  Well…&lt;/p&gt;
+&lt;p&gt;My phone has a small crack in the screen, so they had trouble scanning it. No problem, it happens a lot with QR codes; lemme just zoom in…&lt;/p&gt;
+&lt;p&gt;Except this app doesn’t allow pinch zooming.&lt;/p&gt;
+&lt;p&gt;Okay, then, rotate the phone?&lt;/p&gt;
+&lt;p&gt;Nope. No landscape support, either.&lt;/p&gt;
+&lt;p&gt;The gate agent told me that if it couldn’t scan, I’d have to leave the arena, walk down the block to the box office, show someone (assuming there&#39;s anyone there at noon on a Saturday) my ID to get physical tickets, and then come back.&lt;/p&gt;
+&lt;p&gt;Seriously.&lt;/p&gt;
+&lt;p&gt;Luckily, after another minute or so, the scanner finally worked. But, still… that was a &lt;strong&gt;TON&lt;/strong&gt; of friction for something so common.&lt;/p&gt;
+&lt;p&gt;And it all could’ve easily been avoided if the app developers had just:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Enabled pinch zooming&lt;/li&gt;
+&lt;li&gt;Or allowed device rotation&lt;/li&gt;
+&lt;li&gt;Or added a confirmation code for the gate agent to enter manually&lt;/li&gt;
+&lt;li&gt;Or even just let me print the QR code on my own piece of paper before I left the house&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Point being:&lt;/strong&gt; Not everyone has the best tech. And even if they do, it often fails at the worst possible moment.&lt;/p&gt;
+&lt;p&gt;Plan for the &amp;quot;what ifs,&amp;quot; because they&#39;re not just hypotheticals — they&#39;re real things that happen to real people all the time.&lt;/p&gt;
+&lt;p&gt;Give your users a way forward when — not if — the happy path breaks.&lt;/p&gt;
+&lt;p&gt;At least then you won’t have guys like me yelling at you online.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Five Fast Fixes - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
