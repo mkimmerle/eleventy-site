@@ -39,7 +39,7 @@ title: Is Your Website an Accessibility Liability? Mark Kimmerle - CT Website Ac
     <h2 class="u-h2">Let's Talk</h2>
     <p class="u-b1">Curious if your site has hidden issues? Enter your details below. I’ll perform a preliminary check and give you an honest assessment of your current risk level — no strings attached.</p>
 
-<form name="accessibility" action="/thanks" method="POST" data-netlify="true" id="jform">
+<form name="accessibility" action="/confirm" method="POST" data-netlify="true" id="jform">
     <fieldset style="border:0;margin:0;padding:0;">
         <legend class="sr-only">Request a preliminary accessibility assessment</legend>
         <div class="input-container">
