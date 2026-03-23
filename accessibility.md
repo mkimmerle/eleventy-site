@@ -35,7 +35,7 @@ title: Is Your Website an Accessibility Liability? Mark Kimmerle - CT Website Ac
         <li class="u-b1"><strong>E-commerce & Non-profits:</strong> Helping your mission and your products reach everyone.</li>
     </ul>
     <h2 class="u-h2">About Me</h2>
-    <p class="u-b1">I'm a front-end developer based in Shelton, CT, with over 25 years of experience building for the web. Accessibility has been a core part of my practice for years — not as an afterthought, but as a design constraint I take seriously on every project from start to finish. I’ve built my own auditing workflow to bridge the gap between technical jargon and business reality, to help you make your website work for everyone.</p>
+    <p class="u-b1">I'm a front-end developer based in Shelton, CT, with over 25 years of experience building for the web. Accessibility has been a core part of my practice for years — not as an afterthought, but as a design constraint I take seriously on every project from start to finish. I’ve built my own auditing workflow to bridge the gap between technical jargon and business reality, facilitating a web experience that works for everyone.</p>
     <h2 class="u-h2">Let's Talk</h2>
     <p class="u-b1">Curious if your site has hidden issues? Enter your details below. I’ll perform a preliminary check and give you an honest assessment of your current risk level — no strings attached.</p>
 
@@ -66,4 +66,5 @@ title: Is Your Website an Accessibility Liability? Mark Kimmerle - CT Website Ac
         </div>
     </fieldset>
 </form>
+<p class="u-b3"><em>Note: This assessment is a professional review intended to help identify accessibility barriers and support your good-faith compliance efforts. It does not constitute legal advice. For legal questions related to ADA compliance, please consult a qualified attorney.</em></p>
 </section>
