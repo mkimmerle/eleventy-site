@@ -1,7 +1,7 @@
 ---
 layout: layout.html
 meta-description: Thank you for requesting your free preliminary accessibility check from Mark Kimmerle, a web designer and developer in Fairfield County, CT.
-title: Preliminary Check Confirmed! Mark Kimmerle - CT Website Accessibility Testing
+title: Preliminary Check Confirmed | Mark Kimmerle | CT Website Accessibility Testing
 ---
 
 <section class="content-container">
