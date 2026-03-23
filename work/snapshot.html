@@ -1,0 +1,1739 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accessibility Snapshot for https://unionstationnewhaven.com</title>
+    <style>
+      /* ============================================================
+   Accessibility Audit Tool — Shared Styles
+   Single source of truth for:
+   - Main UI
+   - Embedded report
+   - Standalone report
+   ============================================================ */
+
+/* ============================================================
+   Design Tokens
+   ============================================================ */
+
+:root {
+  /* Colors — leave as-is */
+  --color-primary: #243a5e;
+  --color-link: #2b4a7f;
+
+  --color-text-primary:  #2f2f2f;
+  --color-text-muted: #6f6f6f;
+  --color-text-light: #64748b;
+  --color-text-on-dark: #ffffff;
+
+  --color-code-text: #f6f8fa;
+
+  --color-border: #d1d5db;
+  --color-border-subtle: #e5e7eb;
+  --color-border-light: #f5f5f5;
+  --color-border-medium-gray: #8b8b8b;
+  --color-border-dark-gray: #6b7280;
+
+  --color-new: #bc222f;
+  --color-fixed: #1a7f37;
+  --color-serious: #7d5200;
+  --color-baseline: #f0f4ff;
+
+  /* Info / Rationale Tokens */
+  --bg-info: #f0f9ff;
+  --color-info-border: #0ea5e9;
+  --color-info-text: #0369a1;
+
+  --color-systemic: #4f46e5;
+  --color-systemic-dark: #3730a3;
+
+  --color-action-hover: #1a2d4a;
+
+  --bg-new: #fff0f1;
+  --bg-fixed: #f0fff4;
+  --bg-card: #ffffff;
+  --bg-app: #fefefe;
+  --bg-summary: #f8f9fa;
+  --bg-code-block: #24292f;
+
+  /* Priority Theme (Amber/Orange) */
+  --color-priority-bg: #fff7ed;
+  --color-priority-border: #fb923c;
+  --color-priority-text-dark: #7c2d12;
+  --color-priority-text-rust: #9a3412;
+  --color-priority-divider: #fdba74;
+  --color-priority-hover: #fff1e6;
+  --color-priority-accent: #ea580c;
+
+  /* Border radius */
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+  --space-filterbar: 5rem;
+
+  /* Font sizes */
+  --font-xs: 0.7rem;
+  --font-sm: 0.85rem;
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.75rem;
+  --font-xxl: 2rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(36, 58, 94, 0.25);
+
+  /* Transitions / motion */
+  --transition-speed: 0.3s;
+  --transition-easing: ease;
+
+  /* Border widths */
+  --border-thin: 1px;
+  --border-medium: 2px;
+  --border-thick: 4px;
+}
+
+/* ============================================================
+   CSS Reset / Base
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg-app);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+  padding: var(--space-xl);
+}
+
+/* Screen-reader-only utility */
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary);
+}
+
+h1 {
+  margin-bottom: var(--space-md);
+  text-align: center;
+  font-size: var(--font-xxl);
+  letter-spacing: 0.15rem;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-text-primary);
+}
+
+/* ============================================================
+   Layout Containers
+   ============================================================ */
+
+.layout-container {
+  width: 95%;
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+.layout-container--wide {
+  max-width: 1200px;
+}
+
+/* ============================================================
+   Form / Controls
+   ============================================================ */
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-sm);
+  font-size: var(--font-base);
+  border: var(--border-thin) solid var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.button {
+  margin-top: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-base);
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: var(--border-thin) solid var(--color-primary);
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-dark);
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button:focus-visible, input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 5px 1px var(--color-primary);
+}
+
+/* ============================================================
+   Progress / Status
+   ============================================================ */
+
+.audit-progress {
+  width: 100%;
+  height: 1.25rem;
+  margin: var(--space-md) 0;
+  border-radius: var(--radius-sm);
+  border: var(--border-thin) solid var(--color-border-medium-gray);
+  appearance: none;
+}
+
+.audit-progress::-webkit-progress-bar {
+  background-color: var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.audit-progress::-webkit-progress-value {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.audit-progress::-moz-progress-bar {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+.audit-status {
+  font-weight: 600;
+  margin-top:  var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.audit-url {
+  font-family: monospace;
+}
+
+/* ============================================================
+   Download Links
+   ============================================================ */
+
+.download-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--space-md);
+}
+
+/* ============================================================
+   Audit History
+   ============================================================ */
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-item {
+  margin-bottom: var(--space-sm);
+}
+
+.history-item a {
+  display: inline-block;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
+}
+
+.history-meta {
+  font-size: var(--font-sm);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-top: calc(var(--space-md) * -1);
+  margin-bottom: var(--space-md);
+}
+
+/* ============================================================
+   Results Page Base
+   ============================================================ */
+
+body.results-page {
+  padding: var(--space-lg);
+  margin:  0 auto;
+}
+
+.results-shell {
+  background: var(--bg-card);
+  /*padding: var(--space-xl);
+  border: var(--border-thin) solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);*/
+}
+
+/* ============================================================
+   Filters
+   ============================================================ */
+
+.rule-filters {
+  margin: var(--space-lg) 0;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-summary);
+  border-radius: var(--radius-sm);
+  border: var(--border-thin) solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+}
+
+.rule-filters fieldset { border: none; padding: 0; }
+
+.filter-title {
+  margin-top: 0;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+  margin-top: var(--space-xs);
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    cursor: pointer;
+    font-size: var(--font-sm);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    padding: var(--space-xs) 0;
+}
+
+.filter-impact {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: var(--color-primary);
+}
+
+/* ============================================================
+   Rule List
+   ============================================================ */
+
+.rules-title, .manual-title {
+    font-size: var(--font-xl);
+    font-weight: 700;
+    margin-top: var(--space-xxl);
+    margin-bottom: 0;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.manual-title {
+  color: var(--color-priority-text-dark);
+}
+
+.rules-subtitle {
+    font-size: var(--font-sm);
+    color: var(--color-text-muted);
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    line-height: 1.4;
+    max-width: 80ch;
+}
+
+.rule {
+  margin-bottom: var(--space-md);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  scroll-margin-top: var(--space-filterbar);
+}
+
+.rule:has(.rule__badge--systemic) {
+  border-left: var(--border-thick) solid var(--color-systemic);
+}
+
+.rule__summary {
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-summary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.rule__title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-width: 0;
+  width: 100%;
+}
+
+.rule__name--wrapper {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+.rule__details {
+  display: grid;
+  grid-template-columns: 140px 200px 100px; 
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.rule__content {
+  padding: var(--space-sm) var(--space-md);
+}
+
+.rule__description {
+    font-size: var(--font-base);
+    line-height: 1.6;
+    margin-top: var(--space-sm);
+}
+
+.rule__rationale {
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background-color: var(--bg-info);
+  border-left: var(--border-thick) solid var(--color-info-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  color: var(--color-text-primary);
+}
+
+.rule__rationale strong {
+  color: var(--color-info-text);
+  display: block;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--font-xs);
+}
+
+.rule__rationale p {
+  margin: 0 0 var(--space-sm);
+}
+
+.rule__rationale p:last-child {
+  margin-bottom: 0;
+}
+
+.rule__resources {
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background-color: var(--color-border-light);
+  border-left: var(--border-thick) solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  color: var(--color-text-primary);
+}
+
+.rule__badge--systemic {
+  background: var(--color-systemic);
+  border: var(--border-thin) solid var(--color-systemic-dark);
+  letter-spacing: 0.025em;
+}
+
+.rule__diff {
+  font-size: var(--font-sm);
+  color: var(--color-text-light);
+  white-space: nowrap;
+  justify-self: center;
+}
+
+/* WCAG level pills */
+.rule__badge {
+  font-size: var(--font-xs);
+  padding: 3px 5px;
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark);
+  justify-self: start;
+  width:  auto;
+}
+
+.rule__badge--new {
+  background: var(--color-new);
+}
+
+.rule__level--a { background: #e0f2fe; color: #075985; border: var(--border-thin) solid #bae6fd; }
+.rule__level--aa { background: #dcfce7; color: #166534; border: var(--border-thin) solid #bbf7d0; }
+.rule__level--aaa { background: #fef9c3; color: #854d0e; border: var(--border-thin) solid #fef08a; }
+.rule__level--best-practice { background: #f3f4f6; color: #374151; border: var(--border-thin) solid #e5e7eb; }
+
+/* Impact pills */
+.rule__impact {
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-base);
+  font-weight: 700;
+  color: var(--color-text-on-dark);
+  text-transform: capitalize;
+  display: inline-block;
+  justify-self: start;
+  margin: 0;
+  width: auto;
+}
+
+.rule__impact--critical   { background-color: #8f1d1d; }
+.rule__impact--serious    { background-color: #b45309; }
+.rule__impact--moderate   { background-color: #a16207; }
+.rule__impact--minor      { background-color: #355d9b; }
+.rule__impact--incomplete { background-color: var(--color-priority-text-rust); }
+
+.rule--manual {
+  border-color: var(--color-priority-divider);
+}
+
+.rule--manual .rule__summary {
+  background-color: var(--color-priority-bg);
+}
+
+.rule__incomplete-reason {
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background-color: var(--color-priority-bg);
+  border-left: var(--border-thick) solid var(--color-priority-accent);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  color: var(--color-text-primary);
+}
+
+.rule__incomplete-reason strong {
+  color: var(--color-priority-text-rust);
+  display: block;
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--font-xs);
+}
+
+.rule__help-link {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  font-weight: 600;
+  font-size: var(--font-sm);
+  color: var(--color-priority-text-rust);
+}
+
+/* ============================================================
+   Priorities
+   ============================================================ */
+
+.priority-callout {
+  background-color: var(--color-priority-bg);
+  border: var(--border-medium) solid var(--color-priority-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.priority-title {
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+  color: var(--color-priority-text-dark);
+  font-size: var(--font-lg);
+  font-weight: 600;
+}
+
+.priority-description {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+  font-size: var(--font-sm);
+  font-style: italic;
+  color: var(--color-text-primary);
+}
+
+.priority-tip {
+  margin: var(--space-md) 0;
+  padding-bottom: var(--space-md);
+  border-bottom: 1px dashed var(--color-priority-divider);
+  font-size: var(--font-base);
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+.priority-tip strong {
+  color: var(--color-priority-text-dark);
+  font-weight: 700;
+}
+
+.priority-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+.priority-item {
+  background-color:var(--bg-card);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  border-left: var(--border-medium) solid var(--color-priority-accent);
+  margin-bottom: var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.priority-item:hover {
+  background-color: var(--color-priority-hover);
+}
+
+.priority-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  font-weight: 600;
+  color: var(--color-priority-text-rust);
+  text-decoration: none;
+}
+
+.priority-name {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  gap: var(--space-md);
+  min-width: 0;
+}
+
+.priority-details {
+  display: grid;
+  grid-template-columns: 140px 200px 150px; 
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.priority-count {
+  font-size: .85rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+/* ============================================================
+   Occurrences
+   ============================================================ */
+
+.occurrence {
+  padding: var(--space-md);
+  border-top: var(--border-thin) solid var(--color-border-subtle);
+}
+
+.occurrence--new {
+  border-left: var(--border-medium) solid var(--color-new);
+  background: var(--bg-new);
+}
+
+.occurrence__page {
+  font-weight: 600;
+}
+
+.occurrence__badge {
+  font-size: var(--font-xs);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  background: var(--color-new);
+  color: var(--color-text-on-dark);
+  font-weight: bold;
+}
+
+.occurrence__html {
+  background: var(--bg-code-block);
+  color: var(--color-code-text);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-sm);
+  overflow-x: auto;
+}
+
+/* ============================================================
+   Details Toggle
+   ============================================================ */
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.rule__title::after {
+  content: "▼";
+  margin-left: var(--space-md);
+  flex-shrink: 0;
+}
+
+details[open] .rule__title::after {
+  content: "▲";
+}
+
+div.rule__summary {
+  cursor: auto;
+}
+
+span.rule__title::after {
+  content: "";
+  margin-left: var(--space-md);
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   Audit Summary Cards (Results Page)
+   ============================================================ */
+
+.audit-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-xl) 0;
+}
+
+.summary-card {
+  padding: var(--space-md);
+  border: var(--border-thin) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border-left: var(--border-thick) solid var(--color-border-dark-gray);
+}
+
+.summary-label {
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.summary-value {
+  font-size: var(--font-xl);
+  font-weight: 800;
+  display: block;
+}
+
+.summary-meta {
+  display: block;
+  font-size: var(--font-xs);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+/* Status modifiers */
+.status--new {
+  border-left-color: var(--color-new);
+  background: var(--bg-new);
+  color: var(--color-new);
+}
+
+.status--fixed {
+  border-left-color: var(--color-fixed);
+  background: var(--bg-fixed);
+  color: var(--color-fixed);
+}
+
+.status--review {
+  border-left-color: var(--color-priority-accent);
+  background: var(--color-priority-bg);
+  color: var(--color-priority-text-rust);
+}
+
+.status--baseline {
+  border-left-color: var(--color-primary);
+  background: var(--color-baseline);
+  color: var(--color-primary);
+}
+
+/* ============================================================
+   Needs Manual Review
+   ============================================================ */
+
+.manual-review-section {
+  margin-top: var(--space-xxl);
+}
+
+.rule__scope-summary, 
+.rule__pattern-summary, 
+.rule__samples {
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+}
+
+.rule__scope-summary h3,
+.rule__pattern-summary h3,
+.rule__samples h3 {
+    font-size: var(--font-sm);
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-xs);
+    letter-spacing: 0.05em;
+}
+
+.rule__scope-summary p {
+  margin-top: 0;
+}
+
+.rule__pattern-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-xl) 0;
+}
+
+.rule__pattern-summary ul:last-child {
+    margin-bottom: 0;
+}
+
+.rule__pattern-summary li {
+    font-size: var(--font-sm);
+    margin-bottom: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: var(--space-sm) var(--space-sm) var(--space-xs);
+    background: var(--color-border-light);
+    border-radius: 0;
+    gap: var(--space-sm);
+}
+
+.rule__pattern-summary code {
+    color: var(--color-priority-text-rust);
+    font-weight: 600;
+}
+
+.rule__samples .occurrence {
+    border-left:0;
+    background: transparent;
+    margin-bottom: var(--space-sm);
+}
+
+/* ============================================================
+   Success Messages
+   ============================================================ */
+
+.success-hero {
+  background-color: var(--bg-fixed);
+  border: var(--border-thin) solid var(--color-fixed);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin: var(--space-xl) 0;
+  text-align: center;
+}
+
+.success-icon-frame {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-fixed);
+  color: var(--color-text-on-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-md);
+}
+
+.success-icon {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.success-title {
+  color: var(--color-fixed);
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-xl);
+}
+
+.success-message {
+  max-width: 50ch;
+  margin-inline: auto;
+  color: var(--color-text-primary);
+  font-size: var(--font-base);
+}
+
+/* ============================================================
+   Chart
+   ============================================================ */
+.chart-container {
+    background-color: var(--bg-summary);
+    border-color: var(--color-border);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.chart-wrapper {
+    overflow: visible;
+    padding-top: var(--space-md);
+    width: 100%;
+}
+
+.trend-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+}
+
+/* Chart Visuals */
+.chart-grid-line {
+    stroke: var(--color-border);
+    stroke-width: var(--border-thin);
+}
+
+.chart-grid-line--dashed {
+    stroke: var(--color-border-subtle);
+    stroke-dasharray: 4;
+}
+
+.trend-line {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: var(--border-thick);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.trend-point {
+    fill: var(--color-primary);
+    stroke: var(--bg-card);
+    stroke-width: var(--border-medium);
+}
+
+.chart-label {
+    font-family: system-ui, sans-serif;
+    pointer-events: none;
+}
+
+.chart-label--value {
+    font-weight: 800;
+    font-size: var(--font-sm); /* Using Token! */
+    fill: var(--color-text-primary);
+}
+
+.chart-label--date {
+    font-size: var(--font-xs); /* Using Token! */
+    fill: var(--color-text-light);
+}
+
+.chart-label--axis {
+    font-size: var(--font-xs);
+    fill: var(--color-text-muted);
+    font-weight: 600;
+}
+
+/* ============================================================
+   Resolved Section (Fixed Issues)
+   ============================================================ */
+
+.resolved-section {
+    margin-top: var(--space-xl);
+    padding: var(--space-lg);
+    background-color: var(--bg-fixed);
+    border: var(--border-thin) solid var(--color-fixed);
+    border-radius: var(--radius-lg);
+}
+
+.resolved-title {
+    margin-top: 0;
+    margin-bottom: var(--space-md);
+    color: var(--color-fixed);
+    font-size: var(--font-lg);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.resolved-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.resolved-chip {
+    background: var(--bg-card);
+    border: var(--border-thin) solid var(--color-fixed);
+    color: var(--color-text-primary);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 50px; /* Pill shape */
+    font-size: var(--font-sm);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.report-footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: var(--border-thin) solid var(--color-border);
+  font-size: var(--font-sm);
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   Print-related styles
+   ============================================================ */
+
+.btn-pdf-export, a.btn-pdf-export {
+  display: none;
+  appearance: none;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-dark);
+  border: var(--border-thin) solid var(--color-primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  align-items: center;
+  gap: var(--space-sm);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--space-md);
+  text-decoration: none;
+}
+
+.btn-pdf-export:hover, a.btn-pdf-export:hover {
+  background-color: var(--color-action-hover);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.results-page .btn-pdf-export {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   Print & PDF Optimization
+   ============================================================ */
+
+@media print {
+  @page {
+    margin: 1.5cm;
+    size: A4 portrait;
+  }
+
+  html, body {
+    background: white !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  .layout-container, .results-shell, #rules-container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  h1 {
+    margin-bottom: var(--space-md);
+    text-align: left;
+    font-size: var(--font-xl);
+    letter-spacing: initial;
+  }
+
+  .results-shell {
+    display: block !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .audit-summary-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+
+  .summary-card {
+    flex: 1 1 0px !important;
+    width: auto !important;
+    margin: 5px !important;
+  }
+
+  .summary-value {
+    font-size: var(--font-lg) !important;
+  }
+
+  .priority-callout {
+    page-break-inside: auto !important;
+  }
+
+  .rule-filters {
+    display: none !important;
+    position: static !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  details {
+    display: block !important;
+    margin-bottom: var(--space-lg) !important;
+    page-break-inside: avoid;
+  }
+
+  .rule {
+    display: block !important;
+    page-break-inside: auto !important;
+    margin-bottom: var(--space-lg) !important;
+    border: var(--border-thin) solid var(--color-border) !important;
+  }
+
+  .rule__summary {
+    background: var(--bg-summary) !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .rule__title::after {
+    display: none !important;
+  }
+
+  .rule__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .occurrence {
+    border-top: none !important;
+    border-left: var(--border-thick) solid var(--color-border-subtle) !important;
+    margin-left: var(--space-md) !important;
+    margin-top: var(--space-sm) !important;
+    background-color: #fcfcfc !important;
+    page-break-inside: avoid;
+  }
+
+  .occurrence__html {
+    background: #f1f1f1 !important;
+    color: #333 !important;
+    border: var(--border-thin) solid #ccc !important;
+    white-space: pre-wrap !important;
+  }
+
+  .resolved-section {
+    background: transparent !important;
+    border: var(--border-medium) solid var(--color-fixed) !important;
+    page-break-inside: avoid;
+  }
+
+  .resolved-chip {
+    border: 1px solid #ccc !important;
+    background: #fff !important;
+  }
+
+  .btn-pdf-export,
+  .report-footer p:last-child {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   Motion (ONLY when user allows it)
+   ============================================================ */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .button:hover {
+    filter: brightness(1.1);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-speed) var(--transition-easing);
+  }
+
+  .button:focus-visible, input:focus-visible {
+    transition: all var(--transition-speed) var(--transition-easing);
+  }
+
+  a {
+    transition: color var(--transition-speed) var(--transition-easing);
+  }
+
+  progress {
+    transition: all var(--transition-speed) var(--transition-easing);
+  }
+
+  .priority-list li:hover {
+    transition: all var(--transition-speed) var(--transition-easing);
+  }
+
+  summary::after {
+    transition: transform var(--transition-speed) var(--transition-easing);
+  }
+
+  .priority-item, .priority-item:hover {
+    transition: box-shadow var(--transition-speed) var(--transition-easing);
+  }
+
+  .btn-pdf-export {
+    transition: background-color var(--transition-speed) var(--transition-easing),
+                transform 0.3s var(--transition-easing);
+  }
+
+  .btn-pdf-export:hover {
+    transition: all var(--transition-speed) var(--transition-easing);
+  }
+}
+    </style>
+</head>
+<body class="results-page">
+<main class="layout-container layout-container--wide results-shell">
+    <h1>Accessibility Snapshot for https://unionstationnewhaven.com</h1>
+    <p><em>Audit recorded on 3/23/2026, 2:20:13 PM</em></p>
+
+    <button class="btn-pdf-export" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg>
+        <span>Print/Save PDF</span>
+    </button>
+
+    <section class="audit-summary-grid">
+        
+  <div class="summary-card ">
+    <span class="summary-label">Pages Audited</span>
+    <span class="summary-value">
+      
+      40
+      
+    </span>
+  </div>
+
+        
+        
+        
+  <div class="summary-card ">
+    <span class="summary-label">Confirmed Violations</span>
+    <span class="summary-value">
+      
+      12
+      
+    </span>
+  </div>
+
+        
+  <div class="summary-card status--review">
+    <span class="summary-label">Needs Review</span>
+    <span class="summary-value">
+      
+      5 rules
+      <span class="summary-meta">1,566 flagged elements · 40 pages</span>
+    </span>
+  </div>
+
+    </section>
+    <section class="priority-callout">
+        <h2 class="priority-title">Priority Items: Fix These First</h2>
+        <p class="priority-description">Ranked by weighted impact (severity × reach).</p>
+        
+        <ul class="priority-list">
+            
+            <li class="priority-item">
+                
+                <span class="priority-link">
+                    <span class="priority-name">
+                        Buttons must have discernible text
+                        
+                    </span>
+                    <span class="priority-details">
+                        <span class="rule__impact rule__impact--critical">critical</span>
+                        <span class="rule__badge rule__level--a">WCAG A</span>
+                    </span>
+                </span>
+            </li>
+            <li class="priority-item">
+                
+                <span class="priority-link">
+                    <span class="priority-name">
+                        Links must have discernible text
+                        
+                    </span>
+                    <span class="priority-details">
+                        <span class="rule__impact rule__impact--serious">serious</span>
+                        <span class="rule__badge rule__level--a">WCAG A</span>
+                    </span>
+                </span>
+            </li>
+            <li class="priority-item">
+                
+                <span class="priority-link">
+                    <span class="priority-name">
+                        Elements must meet minimum color contrast ratio thresholds
+                        
+                    </span>
+                    <span class="priority-details">
+                        <span class="rule__impact rule__impact--serious">serious</span>
+                        <span class="rule__badge rule__level--aa">WCAG AA</span>
+                    </span>
+                </span>
+            </li>
+            <li class="priority-item">
+                
+                <span class="priority-link">
+                    <span class="priority-name">
+                        ARIA input fields must have an accessible name
+                        
+                    </span>
+                    <span class="priority-details">
+                        <span class="rule__impact rule__impact--serious">serious</span>
+                        <span class="rule__badge rule__level--a">WCAG A</span>
+                    </span>
+                </span>
+            </li>
+            <li class="priority-item">
+                
+                <span class="priority-link">
+                    <span class="priority-name">
+                        &lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements
+                        
+                    </span>
+                    <span class="priority-details">
+                        <span class="rule__impact rule__impact--serious">serious</span>
+                        <span class="rule__badge rule__level--a">WCAG A</span>
+                    </span>
+                </span>
+            </li>
+        </ul>
+    </section>
+    <div id="rules-container">
+        <h2 class="rules-title">Confirmed Accessibility Violations</h2>
+        <p class="rules-subtitle">Verified WCAG failures requiring remediation.</p>
+        
+      <div class="rule rule--snapshot" id="rule-button-name" data-impact="critical" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Buttons must have discernible text
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--critical">
+                critical
+              </span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-link-name" data-impact="serious" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Links must have discernible text
+                
+                <span class="rule__badge rule__badge--systemic">ALL PAGES</span>
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--serious">
+                serious
+              </span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-color-contrast" data-impact="serious" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Elements must meet minimum color contrast ratio thresholds
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--serious">
+                serious
+              </span>
+              <span class="rule__badge rule__level--aa">WCAG AA</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-aria-input-field-name" data-impact="serious" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                ARIA input fields must have an accessible name
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--serious">
+                serious
+              </span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-list" data-impact="serious" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                &lt;ul&gt; and &lt;ol&gt; must only directly contain &lt;li&gt;, &lt;script&gt; or &lt;template&gt; elements
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--serious">
+                serious
+              </span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-nested-interactive" data-impact="serious" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Interactive controls must not be nested
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--serious">
+                serious
+              </span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-region" data-impact="moderate" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                All page content should be contained by landmarks
+                
+                <span class="rule__badge rule__badge--systemic">ALL PAGES</span>
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--moderate">
+                moderate
+              </span>
+              <span class="rule__badge rule__level--best-practice">WCAG Best Practice</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-heading-order" data-impact="moderate" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Heading levels should only increase by one
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--moderate">
+                moderate
+              </span>
+              <span class="rule__badge rule__level--best-practice">WCAG Best Practice</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-landmark-one-main" data-impact="moderate" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Document should have one main landmark
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--moderate">
+                moderate
+              </span>
+              <span class="rule__badge rule__level--best-practice">WCAG Best Practice</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-page-has-heading-one" data-impact="moderate" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Page should contain a level-one heading
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--moderate">
+                moderate
+              </span>
+              <span class="rule__badge rule__level--best-practice">WCAG Best Practice</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-landmark-unique" data-impact="moderate" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Landmarks should have a unique role or role/label/title (i.e. accessible name) combination
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--moderate">
+                moderate
+              </span>
+              <span class="rule__badge rule__level--best-practice">WCAG Best Practice</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--snapshot" id="rule-presentation-role-conflict" data-impact="minor" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Elements marked as presentational should be consistently ignored
+                
+                
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--minor">
+                minor
+              </span>
+              <span class="rule__badge rule__level--best-practice">WCAG Best Practice</span>
+            </span>
+        </div>
+      </div>
+    
+    </div>
+    <section class="manual-review-section">
+        <h2 class="manual-title">Requires Human Evaluation</h2>
+        <p class="rules-subtitle">
+            These items were flagged by automated checks but require human intuition to verify.
+        </p>
+        <div class="manual-review-grid">
+            
+      <div class="rule rule--manual rule--snapshot" id="manual-color-contrast" data-impact="incomplete" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Elements must meet minimum color contrast ratio thresholds
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--incomplete">incomplete</span>
+              <span class="rule__badge rule__level--aa">WCAG AA</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--manual rule--snapshot" id="manual-aria-required-children" data-impact="incomplete" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Certain ARIA roles must contain particular children
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--incomplete">incomplete</span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--manual rule--snapshot" id="manual-duplicate-id-aria" data-impact="incomplete" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                IDs used in ARIA and labels must be unique
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--incomplete">incomplete</span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--manual rule--snapshot" id="manual-form-field-multiple-labels" data-impact="incomplete" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Form field must not have multiple label elements
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--incomplete">incomplete</span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+      <div class="rule rule--manual rule--snapshot" id="manual-link-in-text-block" data-impact="incomplete" data-new="false">
+        <div class="rule__summary">
+            <span class="rule__title">
+              <span class="rule__name--wrapper">
+                Links must be distinguishable without relying on color
+              </span>
+            </span>
+            <span class="rule__details">
+              <span class="rule__impact rule__impact--incomplete">incomplete</span>
+              <span class="rule__badge rule__level--a">WCAG A</span>
+            </span>
+        </div>
+      </div>
+    
+        </div>
+    </section>
+
+    
+      <footer class="report-footer report-footer--upsell">
+        <p>
+          Snapshot prepared for https://unionstationnewhaven.com on 3/23/2026, 2:20:13 PM.</p>
+        <p>
+          This condensed report highlights key findings. Automated scanning covers roughly 30–40% of accessibility barriers. 
+          It can't evaluate keyboard navigation, screen reader behavior, focus management, or the dozens of judgment calls 
+          that separate a technically passing site from one that actually works for people with disabilities.
+        </p>
+        <p>
+          The full assessment covers all of that, delivers remediation guidance your developer can act on directly, and 
+          includes a plain-English summary you can share with stakeholders or keep on file as documentation of good-faith effort.</p>
+        <p>
+          <a href="mailto:mark@markkimmerle.com" class="btn-pdf-export">Request a full accessibility assessment</a>
+        </p>
+        <p>© 2026 <a href="https://markkimmerle.com/" target="_blank" rel="noopener">Mark Kimmerle</a></p>
+      </footer>
+    
+    </main>
+    <script>
+    (function () {
+        const currentScript = document.currentScript;
+        const root = currentScript ? currentScript.parentElement : document;
+
+        const form = root.querySelector('#rule-filters-form');
+        if (!form) return;
+
+        const filterAll = form.querySelector('#filter-all');
+        const impactBoxes = form.querySelectorAll('.filter-impact');
+        const filterNew = form.querySelector('#filter-new');
+        
+        const rules = root.querySelectorAll('.rule');
+
+        function applyFilters() {
+            const activeImpacts = [...impactBoxes].filter(cb => cb.checked).map(cb => cb.value);
+            const newOnly = filterNew && filterNew.checked;
+
+            rules.forEach(rule => {
+                const impact = rule.dataset.impact;
+                const isNew = rule.dataset.new === 'true';
+                let visible = true;
+
+                if (!filterAll.checked) {
+                    if (activeImpacts.length) {
+                        visible = activeImpacts.includes(impact);
+                    } else if (!newOnly) {
+                        visible = false;
+                    }
+
+                    if (newOnly) {
+                        visible = visible && isNew;
+                    }
+                }
+                rule.style.display = visible ? '' : 'none';
+            });
+        }
+
+        const allControls = [filterAll, ...impactBoxes, filterNew].filter(Boolean);
+        allControls.forEach(el => {
+            el.addEventListener('change', (e) => {
+                if (e.target === filterAll && filterAll.checked) {
+                    impactBoxes.forEach(cb => cb.checked = false);
+                    if (filterNew) filterNew.checked = false;
+                } else if (e.target.checked) {
+                    filterAll.checked = false;
+                }
+                applyFilters();
+            });
+        });
+
+        applyFilters();
+    })();
+</script> 
+  </body>
+  </html>
