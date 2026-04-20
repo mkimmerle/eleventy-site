@@ -4,12 +4,59 @@
   <subtitle>Here&#39;s the part where I say a whole bunch of stuff that doesn&#39;t mean anything.</subtitle>
   <link href="https://www.markkimmerle.com/feed.xml" rel="self"/>
   <link href="https://www.markkimmerle.com/"/>
-  <updated>2026-03-24T00:00:00Z</updated>
+  <updated>2026-04-20T00:00:00Z</updated>
   <id>https://www.markkimmerle.com/</id>
   <author>
     <name>Mark Kimmerle</name>
     <email>me@example.com</email>
   </author>
+  
+  <entry>
+    <title>100,847 Accessibility Errors. 28 Actual Problems - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
+    <link href="https://www.markkimmerle.com/blog/posts/2026/4/accessibility-at-scale-isnt-what-you-think/"/>
+    <updated>2026-04-20T00:00:00Z</updated>
+    <id>https://www.markkimmerle.com/blog/posts/2026/4/accessibility-at-scale-isnt-what-you-think/</id>
+    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;100,847 Accessibility Errors. 28 Actual Problems&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;2026-04-20&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;u-b1&quot;&gt;
+&lt;p&gt;There are plenty of good accessibility testing tools out there. Most of them are either expensive (enterprise SaaS platforms with monthly contracts that make sense for a large team but are out of reach for a solo developer or a small agency trying to do the right thing) or limited to only testing one page at a time.&lt;/p&gt;
+&lt;p&gt;That&#39;s why &lt;a href=&quot;https://www.markkimmerle.com/accessibility&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;I&#39;ve been building my own testing tool&lt;/a&gt;. I wanted something that could crawl an entire site, run axe-core against every page, and generate a report I could actually act on, without a subscription fee. Nothing fancy. Just a tool that could do the job.&lt;/p&gt;
+&lt;p&gt;Recently, I pointed it at a live ecommerce site to stress-test it. I figured a few hundred pages, maybe a thousand if I was unlucky.&lt;/p&gt;
+&lt;p&gt;It was &lt;strong&gt;2,774 pages&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Watching the counter slowly tick by was the roughest four hours I&#39;ve had since the time I forgot my glasses when I went to the theater to see &lt;em&gt;Dances With Wolves&lt;/em&gt;. But it didn&#39;t crash. It finished, serialized a massive JSON file, and generated a complete report.&lt;/p&gt;
+&lt;p&gt;Then I opened the report.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;The Number That Sounds Terrifying&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;100,847 accessibility errors across 2,774 pages.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If you&#39;re a merchant or an agency account manager, that number probably makes you want to close this page right now and forget I even exist. It sounds like a complete rebuild. It sounds like months of work. It sounds expensive and endless.&lt;/p&gt;
+&lt;p&gt;But it isn&#39;t. Here&#39;s why.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;The Number That Actually Matters&lt;/h2&gt;
+&lt;p class=&quot;u-h4&quot;&gt;28&lt;/p&gt;
+&lt;p&gt;That&#39;s the number of unique rule violations across those 100,000+ errors.&lt;/p&gt;
+&lt;p&gt;Every one of those errors came from just 28 distinct problems, repeated across templates, components, and page types. Fix the template, the section, the snippet, the CSS rule, and you fix the violation everywhere it appears. A link without text on a product card isn&#39;t 400 separate bugs — it&#39;s one empty alt attribute in one component that renders 400 times.&lt;/p&gt;
+&lt;p&gt;This is what automated accessibility reports almost never tell you, because they&#39;re designed to show you everything. But everything, at scale, is paralyzing. What you really need to know is: how many distinct problems do I have, and which ones appear most often?&lt;/p&gt;
+&lt;p&gt;That&#39;s a pattern recognition problem. And it&#39;s exactly what I built the tool to surface.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;What This Means For E-commerce Specifically&lt;/h2&gt;
+&lt;p&gt;Shopify and other e-commerce platforms have a structural characteristic that makes this especially true: they&#39;re driven by templates and components. A product page is a template. A navigation menu is a component. A star rating is a snippet.&lt;/p&gt;
+&lt;p&gt;Which means accessibility problems on those sites tend to be systematically repeated — the same missing label, the same div masquerading as a button, the same contrast failure on the same CTA — across dozens or hundreds of pages.&lt;/p&gt;
+&lt;p&gt;The good news: fixing a template-level issue is one fix.&lt;/p&gt;
+&lt;p&gt;The bad news: most accessibility testing tools only test a single page at a time and never surface the pattern. You fix the five issues the plugin caught... and miss the 400 identical instances they didn&#39;t look at.&lt;/p&gt;
+&lt;p&gt;A site-wide audit changes that math entirely.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;What Automation Still Can&#39;t Do&lt;/h2&gt;
+&lt;p&gt;Those 28 violations were everything the scanner could detect. But &amp;quot;detectable&amp;quot; is a narrower category than it first appears.&lt;/p&gt;
+&lt;p&gt;Automated tools evaluate what&#39;s present against a set of measurable rules. They can flag an image that&#39;s missing an alt attribute entirely. What they can&#39;t do is tell you whether the alt text that is there is actually meaningful, or if the image is decorative and should have an empty alt instead. Both of those require a human looking at the image in context and making a judgment call. A scanner sees the attribute. It can&#39;t read the room.&lt;/p&gt;
+&lt;p&gt;The same is true for color contrast in certain contexts, form labels that exist but don&#39;t clearly describe what the field expects, and link text that&#39;s technically present but meaningless without surrounding context (think &amp;quot;click here&amp;quot; and &amp;quot;read more&amp;quot;).&lt;/p&gt;
+&lt;p&gt;And then there&#39;s a category of issues that automation struggles with: things that require context. A scanner can tell you when an attribute is wrong. It’s much worse at knowing when something should exist in the first place, especially when that depends on how the interface is meant to be used. That&#39;s not a rule check. That&#39;s domain knowledge.&lt;/p&gt;
+&lt;p&gt;Automated scanning is the floor, not the ceiling. This tool finds the floor fast, at scale, across an entire site. Everything above the floor still requires a person.&lt;/p&gt;
+&lt;h2 class=&quot;u-h2&quot;&gt;The Practical Takeaway&lt;/h2&gt;
+&lt;p&gt;If you&#39;re a merchant or agency looking at an accessibility problem and feeling overwhelmed by the scope, the number that matters isn&#39;t the total error count. It&#39;s the number of unique violations, weighted by how often they appear.&lt;/p&gt;
+&lt;p&gt;Find the three violations that appear on 80% of your pages. Fix those in the templates. Run the scan again.&lt;/p&gt;
+&lt;p&gt;Accessibility at scale isn&#39;t about fixing thousands of issues. It&#39;s almost always about finding the handful of problems that created them.&lt;/p&gt;
+&lt;p&gt;Fix them at the source, and watch the numbers fall.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+</content>
+  </entry>
   
   <entry>
     <title>Bad UX In Live Events - Mark Kimmerle&#39;s Blog - CT Web Design &amp; Development</title>
