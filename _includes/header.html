@@ -7,11 +7,11 @@
 	<div class="fluid-container nav-container" id="topnav">
 		<nav class="main-nav" aria-label="Primary">
 			<ul>
-				<li role="listitem"><a href="/">About</a></li>
-				<li role="listitem"><a href="/samples/">Work</a></li>
-				<li role="listitem"><a href="/accessibility/">Accessibility</a></li>
-				<li role="listitem"><a href="/blog/">Blog</a></li>
-				<li role="listitem"><a href="/contact/">Contact</a></li>
+				<li role="listitem"><a href="/" {% if page.url == "/" %} aria-current="page"{% endif %}>About</a></li>
+				<li role="listitem"><a href="/samples/" {% if page.url == "/samples/" %} aria-current="page"{% endif %}>Work</a></li>
+				<li role="listitem"><a href="/accessibility/" {% if page.url == "/accessibility/" %} aria-current="page"{% endif %}>Accessibility</a></li>
+				<li role="listitem"><a href="/blog/" {% if page.url contains "/blog/" %} aria-current="page"{% endif %}>Blog</a></li>
+				<li role="listitem"><a href="/contact/" {% if page.url == "/contact/" %} aria-current="page"{% endif %}>Contact</a></li>
 			</ul>
 		</nav>
 		<nav class="top-icon-nav" aria-label="Secondary">
