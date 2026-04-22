@@ -23,7 +23,7 @@ There are plenty of good accessibility testing tools out there. Most of them are
 
 That's why <a href="/accessibility" target="_blank" rel="noopener">I've been building my own testing tool</a>. I wanted something that could crawl an entire site, run axe-core against every page, and generate a report I could actually act on, without a subscription fee. Nothing fancy. Just a tool that could do the job.
 
-Recently, I pointed it at a live ecommerce site to stress-test it. I figured a few hundred pages, maybe a thousand if I was unlucky.
+Recently, I pointed it at a live e-commerce site to stress-test it. I figured a few hundred pages, maybe a thousand if I was unlucky.
 
 It was **2,774 pages**.
 
