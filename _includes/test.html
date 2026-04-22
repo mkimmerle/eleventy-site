@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Mark Kimmerle — front-end developer, accessibility nerd, and opinionated person on the internet. Based in Shelton, CT.">
+  <meta name="theme-color" content="#ab4f04">
+    <link rel="preload" href="/css/kadwa-v12-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/css/merriweather-sans-v27-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/css/public-sans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="/css/main.min.031226.css">
+  <link rel="stylesheet" media="print" href="/css/print.css">
+    <link rel="icon" sizes="192x192" href="/art/touch-icon-highres.png">
+    <link rel="apple-touch-icon" href="/art/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/art/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/art/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/art/touch-icon-ipad-retina.png">
+  <link rel="manifest" href="/manifest.json">
+  {% if page.url %}
+   <link rel="canonical" href="https://markkimmerle.com{{ page.url | url }}">
+  {% endif %}
+  <title>Mark Kimmerle — Front-End Developer</title>
+
+  <!-- Your existing font preloads go here -->
+  <style>
+    /* =============================================
+       V2 HOMEPAGE — warm editorial / personal blog
+       Uses your existing color palette and fonts.
+       Drop into your stylesheet or add as page CSS.
+       ============================================= */
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root {
+      --orange:  #ab4f04;
+      --navy:    #334d75;
+      --blue:    #335fac;
+      --ink:     #222;
+      --warm-bg: #fdf8f3;
+      --rule:    #d9cfc4;
+      --muted:   #7a6f65;
+    }
+
+    /* ---- PAGE ENTRY ANIMATION ---- */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .home-masthead,
+    .home-availability,
+    .home-intro,
+    .home-posts {
+      animation: fadeUp 0.5s ease both;
+    }
+    .home-availability { animation-delay: 0.1s; }
+    .home-intro        { animation-delay: 0.2s; }
+    .home-posts        { animation-delay: 0.3s; }
+
+
+    /* ---- MASTHEAD ---- */
+    /* Replaces the splash SVG entirely */
+    .home-masthead {
+      border-bottom: 3px double var(--rule);
+      padding: 48px 0 36px;
+      margin-bottom: 0;
+    }
+
+    .home-masthead__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: calc(100% - 60px);
+    }
+
+    /* The big typographic statement */
+    .home-masthead__statement {
+      font-family: "Kadwa", Times, serif;
+      font-size: clamp(2.4rem, 5.5vw, 4.5rem);
+      line-height: 1.05;
+      color: var(--navy);
+      margin: 0 0 0.4em;
+      text-wrap: balance;
+      letter-spacing: -0.02em;
+    }
+
+    .home-masthead__statement mark {
+      background: none;
+      color: var(--orange);
+    }
+
+    /* Byline row beneath the statement */
+    .home-masthead__byline {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1.2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .home-masthead__name {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .home-masthead__meta {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .home-masthead__meta span::before {
+      content: "· ";
+      color: var(--rule);
+    }
+
+    .home-masthead__links {
+      margin-left: auto;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .home-masthead__links a {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      border-bottom: 1px solid var(--blue);
+      text-decoration: none;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .home-masthead__links a:hover {
+      color: var(--orange);
+      border-color: var(--orange);
+    }
+
+
+    /* ---- AVAILABILITY BANNER ---- */
+    /* Small, warm, honest — not a hero CTA */
+    .home-availability {
+      background: #fdf3e7;
+      border-bottom: 1px solid #e8d5b8;
+      padding: 10px 0;
+    }
+
+    .home-availability__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: calc(100% - 60px);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.8rem;
+    }
+
+    .availability-dot {
+      width: 8px;
+      height: 8px;
+      background: #2a7a2a;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(42, 122, 42, 0.4); }
+      50%       { box-shadow: 0 0 0 5px rgba(42, 122, 42, 0); }
+    }
+
+    .home-availability__text {
+      color: var(--ink);
+    }
+
+    .home-availability__text strong {
+      color: #2a5a2a;
+    }
+
+    .home-availability__text a {
+      color: var(--blue);
+      border-bottom: 1px solid var(--blue);
+      font-weight: 700;
+      margin-left: 4px;
+    }
+
+
+    /* ---- MAIN CONTENT AREA ---- */
+    .home-body {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: calc(100% - 60px);
+      padding: 48px 0 80px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 60px;
+      align-items: start;
+    }
+
+
+    /* ---- INTRO / LEFT COLUMN ---- */
+    .home-intro__text {
+      font-family: "Public Sans", Arial, sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.75;
+      color: #3a3530;
+      margin: 0 0 1.5rem;
+      max-width: 58ch;
+    }
+
+    .home-intro__text a {
+      color: var(--blue);
+      border-bottom: 1px solid var(--blue);
+    }
+
+    .home-intro__text a:hover {
+      color: var(--orange);
+      border-color: var(--orange);
+    }
+
+    /* The "quick facts" strip below the intro */
+    .home-intro__facts {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--rule);
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .fact-chip {
+      padding: 12px 20px;
+      border-right: 1px solid var(--rule);
+      flex: 1;
+      min-width: 120px;
+    }
+
+    .fact-chip:last-child {
+      border-right: none;
+    }
+
+    .fact-chip__number {
+      display: block;
+      font-family: "Kadwa", Times, serif;
+      font-size: 1.6rem;
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+
+    .fact-chip__label {
+      display: block;
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ---- POSTS LIST ---- */
+    .home-posts {
+      /* left column, below intro */
+    }
+
+    .home-posts__rule {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .home-posts__rule-label {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      flex-shrink: 0;
+    }
+
+    .home-posts__rule-line {
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .home-posts__rule-all a {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--blue);
+      border-bottom: 1px solid var(--blue);
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .posts-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .posts-list__item {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 0 20px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--rule);
+      align-items: baseline;
+      transition: background 0.15s;
+    }
+
+    .posts-list__item:first-child {
+      border-top: 1px solid var(--rule);
+    }
+
+    .posts-list__item:hover {
+      background: var(--warm-bg);
+      margin: 0 -12px;
+      padding: 16px 12px;
+    }
+
+    .posts-list__date {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.72rem;
+      color: var(--muted);
+      padding-top: 3px;
+    }
+
+    .posts-list__content {}
+
+    .posts-list__title {
+      font-family: "Kadwa", Times, serif;
+      font-size: 1.05rem;
+      line-height: 1.3;
+      margin: 0 0 3px;
+    }
+
+    .posts-list__title a {
+      color: var(--navy);
+      border-bottom: none;
+      text-decoration: none;
+    }
+
+    .posts-list__title a:hover {
+      color: var(--orange);
+    }
+
+    .posts-list__desc {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin: 0;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+
+    /* ---- SIDEBAR / RIGHT COLUMN ---- */
+    .home-sidebar {
+      position: sticky;
+      top: 180px; /* clears your fixed header */
+    }
+
+    .sidebar-section {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .sidebar-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .sidebar-section__label {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--navy);
+    }
+
+    /* About blurb in sidebar */
+    .sidebar-about__text {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #444;
+      margin: 0 0 1rem;
+    }
+
+    .sidebar-about__links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .sidebar-about__links a {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--blue);
+      border-bottom: 1px solid var(--blue);
+      text-decoration: none;
+    }
+
+    .sidebar-about__links a:hover {
+      color: var(--orange);
+      border-color: var(--orange);
+    }
+
+    /* Featured post in sidebar */
+    .sidebar-featured {
+      background: var(--warm-bg);
+      border: 1px solid var(--rule);
+      padding: 20px;
+    }
+
+    .sidebar-featured__tag {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--orange);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .sidebar-featured__title {
+      font-family: "Kadwa", Times, serif;
+      font-size: 1rem;
+      line-height: 1.3;
+      color: var(--navy);
+      margin: 0 0 10px;
+    }
+
+    .sidebar-featured__title a {
+      color: inherit;
+      border-bottom: none;
+      text-decoration: none;
+    }
+
+    .sidebar-featured__title a:hover {
+      color: var(--orange);
+    }
+
+    .sidebar-featured__excerpt {
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: #555;
+      margin: 0 0 12px;
+    }
+
+    .sidebar-featured__stats {
+      display: flex;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .sidebar-stat {
+      text-align: center;
+      flex: 1;
+    }
+
+    .sidebar-stat__num {
+      display: block;
+      font-family: "Kadwa", Times, serif;
+      font-size: 1.3rem;
+      color: var(--orange);
+      line-height: 1;
+    }
+
+    .sidebar-stat__label {
+      display: block;
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* Skills list in sidebar */
+    .sidebar-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .sidebar-skills li {
+      font-family: "Merriweather Sans", Arial, sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--navy);
+      background: #eef2f8;
+      border: 1px solid #c8d4e8;
+      padding: 4px 10px;
+      margin: 0;
+    }
+
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 960px) {
+      .home-body {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .home-sidebar {
+        position: static;
+        border-top: 2px solid var(--rule);
+        padding-top: 2rem;
+      }
+
+      .home-masthead__links {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 0.75rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .home-masthead {
+        padding: 28px 0 24px;
+      }
+
+      .home-masthead__meta {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .home-masthead__meta span::before {
+        display: none;
+      }
+
+      .home-intro__facts {
+        flex-wrap: wrap;
+      }
+
+      .fact-chip {
+        min-width: 45%;
+      }
+
+      .posts-list__item {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .posts-list__date {
+        font-size: 0.68rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .home-masthead,
+      .home-availability,
+      .home-intro,
+      .home-posts,
+      .availability-dot {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       YOUR EXISTING HEADER — unchanged
+       ============================================================ -->
+
+  <main class="main" id="main-content" tabindex="-1">
+
+
+    <!-- ============================================================
+         MASTHEAD — replaces the splash SVG
+         The big typographic statement that sets the tone
+         ============================================================ -->
+    <section class="home-masthead">
+      <div class="home-masthead__inner">
+
+        <p class="home-masthead__statement">
+          I build fast websites.<br>
+          I make them <mark>accessible</mark>.<br>
+          I have opinions about both.
+        </p>
+
+        <div class="home-masthead__byline">
+          <span class="home-masthead__name">Mark Kimmerle</span>
+          <div class="home-masthead__meta">
+            <span>Front-End Developer</span>
+            <span>Shopify Plus</span>
+            <span>WCAG / Accessibility</span>
+            <span>Shelton, CT</span>
+          </div>
+          <div class="home-masthead__links">
+            <a href="/samples/">Work</a>
+            <a href="/accessibility/">Audits</a>
+            <a href="/contact/">Contact</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         AVAILABILITY BANNER — present but not desperate
+         ============================================================ -->
+    <div class="home-availability" role="note" aria-label="Work availability">
+      <div class="home-availability__inner">
+        <span class="availability-dot" aria-hidden="true"></span>
+        <p class="home-availability__text" style="margin:0;">
+          <strong>Available for contract and freelance work.</strong>
+          Front-end development, Shopify Plus, accessibility audits.
+          <a href="/contact/">Get in touch →</a>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- ============================================================
+         MAIN BODY — two-column: posts left, sidebar right
+         ============================================================ -->
+    <div class="home-body">
+
+      <!-- LEFT: intro + posts -->
+      <div>
+        <section class="home-intro" aria-label="About">
+
+          <p class="home-intro__text">
+            I'm a front-end developer based in Shelton, CT. I've spent 25 years building things 
+            for the web — most recently six years leading front-end development for 
+            <a href="/samples/">twelve Shopify Plus storefronts</a> at Edgewell Personal Care 
+            (Schick, Banana Boat, Cremo). These days I'm independent, working on 
+            <a href="/accessibility/">accessibility audits</a>, building 
+            <a href="https://github.com/mkimmerle/accessibility-audit-tool" target="_blank" rel="noopener">tools</a>, 
+            and writing about things that interest me — which is mostly the web, 
+            but occasionally also Costco and monster trucks.
+          </p>
+
+          <div class="home-intro__facts" role="list" aria-label="Key numbers">
+            <div class="fact-chip" role="listitem">
+              <span class="fact-chip__number">12</span>
+              <span class="fact-chip__label">Shopify Plus stores</span>
+            </div>
+            <div class="fact-chip" role="listitem">
+              <span class="fact-chip__number">25%</span>
+              <span class="fact-chip__label">CWV improvement</span>
+            </div>
+            <div class="fact-chip" role="listitem">
+              <span class="fact-chip__number">25+</span>
+              <span class="fact-chip__label">Years on the web</span>
+            </div>
+            <div class="fact-chip" role="listitem">
+              <span class="fact-chip__number">AA</span>
+              <span class="fact-chip__label">WCAG compliance</span>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Posts list — all posts, no categorization, reverse chron -->
+        <section class="home-posts" aria-labelledby="posts-heading">
+
+          <div class="home-posts__rule">
+            <span class="home-posts__rule-label" id="posts-heading">Recent Posts</span>
+            <span class="home-posts__rule-line" aria-hidden="true"></span>
+            <span class="home-posts__rule-all"><a href="/blog/">All posts →</a></span>
+          </div>
+
+          <ul class="posts-list">
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Apr 20, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/4/accessibility-at-scale-isnt-what-you-think/">100,847 Accessibility Errors. 28 Actual Problems.</a></h2>
+                <p class="posts-list__desc">Accessibility at scale is a pattern problem, not a counting problem.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Mar 24, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/3/bad-ux-in-live-events/">Bad UX In Live Events</a></h2>
+                <p class="posts-list__desc">If you only design the happy path, you'll have a lot of unhappy users.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Mar 21, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/3/four/">Four</a></h2>
+                <p class="posts-list__desc">Happy birthday, bubba.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Mar 11, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/3/five-fast-fixes/">Five Fast Fixes</a></h2>
+                <p class="posts-list__desc">An accessibility "bang for your buck" list.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Mar 8, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/3/what-happened-to-costco/">What The Hell Happened To Costco?</a></h2>
+                <p class="posts-list__desc">Oh, how the mighty have fallen.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Mar 1, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/3/automation-is-powerful-its-not-enough/">Automation Is Powerful. It's Not Enough.</a></h2>
+                <p class="posts-list__desc">Automated tools check rules. They don't evaluate real-world experience.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Feb 5, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/2/i-built-a-thing/">I Built A Thing</a></h2>
+                <p class="posts-list__desc">More like a flashlight than a magic wand.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Jan 21, 2026</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2026/1/bad-ux-in-hiring/">Bad UX In Hiring</a></h2>
+                <p class="posts-list__desc">Seriously, companies — do better.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Oct 14, 2025</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2025/10/my-custom-css-reset/">My Custom CSS Reset</a></h2>
+                <p class="posts-list__desc">Because apparently everyone needs one.</p>
+              </div>
+            </li>
+
+            <li class="posts-list__item">
+              <span class="posts-list__date">Sep 11, 2025</span>
+              <div class="posts-list__content">
+                <h2 class="posts-list__title"><a href="/blog/posts/2025/9/use-the-drawer/">USE THE DRAWER!!</a></h2>
+                <p class="posts-list__desc">That's what it's there for.</p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+      </div>
+
+
+      <!-- RIGHT: sticky sidebar -->
+      <aside class="home-sidebar" aria-label="About and featured content">
+
+        <!-- About -->
+        <div class="sidebar-section">
+          <span class="sidebar-section__label">About</span>
+          <p class="sidebar-about__text">
+            Front-end developer. Accessibility specialist. 
+            Shopify Plus. 25 years on the web, still finding new things to have 
+            opinions about.
+          </p>
+          <div class="sidebar-about__links">
+            <a href="/samples/">See my work →</a>
+            <a href="/accessibility/">Accessibility audits →</a>
+            <a href="https://github.com/mkimmerle" target="_blank" rel="noopener">GitHub →</a>
+            <a href="https://www.linkedin.com/in/markkimmerle" target="_blank" rel="noopener">LinkedIn →</a>
+            <a href="/Mark-Kimmerle-Resume-2025.pdf" target="_blank" rel="noopener">Résumé (PDF) →</a>
+          </div>
+        </div>
+
+        <!-- Featured post -->
+        <div class="sidebar-section">
+          <span class="sidebar-section__label">Worth Reading</span>
+          <div class="sidebar-featured">
+            <span class="sidebar-featured__tag">Latest post</span>
+            <h2 class="sidebar-featured__title">
+              <a href="/blog/posts/2026/4/accessibility-at-scale-isnt-what-you-think/">
+                100,847 Accessibility Errors. 28 Actual Problems.
+              </a>
+            </h2>
+            <p class="sidebar-featured__excerpt">
+              I pointed my auditing tool at a 2,774-page ecommerce site. 
+              Here's what the numbers actually mean.
+            </p>
+            <div class="sidebar-featured__stats" aria-label="Post key figures">
+              <div class="sidebar-stat">
+                <span class="sidebar-stat__num">2,774</span>
+                <span class="sidebar-stat__label">Pages</span>
+              </div>
+              <div class="sidebar-stat">
+                <span class="sidebar-stat__num">100k</span>
+                <span class="sidebar-stat__label">Errors</span>
+              </div>
+              <div class="sidebar-stat">
+                <span class="sidebar-stat__num">28</span>
+                <span class="sidebar-stat__label">Problems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="sidebar-section">
+          <span class="sidebar-section__label">Skills</span>
+          <ul class="sidebar-skills">
+            <li>Shopify Plus</li>
+            <li>Liquid</li>
+            <li>WCAG 2.1 AA</li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>TypeScript</li>
+            <li>Core Web Vitals</li>
+            <li>Node.js</li>
+            <li>CI/CD</li>
+            <li>axe-core</li>
+            <li>WAI-ARIA</li>
+            <li>Section 508</li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+    <!-- end .home-body -->
+
+  </main>
+
+  <!-- ============================================================
+       YOUR EXISTING FOOTER — unchanged
+       ============================================================ -->
+
+</body>
+</html>

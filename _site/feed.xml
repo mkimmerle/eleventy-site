@@ -17,7 +17,7 @@
     <updated>2026-04-20T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/4/accessibility-at-scale-isnt-what-you-think/</id>
     <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;100,847 Accessibility Errors. 28 Actual Problems&lt;/h1&gt;
+&lt;h1 class=&quot;u-h1&quot;&gt;100,847 Accessibility Errors. 28 Actual Problems.&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;2026-04-20&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;There are plenty of good accessibility testing tools out there. Most of them are either expensive (enterprise SaaS platforms with monthly contracts that make sense for a large team but are out of reach for a solo developer or a small agency trying to do the right thing) or limited to only testing one page at a time.&lt;/p&gt;

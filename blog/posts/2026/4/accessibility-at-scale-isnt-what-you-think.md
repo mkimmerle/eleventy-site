@@ -3,7 +3,7 @@ layout: blogpost.html
 meta-description: Automated tools check rules. They don’t evaluate real-world experience.
 title: 100,847 Accessibility Errors. 28 Actual Problems - Mark Kimmerle's Blog - CT Web Design & Development
 date: 2026-04-20
-page-title: 100,847 Accessibility Errors. 28 Actual Problems
+page-title: 100,847 Accessibility Errors. 28 Actual Problems.
 page-datetime: "2026-04-20"
 authored-date: April 20, 2026
 page-excerpt: Accessibility at scale is a pattern problem, not a counting problem.
