@@ -19,15 +19,15 @@ tags: post
 
 <div class="u-b1">
 
-I've been doing front-end development since the *Office Space* days, and no matter how much I do, I've always had this nagging feeling that I'm behind on ***something***.
+I've been doing front-end development since the *Office Space* days, and no matter how much I do, I always have this nagging feeling that I'm behind on ***something***.
 
-Way back when, it was responsive design.  Then it became frameworks.  Later it was performance.  Now it's AI.
+Way back when, it was responsive design.  Then it became frameworks.  Later it was performance and accessibility.  Now it's AI.
 
 Everywhere I look, developers are talking about “agent workflows,” “autonomous systems,” and how they’ve reinvented the way they build software.  It all sounds very shiny and fancy and magical.
 
 As usual, my experience has been… decidedly less.
 
-For the past few months, I’ve been building a side project with a lot of AI help along the way.  Not in any structured, well-planned sense, though.  Really just bouncing between ChatGPT, Claude, and Gemini, pasting in code, asking questions, trying things, and seeing what sticks.
+For the past few months, I’ve been building a side project with a lot of AI help.  Not in any structured, well-planned sense, though.  Really just bouncing between ChatGPT, Claude, and Gemini, pasting in code, asking questions, trying things, and seeing what sticks.
 
 A lot of it has been genuinely impressive.  There have been plenty of times where something that would’ve taken me (or even a team of mes) a week in the before times legitimately got solved in a few minutes.
 
