@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 I'm just gonna come right out and say it:
@@ -58,5 +52,3 @@ Like I said, Costco used to be awesome.
 Now they're just another symbol of capitalistic cultural rot.
 
 </div>
-
-</section>

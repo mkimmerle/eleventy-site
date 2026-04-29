@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 I’ve spent years relying on automated accessibility tools. They’re part of my workflow. I use them in the browser. I use them in audits. I’ve trusted engines like axe-core to quickly show me issues before they make it to production.
@@ -107,5 +101,3 @@ Because at the end of the day, accessibility isn’t about passing a test — it
 That's why the most defensible approach combines the two: automated scanning to catch patterns at scale, and informed human review to catch what the rules miss. If you're not sure where your site stands on either front, that's worth knowing before someone else finds out for you.
 
 </div>
-
-</section>

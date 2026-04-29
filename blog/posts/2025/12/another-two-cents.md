@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 And now, more random thoughts that nobody asked for…
@@ -33,5 +27,3 @@ And now, more random thoughts that nobody asked for…
 - An interviewer asked me, "if you were a Transformer, who would you be?" I told them, "I'm more Ultra Magnus than Optimus Prime"… but the sad truth is, I'm probably Springer.
 
 </div>
-
-</section>

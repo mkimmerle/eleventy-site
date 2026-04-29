@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 One more time for 2025…
@@ -33,5 +27,3 @@ One more time for 2025…
 - I **HATE** “special editions” and “director’s cuts” of classic movies… but if James Cameron would stop wasting time on *Avatar* and just clean up the effects in *The Terminator*, I’d pay a **TRILLION DOLLARS** to see it.
 
 </div>
-
-</section>

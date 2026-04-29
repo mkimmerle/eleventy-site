@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Yep, I'm doing this again…
@@ -33,5 +27,3 @@ Yep, I'm doing this again…
 - Joe Torre is the best baseball manager in my lifetime, but *not* bunting on Schilling and his stupid bloody sock should've permanently barred him from Hall of Fame induction.
 
 </div>
-
-</section>

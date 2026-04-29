@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 On to this week's list…
@@ -33,5 +27,3 @@ On to this week's list…
 - Anyone who says Jim is the villain of *The Office* only gets partial credit — the correct answer is, they all suck.
 
 </div>
-
-</section>

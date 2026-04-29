@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Time for the list…
@@ -33,5 +27,3 @@ Time for the list…
 - The worst thing to ever happen in the entire history of organized sports was the 1995 New Jersey Devils and the neutral-zone trap.
 
 </div>
-
-</section>

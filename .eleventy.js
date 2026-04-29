@@ -28,4 +28,9 @@ module.exports = function(eleventyConfig) {
       };
     },
   });
+  eleventyConfig.addFilter("readingTime", (content) => {
+    const wordsPerMinute = 230;
+    const words = content.split(/\s+/).length;
+    return Math.ceil(words / wordsPerMinute);
+  });
 }

@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 *ANOTHER* list? What is this, BuzzFeed?? Anyway...
@@ -33,5 +27,3 @@ tags: post
 - I'm probably the biggest "Miami Vice" fan alive, and even I think another reboot is an atrocity. But if you’re convinced you have to do it, do yourself a favor and cast Donald Glover as Tubbs. You’ll thank me later.
 
 </div>
-
-</section>

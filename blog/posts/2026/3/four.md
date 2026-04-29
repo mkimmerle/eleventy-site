@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Today is my son's fourth birthday.
@@ -44,5 +38,3 @@ Happy birthday, bubba. Te amo, se&ntilde;or.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1hKIGOfZp8o?si=m0iduEYH2xTXAc3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </div>
-
-</section>

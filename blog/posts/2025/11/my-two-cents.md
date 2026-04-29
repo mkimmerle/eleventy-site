@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Anyone else old enough to remember Larry King's old USA Today column? (For that matter, is anyone even old enough to remember USA Today??) On of the main reasons I always wanted a blog was to try writing something like that, so, here goes nothing...
@@ -33,5 +27,3 @@ Anyone else old enough to remember Larry King's old USA Today column? (For that 
 - When I was in high school, I had a buddy whose first car was an Oldsmobile Cutlass Ciera. The bench seat in the back of that car was the most comfortable thing I ever sat on. I told him that when he was done with the car, I wanted to buy the bench to use as my living room sofa. It's a shame he never took me seriously.
 
 </div>
-
-</section>

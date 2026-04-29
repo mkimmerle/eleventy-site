@@ -11,15 +11,8 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 IYKYK
 
 </div>
-
-</section>

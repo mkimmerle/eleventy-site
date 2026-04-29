@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 I've been doing front-end development since the *Office Space* days, and no matter how much I do, I always have this nagging feeling that I'm behind on ***something***.
@@ -148,5 +142,3 @@ Or at least they should be, if you're doing it right.  Which I wasn't.
 I'm still working on it.
 
 </div>
-
-</section>

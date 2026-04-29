@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 A handful of a11y-related links I found this week that I thought were useful and thoughtful...
@@ -37,5 +31,3 @@ So glad I stumbled onto this one! Maybe now I'll finally learn the right way to 
 This is a really insightful point, and I've actually seen this lesson work in practice without really noticing it, too. Pushing uphill is hard work, but if you and the people around you resolve to do the right thing for yourselves, you can still build the accessibility culture you want.
 
 </div>
-
-</section>

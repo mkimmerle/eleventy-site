@@ -11,11 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 I applied for a job yesterday. At 8PM. On a Friday night. Within 10 minutes, I got the following (automated, of course) response:
@@ -29,5 +24,3 @@ Look, I'll be the first to admit that I'm probably not the magical unicorn wizar
 Stop relying on the machines for *everything*, and do your own job once in a while.
 
 </div>
-
-</section>

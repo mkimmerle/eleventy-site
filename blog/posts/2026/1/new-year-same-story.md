@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Back to business…
@@ -33,5 +27,3 @@ Back to business…
 - If you like The Who better than Led Zeppelin, I don’t think we can pretend to be friends.
 
 </div>
-
-</section>

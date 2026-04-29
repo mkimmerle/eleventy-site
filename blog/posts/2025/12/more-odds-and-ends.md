@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Another week of my random musings…
@@ -33,5 +27,3 @@ Another week of my random musings…
 - No offense to anyone who’s given birth, but the worst pain on earth is stepping on a Lego at 3 AM on the way to the bathroom.
 
 </div>
-
-</section>

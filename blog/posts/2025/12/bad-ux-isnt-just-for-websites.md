@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Whoever designed the wheels on my wife’s Jeep should be drawn and quartered. Seriously — why on earth would you put the valve stems inside a recessed cavity that human hands can’t reach?
@@ -34,5 +28,3 @@ As a web guy, I thought this kind of crap was limited to websites. You know, but
 Turns out bad UX isn’t *just* for websites after all.
 
 </div>
-
-</section>

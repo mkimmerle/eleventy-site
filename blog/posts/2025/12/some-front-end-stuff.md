@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Every now and then, I like to use this space to share stuff that's more relevant than my lame jokes. With that in mind, here are a few really good front-end dev links that I stumbled onto this week:
@@ -41,5 +35,3 @@ Every now and then, I like to use this space to share stuff that's more relevant
 </ul>
 
 </div>
-
-</section>

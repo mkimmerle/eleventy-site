@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 I saw a LinkedIn post the other day that said something like: *“Here are the top accessibility fixes I'd implement on a website to get the most bang for your buck.”* The author was definitely on the right track, and it got me thinking about what my own “bang for your buck” list would look like. If you want to make a site meaningfully better and eliminate a huge percentage of real-world accessibility issues **without rebuilding the entire thing**, start here.
@@ -70,5 +64,3 @@ If your site passes these five checks, you’re already doing better than a ton 
 If not... get to work.
 
 </div>
-
-</section>

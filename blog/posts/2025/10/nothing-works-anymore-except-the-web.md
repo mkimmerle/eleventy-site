@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 You've probably read this article before, or at least something very similar, because I'm hardly the first one to say it — nothing works anymore.
@@ -68,5 +62,3 @@ That’s good design for life.
 If only my TV was smart enough to understand that.
 
 </div>
-
-</section>

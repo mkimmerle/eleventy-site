@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Let's do this…
@@ -33,5 +27,3 @@ Let's do this…
 - If the multiverse is real, I want — nay, **NEED** — to visit the world where Van Halen teamed up with Chris Cornell instead of Gary Cherone in the late ’90s.
 
 </div>
-
-</section>

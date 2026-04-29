@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 <figure><img src="/art/a11y_audit_tool.jpg" alt="Dashboard showing 27 new accessibility violations and 1 resolved issue" class="blog-image"></figure>
@@ -106,5 +100,3 @@ You don’t have to be polite, but I’d ask that you please be constructive. Th
 Worst case, you’ll tell me someone else already built it (and built it better), at which point I’m happy to say I learned a lot of new stuff making this and I’ll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.
 
 </div>
-
-</section>

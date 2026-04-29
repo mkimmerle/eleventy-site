@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 This thing again…
@@ -33,5 +27,3 @@ This thing again…
 - I was re-reading this list before I hit "Publish" today and I realized… this one actually isn't half bad. It's **ALL** bad.
 
 </div>
-
-</section>

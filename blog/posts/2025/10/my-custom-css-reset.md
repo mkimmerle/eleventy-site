@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 For... reasons? ... I went down the rabbit hole of CSS resets. It seems like everyone else in the world has one, and even though I've used some of these ideas in some capacity for a long time, I've never formally gathered them up into one file.  So from now on, this is going to be the starter kit that I use for anything I build.
@@ -303,5 +297,3 @@ Here, we're doing stuff like:
 The more I look at this, the more I'm likely to find things I should change (for instance, I should probably add a <code>max-width</code> character setting for content pages), so I bet this will evolve over the days/weeks/months ahead. If anyone ever actually reads this and has any suggestions, I'd really appreciate the feedback.
 
 </div>
-
-</section>

@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 There are plenty of good accessibility testing tools out there. Most of them are either expensive (enterprise SaaS platforms with monthly contracts that make sense for a large team but are out of reach for a solo developer or a small agency trying to do the right thing) or limited to only testing one page at a time.
@@ -86,5 +80,3 @@ Accessibility at scale isn't about fixing thousands of issues. It's almost alway
 Fix them at the source, and watch the numbers fall.
 
 </div>
-
-</section>

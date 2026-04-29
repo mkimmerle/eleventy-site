@@ -11,11 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 At long last, I finally have a blog. And this is the first post. I should've done this a long time ago -- both writing a blog *AND* switching from pure static HTML to <a href="https://www.11ty.dev" target="_blank" rel="noopener">Eleventy</a>. 
@@ -25,5 +20,3 @@ Anyway, I don't have much to say yet, other than I like Eleventy so far. It's fa
 Stay tuned, and hopefully once in a while I'll have some ideas that are worth sharing.
 
 </div>
-
-</section>

@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Trying not to look out the window while I type this…
@@ -33,5 +27,3 @@ Trying not to look out the window while I type this…
 - These lists usually have ten items, but I’m out of ideas this week. Drop me a line if you’d like to rent this item for advertising — I could sure use the dough.
 
 </div>
-
-</section>

@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 Away we go…
@@ -33,5 +27,3 @@ Away we go…
 - Pro tip: Next time you need dessert, make — don’t buy — a tres leches cake. It’s wicked easy, crazy good, and racks up serious baking cred.
 
 </div>
-
-</section>

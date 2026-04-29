@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 I almost didn’t post this because it happens so often now that telling the story again seems pointless. But silence is compliance, and we **HAVE** to keep calling out this behavior instead of just accepting it and moving on.
@@ -76,5 +70,3 @@ Just like customers, candidates talk. Their negative experiences can damage your
 Bad UX shouldn’t be part of your recruiting any more than it should be part of your product.
 
 </div>
-
-</section>

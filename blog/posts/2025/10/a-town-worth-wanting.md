@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 There’s a difference between a town you can afford to live in and a town you *want* to live in.
@@ -52,5 +46,3 @@ Let’s stop confusing cheap with smart. Let’s start building the town we want
 **Vote for leadership that invests in Shelton’s future. Vote Row A.**
 
 </div>
-
-</section>

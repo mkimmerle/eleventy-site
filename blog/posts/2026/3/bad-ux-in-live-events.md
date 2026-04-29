@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 ***If you only design the happy path, you’ll have a lot of unhappy users.***
@@ -55,5 +49,3 @@ Give your users a way forward when — not if — the happy path breaks.
 At least then you won’t have guys like me yelling at you online.
 
 </div>
-
-</section>

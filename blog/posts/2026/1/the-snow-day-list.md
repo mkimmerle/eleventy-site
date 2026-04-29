@@ -11,12 +11,6 @@ categories: other
 tags: post
 ---
 
-<section class="content-container">
-
-<h1 class="u-h1">{{ page-title }}</h1>
-
-*{{ page-datetime }}*
-
 <div class="u-b1">
 
 This week's list…
@@ -33,5 +27,3 @@ This week's list…
 - How come people in monster movies never yell “SKIP FOR YOUR LIVES!!!”? If Tokyo had started skipping, Godzilla would’ve been too confused to destroy the city.
 
 </div>
-
-</section>
