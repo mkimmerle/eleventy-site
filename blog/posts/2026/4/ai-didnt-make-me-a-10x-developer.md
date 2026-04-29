@@ -9,6 +9,7 @@ authored-date: April 27, 2026
 page-excerpt: Tools are only as good as the hands that are using them.
 categories: other
 tags: post
+featured: true 
 ---
 
 <div class="u-b1">

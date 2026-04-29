@@ -41,15 +41,31 @@ title: Mark Kimmerle - Front-End Developer | WCAG / Accessibility | Performance 
       <li role="listitem">Shopify Plus</li>
       <li role="listitem">React</li>
       <li role="listitem">Angular</li>
+      <li role="listitem">JavaScript</li>
       <li role="listitem">TypeScript</li>
       <li role="listitem">Node.js</li>
       <li role="listitem">CI/CD</li>
-      <li role="listitem">axe-core</li>
     </ul>
 </section>
 
+<section class="content-container home-featured">
+  <h2 class="u-h1">Featured Articles</h2>
+  <div class="home-featured-grid">
+    {% assign featuredPosts = collections.post | where: "data.featured", true %}
+    {%- for post in featuredPosts reversed -%}
+    <a href="{{ post.url }}" class="featured-post">
+        <span class="u-b4">
+            <time datetime="{{ post.data['page-datetime'] }}">{{ post.data['authored-date'] }}</time>
+        </span>
+        <h3 class="featured-post__title u-h3">{{ post.data['page-title'] }}</h3>
+        <p class="u-b2">{{ post.data['page-excerpt'] }}</p>
+    </a>
+    {%- endfor -%}
+  </div>
+</section>
+
 <section class="content-container home-blog">
-	<h2 class="u-h1">Posts</h2>
+	<h2 class="u-h1">All Posts</h2>
 
 	<ul>
 		{%- for post in collections.post reversed -%}

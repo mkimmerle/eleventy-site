@@ -9,6 +9,7 @@ authored-date: March 1, 2026
 page-excerpt: Automated tools check rules. They don’t evaluate real-world experience.
 categories: other
 tags: post
+featured: true 
 ---
 
 <div class="u-b1">

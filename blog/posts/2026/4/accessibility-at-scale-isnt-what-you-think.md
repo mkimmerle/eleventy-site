@@ -9,6 +9,7 @@ authored-date: April 20, 2026
 page-excerpt: Accessibility at scale is a pattern problem, not a counting problem.
 categories: other
 tags: post
+featured: true 
 ---
 
 <div class="u-b1">

@@ -9,6 +9,7 @@ authored-date: March 11, 2026
 page-excerpt: An accessibility "bang for your buck" list.
 categories: other
 tags: post
+featured: true 
 ---
 
 <div class="u-b1">
