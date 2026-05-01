@@ -17,15 +17,15 @@ title: Mark Kimmerle - Front-End Developer | WCAG / Accessibility | Performance 
     </p>
     <p class="home-byline">
       <span class="home-byline__name">Mark Kimmerle</span>
-      <span class="home-byline__sep" aria-hidden="true">·</span>
+      <span aria-hidden="true">·</span>
       <span>Front-End Developer</span>
-      <span class="home-byline__sep" aria-hidden="true">·</span>
+      <span aria-hidden="true">·</span>
       <span>WCAG / Accessibility</span>
-      <span class="home-byline__sep" aria-hidden="true">·</span>
+      <span aria-hidden="true">·</span>
       <span>Performance Optimization</span>
-      <span class="home-byline__sep" aria-hidden="true">·</span>
+      <span aria-hidden="true">·</span>
       <span>Shopify Plus</span>
-      <span class="home-byline__sep" aria-hidden="true">·</span>
+      <span aria-hidden="true">·</span>
       <span>Shelton, CT</span>
     </p>
     <h2 class="u-h1">Hi, I'm Mark</h2>
