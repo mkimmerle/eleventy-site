@@ -16,10 +16,7 @@
     <link href="https://www.markkimmerle.com/blog/posts/2026/4/ai-didnt-make-me-a-10x-developer/"/>
     <updated>2026-04-27T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/4/ai-didnt-make-me-a-10x-developer/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;AI Didn’t Make Me A 10x Developer. It Showed Me How Bad I Was At Giving Instructions.&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-04-27&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;I&#39;ve been doing front-end development since the &lt;em&gt;Office Space&lt;/em&gt; days, and no matter how much I do, I always have this nagging feeling that I&#39;m behind on &lt;em&gt;&lt;strong&gt;something&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Way back when, it was responsive design.  Then it became frameworks.  Later it was performance and accessibility.  Now it&#39;s AI.&lt;/p&gt;
 &lt;p&gt;Everywhere I look, developers are talking about “agent workflows,” “autonomous systems,” and how they’ve reinvented the way they build software.  It all sounds very shiny and fancy and magical.&lt;/p&gt;
@@ -85,7 +82,6 @@
 &lt;p&gt;Or at least they should be, if you&#39;re doing it right.  Which I wasn&#39;t.&lt;/p&gt;
 &lt;p&gt;I&#39;m still working on it.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -94,10 +90,7 @@
     <link href="https://www.markkimmerle.com/blog/posts/2026/4/accessibility-at-scale-isnt-what-you-think/"/>
     <updated>2026-04-20T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/4/accessibility-at-scale-isnt-what-you-think/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;100,847 Accessibility Errors. 28 Actual Problems.&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-04-20&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;There are plenty of good accessibility testing tools out there. Most of them are either expensive (enterprise SaaS platforms with monthly contracts that make sense for a large team but are out of reach for a solo developer or a small agency trying to do the right thing) or limited to only testing one page at a time.&lt;/p&gt;
 &lt;p&gt;That&#39;s why &lt;a href=&quot;https://www.markkimmerle.com/accessibility&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;I&#39;ve been building my own testing tool&lt;/a&gt;. I wanted something that could crawl an entire site, run axe-core against every page, and generate a report I could actually act on, without a subscription fee. Nothing fancy. Just a tool that could do the job.&lt;/p&gt;
 &lt;p&gt;Recently, I pointed it at a live e-commerce site to stress-test it. I figured a few hundred pages, maybe a thousand if I was unlucky.&lt;/p&gt;
@@ -132,7 +125,6 @@
 &lt;p&gt;Accessibility at scale isn&#39;t about fixing thousands of issues. It&#39;s almost always about finding the handful of problems that created them.&lt;/p&gt;
 &lt;p&gt;Fix them at the source, and watch the numbers fall.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -141,10 +133,7 @@
     <link href="https://www.markkimmerle.com/blog/posts/2026/3/bad-ux-in-live-events/"/>
     <updated>2026-03-24T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/3/bad-ux-in-live-events/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Bad UX In Live Events&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-03-24&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;If you only design the happy path, you’ll have a lot of unhappy users.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Over the weekend, I took my son to a monster truck show for his birthday. When I bought the tickets, they told me to install the app and show the QR code at the gate.&lt;/p&gt;
 &lt;p&gt;Sounds easy enough, right?  Well…&lt;/p&gt;
@@ -167,7 +156,6 @@
 &lt;p&gt;Give your users a way forward when — not if — the happy path breaks.&lt;/p&gt;
 &lt;p&gt;At least then you won’t have guys like me yelling at you online.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -176,10 +164,7 @@
     <link href="https://www.markkimmerle.com/blog/posts/2026/3/four/"/>
     <updated>2026-03-21T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/3/four/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Four&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-03-21&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Today is my son&#39;s fourth birthday.&lt;/p&gt;
 &lt;p&gt;Wow.&lt;/p&gt;
 &lt;p&gt;It feels like forever and the blink of an eye all at the same time.&lt;/p&gt;
@@ -193,7 +178,6 @@
 &lt;p&gt;Happy birthday, bubba. Te amo, señor.&lt;/p&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/1hKIGOfZp8o?si=m0iduEYH2xTXAc3E&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -202,10 +186,7 @@
     <link href="https://www.markkimmerle.com/blog/posts/2026/3/five-fast-fixes/"/>
     <updated>2026-03-11T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/3/five-fast-fixes/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Five Fast Fixes&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-03-11&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;I saw a LinkedIn post the other day that said something like: &lt;em&gt;“Here are the top accessibility fixes I&#39;d implement on a website to get the most bang for your buck.”&lt;/em&gt; The author was definitely on the right track, and it got me thinking about what my own “bang for your buck” list would look like. If you want to make a site meaningfully better and eliminate a huge percentage of real-world accessibility issues &lt;strong&gt;without rebuilding the entire thing&lt;/strong&gt;, start here.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;BONUS:&lt;/strong&gt; None of these are rocket surgery that need JavaScript frameworks, accessibility overlays, or a week-long refactor.  Just some good old-fashioned HTML and a few lines of CSS.&lt;/p&gt;
 &lt;h2 class=&quot;u-h2&quot;&gt;1. Semantic HTML&lt;/h2&gt;
@@ -232,7 +213,6 @@
 &lt;p&gt;If your site passes these five checks, you’re already doing better than a ton of live websites.&lt;/p&gt;
 &lt;p&gt;If not... get to work.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -241,10 +221,7 @@
     <link href="https://www.markkimmerle.com/blog/posts/2026/3/what-happened-to-costco/"/>
     <updated>2026-03-08T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/3/what-happened-to-costco/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;What The Hell Happened To Costco?&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-03-08&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;I&#39;m just gonna come right out and say it:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Costco is fucking terrible.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;They used to be awesome. Now they suck.&lt;/p&gt;
@@ -265,7 +242,6 @@
 &lt;p&gt;Like I said, Costco used to be awesome.&lt;/p&gt;
 &lt;p&gt;Now they&#39;re just another symbol of capitalistic cultural rot.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -274,10 +250,7 @@
     <link href="https://www.markkimmerle.com/blog/posts/2026/3/automation-is-powerful-its-not-enough/"/>
     <updated>2026-03-01T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/3/automation-is-powerful-its-not-enough/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Automation Is Powerful. It’s Not Enough.&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-03-01&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;I’ve spent years relying on automated accessibility tools. They’re part of my workflow. I use them in the browser. I use them in audits. I’ve trusted engines like axe-core to quickly show me issues before they make it to production.&lt;/p&gt;
 &lt;p&gt;So this weekend, while I was testing the &lt;a href=&quot;https://github.com/mkimmerle/accessibility-audit-tool&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;accessibility audit tool I’m building&lt;/a&gt;, I decided to run a simple experiment, where I intentionally planted three obvious issues on one of my own pages:&lt;/p&gt;
 &lt;ul&gt;
@@ -330,7 +303,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;p&gt;Because at the end of the day, accessibility isn’t about passing a test — it’s about whether people can actually use your website.&lt;/p&gt;
 &lt;p&gt;That&#39;s why the most defensible approach combines the two: automated scanning to catch patterns at scale, and informed human review to catch what the rules miss. If you&#39;re not sure where your site stands on either front, that&#39;s worth knowing before someone else finds out for you.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -339,10 +311,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/2/the-snowing-again-list/"/>
     <updated>2026-02-23T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/2/the-snowing-again-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;The &quot;SNOWING AGAIN??!?&quot; List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-02-23&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Trying not to look out the window while I type this…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Pop culture guidelines, abridged: 70&#39;s music, 80&#39;s movies, 90&#39;s TV.&lt;/li&gt;
@@ -357,7 +326,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;These lists usually have ten items, but I’m out of ideas this week. Drop me a line if you’d like to rent this item for advertising — I could sure use the dough.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -366,10 +334,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/2/the-mid-winter-list/"/>
     <updated>2026-02-16T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/2/the-mid-winter-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;The Mid-Winter List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-02-16&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;This thing again…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I really want to be an ascot guy… but I’m pretty sure it would clash with my tuxedo t-shirt.&lt;/li&gt;
@@ -384,7 +349,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;I was re-reading this list before I hit &amp;quot;Publish&amp;quot; today and I realized… this one actually isn&#39;t half bad. It&#39;s &lt;strong&gt;ALL&lt;/strong&gt; bad.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -393,10 +357,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/2/the-post-game-list/"/>
     <updated>2026-02-09T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/2/the-post-game-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;The Post-Game List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-02-02&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;On to this week&#39;s list…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The difference between men and women is that women call it &amp;quot;Valentine&#39;s Day&amp;quot; while men call it &amp;quot;pitchers and catchers report.&amp;quot;&lt;/li&gt;
@@ -411,7 +372,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;Anyone who says Jim is the villain of &lt;em&gt;The Office&lt;/em&gt; only gets partial credit — the correct answer is, they all suck.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -420,10 +380,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/2/i-built-a-thing/"/>
     <updated>2026-02-05T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/2/i-built-a-thing/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;I Built A Thing&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-02-05&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;figure&gt;&lt;img src=&quot;https://www.markkimmerle.com/art/a11y_audit_tool.jpg&quot; alt=&quot;Dashboard showing 27 new accessibility violations and 1 resolved issue&quot; class=&quot;blog-image&quot; /&gt;&lt;/figure&gt;
 &lt;p&gt;Honestly, this all started with boredom.&lt;/p&gt;
 &lt;p&gt;Not the fun kind of boredom where you learn to cook or binge &lt;em&gt;Cheers&lt;/em&gt; for the bajillionth time, but the kind where you’ve been job hunting for far too long, your whole portfolio is expired or inactive, and you’ve lost track of what day it is.&lt;/p&gt;
@@ -480,7 +437,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;p&gt;You don’t have to be polite, but I’d ask that you please be constructive. The goal is to see if this could potentially be useful to anyone who’s not me, and then find ways to make it more useful.&lt;/p&gt;
 &lt;p&gt;Worst case, you’ll tell me someone else already built it (and built it better), at which point I’m happy to say I learned a lot of new stuff making this and I’ll just keep using it for myself. Best case, it becomes a helpful tool for at least one other person in the world.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;</content>
+</content>
   </entry>
   
   <entry>
@@ -488,10 +445,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/2/the-deep-freeze-list/"/>
     <updated>2026-02-02T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/2/the-deep-freeze-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;The Deep Freeze List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-02-02&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Time for the list…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Winter in New England: There&#39;s &amp;quot;cold,&amp;quot; and then there&#39;s &amp;quot;the dog wants to pee at 4AM and you pretend you don&#39;t hear him&amp;quot; cold.&lt;/li&gt;
@@ -506,7 +460,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;The worst thing to ever happen in the entire history of organized sports was the 1995 New Jersey Devils and the neutral-zone trap.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -515,10 +468,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/1/the-snow-day-list/"/>
     <updated>2026-01-26T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/1/the-snow-day-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;The Snow Day List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-01-26&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;This week&#39;s list…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You know automated tipping prompts have gone too far when they show up in the check-in kiosk at your doctor’s office.&lt;/li&gt;
@@ -533,7 +483,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;How come people in monster movies never yell “SKIP FOR YOUR LIVES!!!”? If Tokyo had started skipping, Godzilla would’ve been too confused to destroy the city.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -542,10 +491,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/1/bad-ux-in-hiring/"/>
     <updated>2026-01-21T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/1/bad-ux-in-hiring/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Bad UX In Hiring&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-01-21&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;I almost didn’t post this because it happens so often now that telling the story again seems pointless. But silence is compliance, and we &lt;strong&gt;HAVE&lt;/strong&gt; to keep calling out this behavior instead of just accepting it and moving on.&lt;/p&gt;
 &lt;p&gt;Last week, I went through an interview process that was a textbook example of how bad hiring is these days — even (and especially) for UX-adjacent roles.&lt;/p&gt;
 &lt;p&gt;Here’s what happened.&lt;/p&gt;
@@ -599,7 +545,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;p&gt;Just like customers, candidates talk. Their negative experiences can damage your brand just as much as a bad product review.&lt;/p&gt;
 &lt;p&gt;Bad UX shouldn’t be part of your recruiting any more than it should be part of your product.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -608,10 +553,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/1/the-list-again/"/>
     <updated>2026-01-19T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/1/the-list-again/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;The List, Again&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-01-19&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Away we go…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;IANAL, but Josh Allen should sue the Bills front office for workplace discrimination over the way they&#39;re wasting his career.&lt;/li&gt;
@@ -626,7 +568,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;Pro tip: Next time you need dessert, make — don’t buy — a tres leches cake. It’s wicked easy, crazy good, and racks up serious baking cred.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -635,10 +576,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/1/another-list/"/>
     <updated>2026-01-12T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/1/another-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Another List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-01-12&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Let&#39;s do this…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The only person on earth who goes through more outfits in a three-hour period than my wife is Elton John.&lt;/li&gt;
@@ -653,7 +591,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;If the multiverse is real, I want — nay, &lt;strong&gt;NEED&lt;/strong&gt; — to visit the world where Van Halen teamed up with Chris Cornell instead of Gary Cherone in the late ’90s.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -662,10 +599,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2026/1/new-year-same-story/"/>
     <updated>2026-01-05T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2026/1/new-year-same-story/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;New Year, Same Story&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2026-01-05&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Back to business…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Why does hazelnut coffee always smell so much better than it actually tastes?&lt;/li&gt;
@@ -680,7 +614,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;If you like The Who better than Led Zeppelin, I don’t think we can pretend to be friends.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -689,10 +622,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/12/the-year-end-list/"/>
     <updated>2025-12-29T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/12/the-year-end-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;The Year-End List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-29&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;One more time for 2025…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;People always say college was the best time of their lives… but the only thing I miss from that era is the chili cheese fries from Deli Haus in Kenmore Square.&lt;/li&gt;
@@ -707,7 +637,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;I &lt;strong&gt;HATE&lt;/strong&gt; “special editions” and “director’s cuts” of classic movies… but if James Cameron would stop wasting time on &lt;em&gt;Avatar&lt;/em&gt; and just clean up the effects in &lt;em&gt;The Terminator&lt;/em&gt;, I’d pay a &lt;strong&gt;TRILLION DOLLARS&lt;/strong&gt; to see it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -716,10 +645,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/12/this-weeks-list/"/>
     <updated>2025-12-22T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/12/this-weeks-list/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;This Week&#39;s List&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-22&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Yep, I&#39;m doing this again…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Pockets — there should always be more, and they should always be bigger.&lt;/li&gt;
@@ -734,7 +660,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;Joe Torre is the best baseball manager in my lifetime, but &lt;em&gt;not&lt;/em&gt; bunting on Schilling and his stupid bloody sock should&#39;ve permanently barred him from Hall of Fame induction.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -743,10 +668,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/12/some-front-end-stuff/"/>
     <updated>2025-12-18T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/12/some-front-end-stuff/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Some Front-End Stuff&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-18&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Every now and then, I like to use this space to share stuff that&#39;s more relevant than my lame jokes. With that in mind, here are a few really good front-end dev links that I stumbled onto this week:&lt;/p&gt;
 &lt;ul&gt;
 	&lt;li&gt;
@@ -767,7 +689,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
  	&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -776,10 +697,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/12/more-odds-and-ends/"/>
     <updated>2025-12-15T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/12/more-odds-and-ends/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;More Odds And Ends&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-15&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Another week of my random musings…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Am I the only one who thinks the playable ads for mobile games are more fun than the games themselves?&lt;/li&gt;
@@ -794,7 +712,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;No offense to anyone who’s given birth, but the worst pain on earth is stepping on a Lego at 3 AM on the way to the bathroom.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -803,10 +720,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/12/another-two-cents/"/>
     <updated>2025-12-08T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/12/another-two-cents/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Another Two Cents&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-08&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;And now, more random thoughts that nobody asked for…&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The most absurd part of the entire Rocky-verse isn’t the robot, or Thunderlips, or even Balboa beating Creed in a footrace — it’s that a BOXING COMMISSION &lt;em&gt;wouldn’t&lt;/em&gt; license Rocky because he was brain damaged.&lt;/li&gt;
@@ -821,7 +735,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;An interviewer asked me, &amp;quot;if you were a Transformer, who would you be?&amp;quot; I told them, &amp;quot;I&#39;m more Ultra Magnus than Optimus Prime&amp;quot;… but the sad truth is, I&#39;m probably Springer.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -830,10 +743,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/12/bad-ux-isnt-just-for-websites/"/>
     <updated>2025-12-05T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/12/bad-ux-isnt-just-for-websites/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Bad UX Isn&#39;t Just For Websites&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-05&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Whoever designed the wheels on my wife’s Jeep should be drawn and quartered. Seriously — why on earth would you put the valve stems inside a recessed cavity that human hands can’t reach?&lt;/p&gt;
 &lt;p&gt;It’s the coldest day of the year (so far). Temperatures drop, tire pressure drops... not rocket surgery over here. So there I am, freezing my schmeckels off, trying to attach the tire inflator, and suddenly I realize I need precision surgical instruments just to remove a valve cap. A valve cap! The one part of a car that literally every human has to touch at some point.&lt;/p&gt;
 &lt;p&gt;If &lt;strong&gt;EVER&lt;/strong&gt; there was something that &lt;strong&gt;SHOULD&lt;/strong&gt; be easy and user-friendly, it’s the valve cap on your car tires.&lt;/p&gt;
@@ -842,7 +752,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;p&gt;As a web guy, I thought this kind of crap was limited to websites. You know, buttons that aren’t buttons, inputs masquerading as divs, dropdowns you need a blood sacrifice to open. But here we are.&lt;/p&gt;
 &lt;p&gt;Turns out bad UX isn’t &lt;em&gt;just&lt;/em&gt; for websites after all.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -851,10 +760,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/12/two-more-cents/"/>
     <updated>2025-12-01T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/12/two-more-cents/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Two More Cents&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-01&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;&lt;em&gt;ANOTHER&lt;/em&gt; list? What is this, BuzzFeed?? Anyway...&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;If you ask me, Tom Hanks deserved just as much credit for &amp;quot;Joe Versus The Volcano&amp;quot; as he got for &amp;quot;Philadelphia&amp;quot; and &amp;quot;Forrest Gump.&amp;quot;&lt;/li&gt;
@@ -869,7 +775,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;I&#39;m probably the biggest &amp;quot;Miami Vice&amp;quot; fan alive, and even I think another reboot is an atrocity. But if you’re convinced you have to do it, do yourself a favor and cast Donald Glover as Tubbs. You’ll thank me later.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -878,10 +783,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/11/my-two-cents/"/>
     <updated>2025-11-24T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/11/my-two-cents/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;My Two Cents&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-12-24&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;Anyone else old enough to remember Larry King&#39;s old USA Today column? (For that matter, is anyone even old enough to remember USA Today??) On of the main reasons I always wanted a blog was to try writing something like that, so, here goes nothing...&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;AC/DC is like the pizza of music -- even their &amp;quot;bad&amp;quot; songs are still some pretty darn good rock and roll.&lt;/li&gt;
@@ -896,7 +798,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;li&gt;When I was in high school, I had a buddy whose first car was an Oldsmobile Cutlass Ciera. The bench seat in the back of that car was the most comfortable thing I ever sat on. I told him that when he was done with the car, I wanted to buy the bench to use as my living room sofa. It&#39;s a shame he never took me seriously.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -905,10 +806,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/10/a-town-worth-wanting/"/>
     <updated>2025-10-27T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/10/a-town-worth-wanting/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;A Town Worth Wanting&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-10-27&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;There’s a difference between a town you can afford to live in and a town you &lt;em&gt;want&lt;/em&gt; to live in.&lt;/p&gt;
 &lt;p&gt;Lately, Shelton has sadly become more of the former than the latter.&lt;/p&gt;
 &lt;p&gt;Early voting is underway, and Election Day is a week away. This is our chance to decide what kind of community we want to be.&lt;/p&gt;
@@ -926,7 +824,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;p&gt;Let’s stop confusing cheap with smart. Let’s start building the town we want to live in.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Vote for leadership that invests in Shelton’s future. Vote Row A.&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -935,10 +832,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/10/nothing-works-anymore-except-the-web/"/>
     <updated>2025-10-25T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/10/nothing-works-anymore-except-the-web/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Nothing Works Anymore… Except the Web&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-10-25&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;You&#39;ve probably read this article before, or at least something very similar, because I&#39;m hardly the first one to say it — nothing works anymore.&lt;/p&gt;
 &lt;p&gt;The fridge needs a software update. The car doors won&#39;t unlock without an app. Even the “smart” TV is too dumb to find the only WiFi network it&#39;s ever been connected to since I bought it a year ago.&lt;/p&gt;
 &lt;p&gt;And yet, somehow, the first website I ever built on Geocities (remember that?) back in 1999 will still render in a modern browser.&lt;/p&gt;
@@ -967,7 +861,6 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
 &lt;p&gt;That’s good design for life.&lt;/p&gt;
 &lt;p&gt;If only my TV was smart enough to understand that.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -976,10 +869,7 @@ But it did &lt;strong&gt;NOT&lt;/strong&gt; flag the missing label.&lt;/p&gt;
     <link href="https://www.markkimmerle.com/blog/posts/2025/10/accessibility-roundup/"/>
     <updated>2025-10-15T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/10/accessibility-roundup/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Accessibility Roundup&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-10-15&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;A handful of a11y-related links I found this week that I thought were useful and thoughtful...&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1004,7 +894,6 @@ This is a really insightful point, and I&#39;ve actually seen this lesson work i
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -1013,10 +902,7 @@ This is a really insightful point, and I&#39;ve actually seen this lesson work i
     <link href="https://www.markkimmerle.com/blog/posts/2025/10/my-custom-css-reset/"/>
     <updated>2025-10-14T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/10/my-custom-css-reset/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;My Custom CSS Reset&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-10-14&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;For... reasons? ... I went down the rabbit hole of CSS resets. It seems like everyone else in the world has one, and even though I&#39;ve used some of these ideas in some capacity for a long time, I&#39;ve never formally gathered them up into one file.  So from now on, this is going to be the starter kit that I use for anything I build.&lt;/p&gt;
 &lt;p&gt;Here&#39;s a &lt;a href=&quot;https://codepen.io/mkimmerle/pen/WbrEPjz&quot;&gt;CodePen link to my version&lt;/a&gt;, with some explanations below.&lt;/p&gt;
 &lt;h2 class=&quot;u-h2&quot;&gt;Disclaimer&lt;/h2&gt;
@@ -1275,7 +1161,6 @@ fieldset {
 &lt;h2 class=&quot;u-h2&quot;&gt;Thoughts?&lt;/h2&gt;
 &lt;p&gt;The more I look at this, the more I&#39;m likely to find things I should change (for instance, I should probably add a &lt;code&gt;max-width&lt;/code&gt; character setting for content pages), so I bet this will evolve over the days/weeks/months ahead. If anyone ever actually reads this and has any suggestions, I&#39;d really appreciate the feedback.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -1284,16 +1169,12 @@ fieldset {
     <link href="https://www.markkimmerle.com/blog/posts/2025/9/use-the-drawer/"/>
     <updated>2025-09-11T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/9/use-the-drawer/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;USE THE DRAWER!!&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-09-11&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;To whom it may concern,&lt;/p&gt;
 &lt;p&gt;The oven is &lt;strong&gt;NOT&lt;/strong&gt; an appropriate place to store the cookie sheets when you&#39;re not actually baking.&lt;/p&gt;
 &lt;p&gt;Thank you,&lt;/p&gt;
 &lt;p&gt;The Management&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -1302,10 +1183,7 @@ fieldset {
     <link href="https://www.markkimmerle.com/blog/posts/2025/9/you-are-not-eligible/"/>
     <updated>2025-09-06T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/9/you-are-not-eligible/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;You Are Not Eligible&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-09-06&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;I applied for a job yesterday. At 8PM. On a Friday night. Within 10 minutes, I got the following (automated, of course) response:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Thank you for your interest in the position of XXXX.  Based on your responses to the application questionnaire, you are ineligible to submit an application.&lt;/p&gt;
@@ -1314,7 +1192,6 @@ fieldset {
 &lt;p&gt;Look, I&#39;ll be the first to admit that I&#39;m probably not the magical unicorn wizard ninja you&#39;re hoping to find out here. But I can&#39;t help but wonder -- if you&#39;ve done such a bad job configuring your robot gatekeepers that qualified candidates can&#39;t even get in front of human eyes, then has it ever occurred to you that you&#39;re likely missing out on a ton of candidates that come pretty close to being that magical unicorn wizard ninja, all because your people aren&#39;t willing to do the job that people should be doing??&lt;/p&gt;
 &lt;p&gt;Stop relying on the machines for &lt;em&gt;everything&lt;/em&gt;, and do your own job once in a while.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -1323,13 +1200,9 @@ fieldset {
     <link href="https://www.markkimmerle.com/blog/posts/2025/9/two-down-one-to-go/"/>
     <updated>2025-09-05T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/9/two-down-one-to-go/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Two Down, One To Go&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-09-05&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;IYKYK&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
   
@@ -1338,15 +1211,11 @@ fieldset {
     <link href="https://www.markkimmerle.com/blog/posts/2025/9/welcome-to-my-blog/"/>
     <updated>2025-09-03T00:00:00Z</updated>
     <id>https://www.markkimmerle.com/blog/posts/2025/9/welcome-to-my-blog/</id>
-    <content type="html">&lt;section class=&quot;content-container&quot;&gt;
-&lt;h1 class=&quot;u-h1&quot;&gt;Welcome to my Blog&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;2025-09-03&lt;/em&gt;&lt;/p&gt;
-&lt;div class=&quot;u-b1&quot;&gt;
+    <content type="html">&lt;div class=&quot;u-b1&quot;&gt;
 &lt;p&gt;At long last, I finally have a blog. And this is the first post. I should&#39;ve done this a long time ago -- both writing a blog &lt;em&gt;AND&lt;/em&gt; switching from pure static HTML to &lt;a href=&quot;https://www.11ty.dev/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Eleventy&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Anyway, I don&#39;t have much to say yet, other than I like Eleventy so far. It&#39;s fast and the templating is very nice.&lt;/p&gt;
 &lt;p&gt;Stay tuned, and hopefully once in a while I&#39;ll have some ideas that are worth sharing.&lt;/p&gt;
 &lt;/div&gt;
-&lt;/section&gt;
 </content>
   </entry>
 </feed>
