@@ -10,11 +10,6 @@ title: Mark Kimmerle - Front-End Developer | WCAG / Accessibility | Performance 
       I make them <span class="home-headline__accent">accessible</span>.<br>
       I have <span class="home-headline__accent">opinions</span> about both.
     </h1>
-    <p class="home-available">
-      <span class="home-available__dot" aria-hidden="true"></span>
-      <strong>Currently available</strong> for contract and freelance work: front-end development, Shopify Plus, accessibility audits, performance optimization.
-      <a href="/contact/">Get in touch</a>
-    </p>
     <p class="home-byline">
       <span class="home-byline__name">Mark Kimmerle</span>
       <span aria-hidden="true">·</span>
