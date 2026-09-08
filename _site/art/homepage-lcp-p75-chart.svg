@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="100%" height="100%" style="background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Title & Subtitle -->
+  <text x="40" y="30" font-size="18" font-weight="bold" fill="#111827">Homepage Largest Contentful Paint (LCP - p75)</text>
+  <text x="40" y="48" font-size="12" fill="#6B7280">Daily CrUX field data (June 2 – September 5, 2026)</text>
+
+  <!-- Legend (Shifted to Left & Lifted Higher) -->
+  <g transform="translate(60, 68)">
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#7E22CE" stroke-width="3"/>
+    <text x="24" y="4" font-size="11" font-weight="600" fill="#374151">LCP (p75)</text>
+
+    <rect x="110" y="-7" width="12" height="12" fill="#DCFCE7" rx="2" stroke="#86EFAC"/>
+    <text x="128" y="3" font-size="11" fill="#4B5563">Good (&lt; 2.5s)</text>
+
+    <rect x="220" y="-7" width="12" height="12" fill="#FEF9C3" rx="2" stroke="#FDE047"/>
+    <text x="238" y="3" font-size="11" fill="#4B5563">Needs Improvement (2.5s–4.0s)</text>
+
+    <rect x="420" y="-7" width="12" height="12" fill="#FEE2E2" rx="2" stroke="#FCA5A5"/>
+    <text x="438" y="3" font-size="11" fill="#4B5563">Poor (&gt; 4.0s)</text>
+  </g>
+
+  <!-- Threshold Background Zones -->
+  <rect x="60" y="110" width="800" height="106.6" fill="#FEE2E2" opacity="0.65"/>
+  <rect x="60" y="216.6" width="800" height="80" fill="#FEF9C3" opacity="0.75"/>
+  <rect x="60" y="296.6" width="800" height="133.4" fill="#DCFCE7" opacity="0.75"/>
+
+  <!-- Background Grid Lines & Y-Labels -->
+  <g stroke="#D1D5DB" stroke-width="1" stroke-dasharray="2,2" opacity="0.7">
+    <line x1="60" y1="110" x2="860" y2="110"/><text x="50" y="114" font-size="11" font-weight="500" fill="#6B7280" text-anchor="end">6.0s</text>
+    <line x1="60" y1="163.3" x2="860" y2="163.3"/><text x="50" y="167" font-size="11" font-weight="500" fill="#6B7280" text-anchor="end">5.0s</text>
+    <line x1="60" y1="216.6" x2="860" y2="216.6"/><text x="50" y="220" font-size="11" font-weight="500" fill="#6B7280" text-anchor="end">4.0s</text>
+    <line x1="60" y1="270" x2="860" y2="270"/><text x="50" y="274" font-size="11" font-weight="500" fill="#6B7280" text-anchor="end">3.0s</text>
+    <line x1="60" y1="323.3" x2="860" y2="323.3"/><text x="50" y="327" font-size="11" font-weight="500" fill="#6B7280" text-anchor="end">2.0s</text>
+    <line x1="60" y1="376.6" x2="860" y2="376.6"/><text x="50" y="380" font-size="11" font-weight="500" fill="#6B7280" text-anchor="end">1.0s</text>
+    <line x1="60" y1="430" x2="860" y2="430"/><text x="50" y="434" font-size="11" font-weight="500" fill="#6B7280" text-anchor="end">0.0s</text>
+  </g>
+
+  <!-- Zone Threshold Boundary Lines -->
+  <line x1="60" y1="216.6" x2="860" y2="216.6" stroke="#DC2626" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="855" y="212" font-size="10" font-weight="bold" fill="#991B1B" text-anchor="end">Poor Threshold (4.0s)</text>
+
+  <line x1="60" y1="296.6" x2="860" y2="296.6" stroke="#16A34A" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="855" y="292" font-size="10" font-weight="bold" fill="#166534" text-anchor="end">Good Threshold (2.5s)</text>
+
+  <!-- Deployment Line (7/14) with Adjusted Vertical Hierarchy -->
+  <text x="413.7" y="88" font-size="11" font-weight="bold" fill="#111827" text-anchor="middle">Deploy (7/14)</text>
+  <polygon points="413.7,108 408,98 419,98" fill="#111827"/>
+  <line x1="413.7" y1="108" x2="413.7" y2="430" stroke="#111827" stroke-width="2"/>
+
+  <!-- LCP Data Line -->
+  <polyline fill="none" stroke="#7E22CE" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" points="
+    60.0,161.5 68.4,159.7 76.8,159.7 85.3,159.7 93.7,159.7 102.1,159.7 110.5,159.7 118.9,151.4 
+    127.4,151.4 135.8,151.4 144.2,148.9 152.6,149.7 161.1,148.9 169.5,149.7 177.9,149.7 186.3,148.9 
+    194.7,148.7 203.2,148.7 211.6,154.5 220.0,156.0 228.4,152.5 236.8,154.5 245.3,151.6 253.7,151.6 
+    262.1,151.6 270.5,158.3 278.9,158.3 287.4,156.0 295.8,152.5 304.2,153.5 312.6,156.0 321.1,156.0 
+    329.5,153.9 337.9,158.0 346.3,158.8 354.7,163.4 363.2,163.4 371.6,163.4 380.0,164.1 388.4,164.1 
+    396.8,166.0 405.3,166.8 413.7,166.8 422.1,175.0 430.5,178.1 438.9,183.0 447.4,187.3 455.8,191.6 
+    464.2,192.6 472.6,199.0 481.1,201.9 489.5,203.4 497.9,211.4 506.3,211.4 514.7,213.6 523.2,216.9 
+    531.6,225.6 540.0,238.9 548.4,249.3 556.8,262.6 565.3,273.1 573.7,273.7 582.1,286.6 590.5,286.6 
+    598.9,290.5 607.4,298.5 615.8,300.0 624.2,304.6 632.6,308.2 641.1,317.0 649.5,320.5 657.9,320.5 
+    666.3,321.5 674.7,321.8 683.2,321.5 691.6,324.5 700.0,326.6 708.4,328.6 716.8,328.6 725.3,328.6 
+    733.7,330.3 742.1,330.3 750.5,329.4 758.9,329.4 767.4,329.4 775.8,329.4 784.2,329.4 792.6,329.4 
+    801.1,331.8 809.5,329.4 817.9,329.4 826.3,329.4 834.7,329.4 843.2,329.4 851.6,329.4
+  "/>
+
+  <!-- X-Axis Base Line -->
+  <line x1="60" y1="430" x2="860" y2="430" stroke="#9CA3AF" stroke-width="1"/>
+
+  <!-- X-Axis Labels -->
+  <g stroke="#9CA3AF" stroke-width="1">
+    <line x1="60" y1="430" x2="60" y2="436"/><text x="60" y="450" font-size="11" fill="#6B7280" text-anchor="middle">Jun 2</text>
+    <line x1="211.6" y1="430" x2="211.6" y2="436"/><text x="211.6" y="450" font-size="11" fill="#6B7280" text-anchor="middle">Jun 20</text>
+    <line x1="304.2" y1="430" x2="304.2" y2="436"/><text x="304.2" y="450" font-size="11" fill="#6B7280" text-anchor="middle">Jul 1</text>
+    <line x1="413.7" y1="430" x2="413.7" y2="436"/><text x="413.7" y="450" font-size="11" font-weight="bold" fill="#111827" text-anchor="middle">Jul 14</text>
+    <line x1="565.3" y1="430" x2="565.3" y2="436"/><text x="565.3" y="450" font-size="11" fill="#6B7280" text-anchor="middle">Aug 1</text>
+    <line x1="691.6" y1="430" x2="691.6" y2="436"/><text x="691.6" y="450" font-size="11" fill="#6B7280" text-anchor="middle">Aug 16</text>
+    <line x1="826.3" y1="430" x2="826.3" y2="436"/><text x="826.3" y="450" font-size="11" fill="#6B7280" text-anchor="middle">Sep 1</text>
+  </g>
+</svg>
